@@ -303,7 +303,7 @@ $settings['hash_salt'] = 'ffwXcFZl83MR4NhpvxQqDlWWDMTTtxB4woeRjCSSpNtZRNB1IlbSv5
  * After finishing the upgrade, be sure to open this file again and change the
  * TRUE back to a FALSE!
  */
-$settings['update_free_access'] = FALSE;
+$settings['update_free_access'] = TRUE;
 
 /**
  * External access proxy settings:
@@ -770,9 +770,9 @@ $settings['entity_update_batch_size'] = 50;
 # }
 $config_directories['sync'] = '../config/sync';
 $databases['default']['default'] = array (
-  'database' => 'colfuturo',
-  'username' => 'root',
-  'password' => 'root',
+  'database' => 'procolombia',
+  'username' => 'procolombia',
+  'password' => 'pr0c0l0mbi@',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',

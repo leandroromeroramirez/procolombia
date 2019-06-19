@@ -1,0 +1,83 @@
+footer{
+    background: $secondary-color;
+    padding: 80px 0 10px 0;
+    h2{
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        text-align: left;
+        font-weight: 500;
+        color: $white;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    a{
+        color: $medium-blue;
+        font-size: 0.9em;
+        line-height: 20px !important;
+        display: inline-block !important;
+        cursor: pointer;
+        &:hover{
+            color: $white;
+        }
+    }
+    li{
+        display: block;
+        width: 100%;
+        a{
+            display: inline-block !important;
+            padding: 0.1rem 0rem !important;
+            cursor: pointer;
+        }
+    }
+    @media only screen and (max-width: 600px){
+        display: none;
+    }
+}
+.bottom-bar {
+    background: $dark-blue;
+    padding: 0.8em 0px;
+    color: $white;
+    font-size: 0.8em;
+    p{
+        margin-bottom: 0;
+    }
+}
+#block-legales{
+    li{
+        display: inline-block;
+        width: auto;
+        padding: 16px 12px;
+        a{
+            display: inline-block;
+            color: white;
+        }
+    }
+}
+.social-media-links--platforms.horizontal li {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    padding: .2em .35em;
+
+    a{
+        color: white;
+        &:hover{
+            color: $light-blue;
+        }
+    }
+}
+section#block-socialmedialinks {
+    padding-top: 10px;
+    ul{
+        float: right;
+        margin: 0;
+    }
+}
+div#footer-middle {
+    border-top: 1px solid $medium-blue;
+    padding-top: 14px;
+}
+div#footer-first {
+    padding-bottom: 31px;
+}

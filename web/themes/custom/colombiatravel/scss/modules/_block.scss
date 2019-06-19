@@ -1,0 +1,872 @@
+.region{
+    header {
+        text-align: center;
+        font-size: 1.2em;
+        //padding: 1em 2.4em 0px;
+        display: block;
+        @media only screen and (max-width: 600px){
+           //padding-left: 0.6em;
+           // padding-right: 0.6em;
+        }
+        p{
+            margin-bottom: 3em;
+            display: block;
+            padding-left: 3em;
+            padding-right: 3em;
+            @media only screen and (max-width: 600px){
+                display: none;
+                padding-left: 0em;
+                padding-right: 0em;
+            }
+        }
+
+        }
+
+        .destinos-home{ 
+            .destacado{
+                text-align: left;
+            }
+            .destino{
+                position: relative;
+                margin-bottom: 1.8em;
+                text-align: center;
+                @media only screen and (max-width: 600px){
+                    margin-bottom: 1em;
+                }
+                &:hover{
+
+                    .photo{
+                        a{
+                            &:before{
+                                background: rgba(0,0,0,.5);
+        
+                                transition: all ease-in-out 0.3s;
+                            }
+                        }
+                    }
+                }
+                .photo{
+                        img{
+                            border-radius: 6px; 
+                        }
+                    a{
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                      
+                        &:before{
+                            position: absolute; 
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0,0,0,.2);
+                            content: "";
+                            z-index: 1;
+                            border-radius: 6px; 
+                        }
+
+                    }
+                }
+                .descripcion {
+                    position: absolute;
+                    bottom: 0;
+                    z-index: 4;
+                    .info-destino{
+                        padding: 0 2em 2em 1.2em;
+                        @media only screen and (max-width: 600px){
+                            padding: 0 0.7em;  
+                        }
+                        .titulo{
+                            font-size: 1.5em;
+                            line-height: 1.2em;
+                            font-weight: 600;
+                            margin-bottom: 12px;
+                            @media only screen and (max-width: 600px){
+                                font-size: 1em;
+                            }
+                            a{
+                                color: $white;
+                                text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+                            }
+                        }
+                        .cuerpo, .cuerpo p{
+                            color: $white;
+                            font-size: 0.9em;
+                            line-height: 1.4em;
+                            display: block; 
+                            text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+                            @media only screen and (max-width: 600px){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            h3{
+                position: absolute;
+                bottom: 50%;
+                transform: translateY(50%);
+                font-size: 1.5em; 
+                line-height: 1.2em;
+                font-weight: 600;
+                z-index: 3;
+                right: 0;
+                left: 0;
+                margin-bottom: 0;
+                padding-left: 0;
+                a{
+                    color: $white;
+                    text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+                    padding: 1em;
+                    display: inline-block; 
+                }
+                @media only screen and (max-width: 600px){
+                    bottom: 0.2em;
+                    left: 1.2em;
+                    font-size: 1em;
+                    padding-right: 1.2em;
+                }
+            }
+        }
+}
+//Region que hacer
+.block-views-block-que-hacer-en-colombia-home-block-1-2{
+    background: $primary-color;
+    background-image: url("../../../../sites/default/files/inline-images/textura01.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: $white;
+    h2{
+        color: $white;
+    }
+    header {
+        text-align: center;
+        font-size: 1.2em;
+        padding: 1em 3em 0px;
+        display: block;
+        @media only screen and (max-width: 600px){
+            font-size: 0.9em;
+        }
+        p{
+            margin-bottom: 2em; 
+        }
+    }
+    .owl-wrapper-outer{
+        .destino{
+            position: relative;
+            .photo{
+                margin-bottom: 20px;
+                img{
+                    border-radius: 6px; 
+                }
+            a{
+                display: inline-block;
+                position: relative;
+              
+                &:before{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,.2);
+                    content: "";
+                    z-index: 1;
+                    border-radius: 6px; 
+                }
+                &:hover{
+                    &:before{
+                        background: rgba(0,0,0,.5);
+
+                        transition: all ease-in-out 0.4s;
+                    }
+                }
+            }
+        }
+        h3{
+            font-size: 1.2em;
+            line-height: 1.4em;
+            font-weight: 600;
+            padding-right: 1.6em;
+            z-index: 4;
+            a{
+                color: $white;
+                text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+            }
+        }
+    }
+}
+//COntroles
+.owl-theme .owl-controls {
+    /* margin-top: 10px; */
+    text-align: justify;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    .owl-next{
+        float: right !important;
+        background-image: url("../../../../sites/default/files/inline-images/right.png") !important; 
+    }
+}
+
+.owl-buttons >div {
+    color: $primary-color;
+    text-indent: 10000px !important;
+    padding: 10px !important;
+    font-size: 18px; 
+    width: 40px !important;
+    height: 40px !important;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px; 
+    border-radius: 30px;
+    background: #fff !important;
+    opacity: 1 !important;
+    background-image: url("../../../../sites/default/files/inline-images/left.png") !important; 
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+.owl-buttons{
+    padding: 0;
+    height: 0;
+    display: block;
+    @media only screen and (max-width: 600px){
+        display: none;
+    }
+}
+}
+// Bloque porque viajar
+.block-views-blockpor-que-viajar-a-colombia-home-block-1, .block-views-blockcomentarios-de-viajeros-block-1{
+    h2{
+        margin-bottom: 1em;
+    }
+    .views-field-field-image{
+        margin-bottom: 1em;
+    }
+    .views-field.views-field-body {
+        font-size: 1.2em;
+        padding: 0 12em;
+        font-style: italic;
+        @media only screen and (max-width: 600px){
+            padding: 0 1em;
+            font-size: 1em;
+        }
+    }
+    .views-field-field-firma {
+        font-size: 0.9em;
+        margin-bottom: 1em;
+    }
+}
+//Recomendaciones viajero, te puede interesar, experiencias.
+.block-views-blockrecomendaciones-viajero-block-1, .block-views-block-experiencias-block-1, .block-views-block-te-puede-interesar-blog-block-1{
+    h2{
+        margin-bottom: 1em;
+    }
+    .destino{
+        position: relative;
+        .photo{
+            img{
+                border-radius: 6px; 
+            }
+        a{
+            display: inline-block;
+            position: relative;
+          
+            &:before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.2);
+                content: "";
+                z-index: 1;
+                border-radius: 6px; 
+            }
+            &:hover{
+                &:before{
+                    background: rgba(0,0,0,.5);
+
+                    transition: all ease-in-out 0.4s;
+                }
+            }
+        }
+    }
+    .views-field-field-image{
+        margin-bottom: 1em;
+    }
+    h3{
+        font-size: 1.2em;
+        font-weight: 600;
+        padding-left: 0em;
+        a{
+            color: $dark-gray;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    .views-field-body p, .views-field-body{
+        line-height: 1.5em;
+    }
+    .views-field-body {
+        .field-content{
+            font-size: 0.92em; 
+            line-height: 1.5em;
+        }
+    }
+
+    }
+}
+//Debes saber
+.block-views-blockque-debes-saber-si-vas-a-viajar-a-colombia-block-1{
+    background: $medium-gray; 
+    h2{
+        margin-bottom: 1em;
+    }
+    h3{
+        font-size: 1em;
+        font-weight: 600;
+        display: block;
+        @media only screen and (max-width: 600px){
+            display: inline-block;
+        }
+        a{
+            color: $dark-gray;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    .views-field-field-image{
+        margin-bottom: 1.1em;
+        display: block;
+        padding-right: 0px;
+        width: auto; 
+        @media only screen and (max-width: 600px){
+            display: inline-block;
+            padding-right: 20px;
+            width: 70px;
+        }
+    }
+    .views-row {
+        text-align: center;
+        padding: 0;
+        @media only screen and (max-width: 600px){
+            text-align: left;
+            padding: 0 1em;
+        }
+    }
+}
+
+//Como llegar
+
+#block-comollegaracolombiacontenedor{
+    background: $light-blue;
+    background-image: url("../../../../sites/default/files/inline-images/textura02.png");
+    background-repeat: repeat;
+    color: $white;
+    h2{
+        margin-bottom: 1em; 
+    }
+    h2, h3{
+        color: $white;
+        text-align: center;
+    }
+    h3{
+        font-size: 1.250em;
+        text-transform: uppercase;
+        @media only screen and (max-width: 600px){
+            font-size: 0.8em;
+        }
+    }
+    .aerolinea{
+        background: $secondary-color;
+        border-radius: 6px;
+        padding: 10px;
+        margin: 8px 4px;
+        width: 48%;  
+        @media only screen and (max-width: 600px){
+            width: 100%;
+        }
+         
+        .views-field-title{
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            font-weight: 700;
+        }
+        .views-field-body{
+            display: inline-block;
+            font-size: 0.8em;
+        }
+    }
+
+}
+//Encabezado{
+    .block-views-block-encabezado-destino-block-1{
+        .views-field-nothing {
+            position: absolute;
+            bottom: 8em;
+            max-width: 80rem;
+            z-index: 5;
+            width: 100%;
+            left: 0;
+            right: 0; 
+            margin-left: auto;
+            margin-right: auto;
+            @media only screen and (max-width: 600px){
+                padding-left: 0.9em;
+            }
+            h1{
+                font-size: 6.5vw;
+                color: #fefefe;
+                font-weight: 700;
+                letter-spacing: -5px;
+                line-height: 0.9em;
+                text-align: left; 
+                text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+                @media only screen and (max-width: 600px){
+                    font-size: 10.5vw;
+                    letter-spacing: -1px;
+                }
+            }
+            .tagline{  
+                    margin-bottom: 0.8em;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    line-height: 1em;
+                    text-rendering: optimizeLegibility;
+                    color: white;
+                    letter-spacing: 1px;
+                    text-align: left;
+                    @media only screen and (max-width: 600px){
+                        margin-bottom: 0.8em;
+                    }
+            }
+        }
+    }
+//Page destino
+.node--type-destino, .node--type-actividad{ 
+    .views-row{
+        position: relative;
+    }
+
+    h2{
+        margin-bottom: 1em;
+    }
+    .block-views-block-encabezado-destino-block-1{
+        .views-field-field-image{
+            position: relative;
+            &:before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.3);
+                content: "";
+                z-index: 1;
+            }
+        }
+    }
+
+    
+
+    summary {
+        display: inline-block;
+        background: $secondary-color;
+        border-radius: 6px;
+        padding: 0.6em 2em;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        position: absolute;
+        bottom: -60px; 
+        transform: translateX(-50%);
+        cursor: pointer;
+        
+    }
+    summary::-webkit-details-marker {
+        display:none;
+      }
+
+    .field-name-field-posts-instagram{
+        margin: 5em auto; 
+        .field-item {
+            width: 33%;
+            float: left;
+            padding: 0 0.1em;
+        }
+    }
+    .field-node--field-recomendaciones{
+        text-align: left;
+        h3{
+            margin-bottom: 1em;
+            border-top: 1px solid $light-gray;
+            padding-top: 46px;
+        }
+        ul {
+            list-style: none; 
+          }
+          
+          ul li::before {
+            content: "\2022";
+            color: $primary-color;
+            font-weight: bold;
+            display: inline-block;
+            font-size: 1.4em;
+            width: 1em;
+            margin-left: -1em;
+          }
+    }
+    .block-views-blockcomentarios-de-viajeros-block-1{
+        h3{
+            text-align: left;
+            border-top: 1px solid $light-gray;
+            padding-top: 46px;
+        }
+    }
+}
+//Que hacer en destino
+.block-views-block-que-hacer-en-destino-block-1, .block-views-block-mas-actividades-en-actividad-block-1 {
+    background: $primary-color;
+    background-image: url("../../../../sites/default/files/inline-images/textura01.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: $white;
+   
+    h2{
+        color: $white;
+    }
+    h3{
+        color: $white;
+        position: relative !important;
+        font-size: 1.4em;
+        line-height: 1.2em;
+        font-weight: 600;
+        z-index: 3;
+        text-align: left; 
+        margin-bottom: 1em;
+        padding: 0 !important;
+        bottom: 40px !important;
+    }
+    h4{
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: 0;
+        right: 0;
+        font-size: 1.3em;
+        line-height: 1.3em;
+        font-weight: 600;
+        padding: 1.2em;
+          z-index: 3; 
+        a{
+            color: $white;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+        }
+        @media only screen and (max-width: 600px){
+            bottom: 0.2em;
+            left: 1.2em;
+            font-size: 1em;
+            padding-right: 1.2em; 
+        }
+    }
+}
+.block-views-block-no-te-puedes-perder-destino-block-1, .block-views-block-eventos-destino-block-1{
+    h3{
+        margin-bottom: 1em;
+    }
+    .views-field-field-fecha-del-evento{
+        color: $primary-color;
+        font-size: 0.8em;
+        margin-bottom: 0.5em;
+    }
+
+    .owl-wrapper-outer{ 
+        .destino{
+            position: relative;
+            .photo{
+                margin-bottom: 20px;
+                img{
+                    border-radius: 6px; 
+                }
+                    a{
+                        display: inline-block;
+                        position: relative;
+                    
+                        &:before{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0,0,0,.2);
+                            content: "";
+                            z-index: 1;
+                            border-radius: 6px; 
+                            
+                        }
+                        &:hover{
+                            &:before{
+                                background: rgba(0,0,0,.5);
+                                transition: all ease-in-out 0.4s;
+                            }
+                        }
+                    }
+             }
+        h4{
+            font-size: 1.2em; 
+            line-height: 1.3em;
+            font-weight: 600;
+            padding-right: 1.6em;
+            z-index: 4;
+            a{
+                color: $dark-gray;
+            }
+        }
+    }
+    }
+    .owl-theme .owl-controls {
+        /* margin-top: 10px; */
+        text-align: justify;
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        .owl-next{
+            float: right !important;
+            background-image: url("../../../../sites/default/files/inline-images/right.png") !important; 
+        }
+    }
+    
+    .owl-buttons >div {
+        color: $primary-color;
+        text-indent: 10000px !important;
+        padding: 10px !important;
+        font-size: 18px; 
+        width: 40px !important;
+        height: 40px !important;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px; 
+        border-radius: 30px;
+        background: #fff !important;
+        opacity: 1 !important;
+        background-image: url("../../../../sites/default/files/inline-images/left.png") !important; 
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+    }
+    .owl-buttons{
+        padding: 0;
+        height: 0;
+        display: block;
+        @media only screen and (max-width: 600px){
+            display: none;
+        }
+    }
+}
+.block-views-block-eventos-destino-block-1{
+   // background-image: url("../../../../sites/default/files/inline-images/textura05_0.png");
+    // background-repeat: no-repeat;
+    //background-position: left bottom;
+}
+.block-views-block-no-te-puedes-perder-destino-block-1{
+    background: #f4f4f4;
+}
+
+//Experiencias
+
+.block-views-block-experiencias-block-1{
+    background: $light-blue;
+    background-image: url("../../../../sites/default/files/inline-images/textura06.png"); 
+    background-repeat: no-repeat;
+    background-position: right;
+    color: $white;
+    h2{
+        color: $white;
+    }
+    h3{
+        font-size: 1.2em;
+        font-weight: 600;
+        padding-left: 0em;
+        a{
+            color: $white !important;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    .views-field-body{
+        .field-content{
+            font-size: 0.9em; 
+            line-height: 1.5em;
+        }
+    }
+}
+//Bloque multimedia destino
+
+#block-multimediadestinocontenedor{
+    background: $secondary-color;
+    color: $white; 
+   background-image: url("../../../../sites/default/files/inline-images/textura04.png");
+    background-repeat: repeat;
+    background-position: right;
+    h2{
+        color: $white;
+        font-size: 2.4em;
+        @media only screen and (max-width: 600px){
+            font-size: 1.8em;
+        }
+    }
+}
+
+//Boton precios y disponibilidad
+#block-botonverpreciosydisponibilidad{
+    .field-block-content--body{
+        border-top: 1px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
+        padding-top: 3em;
+        padding-bottom: 0.2em;  
+    }
+}
+.block-views-block-por-que-hacer-actividad-block-1{
+    h3{
+        margin-bottom: 1em;
+    }
+}
+.block-views-block-mas-actividades-en-actividad-block-1{
+    .destinos-home .destino .descripcion .info-destino {
+        padding: 0 2em 2em 1.2em;
+        text-align: left !important;
+    }
+}
+//Lugares cercanos
+.block-views-block-lugares-cercanos-block-1 {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+}
+
+a.search-button {
+    text-indent: -9999px;
+    background: url("../images/search.png") no-repeat center center;
+    width: 24px;
+}
+a.btn-ingresar {
+    text-indent: -9999px;
+    background: url("../images/login.png") no-repeat center center;
+    width: 24px;
+}
+
+
+#views-exposed-form-buscador-page-1 {
+	position: relative;
+	.form-actions {
+		#edit-submit-buscador {
+			position: absolute;
+			bottom: 8px;
+			right: 0;
+			margin: 0;
+			background: rgba(230, 15, 75, 0) url("../images/search.png") no-repeat center center;
+			text-indent: -99999px;
+			width: 44px;
+		}
+	}
+}
+
+//Resultados de busqueda
+
+.section-buscador{
+    .views-field-field-image {
+        img{
+            border-radius: 6px;
+        }
+        a{
+            display: inline-block;
+            position: relative;
+          
+            &:before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0);
+                content: "";
+                z-index: 1;
+                border-radius: 6px; 
+            }
+            &:hover{
+                &:before{
+                    background: rgba(0,0,0,.5);
+
+                    transition: all ease-in-out 0.4s;
+                }
+            }
+        }
+    }
+    h3{
+        padding-left: 0;
+        font-size: 1.6rem;
+    }
+}
+//Blog
+
+.node--type-article{
+    h2{
+        margin-top: 1em;
+    }
+    h3{
+        padding-left: 0;
+    }
+    .cita-derecha{
+        float: right;
+        width: 40%;
+        margin-left: 18px;
+        border-left: 3px solid $light-gray;
+        padding: 12px 0px 10px 20px;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+}
+.field-node--field-tags{
+    border-top: 1px solid $light-gray;
+    padding-top: 1em;
+    .field-items {
+        .field-item{
+            display: inline-block;
+            margin-right: 6px;
+            a{
+                background: $light-gray;
+                border-radius: 6px;
+                padding: 4px 8px;
+                &:hover{
+                    background: $primary-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.relacionados {
+    margin-bottom: 5em;
+    display: flex;
+    @media only screen and (max-width: 600px){
+        margin-bottom: 1em;
+    }
+}
