@@ -25,6 +25,9 @@
         .destinos-home{ 
             .destacado{
                 text-align: left;
+                .destino{
+                    margin-bottom: 1em;
+                }
             }
             .destino{
                 position: relative;
@@ -48,6 +51,12 @@
                 .photo{
                         img{
                             border-radius: 6px; 
+                            img{
+                                width: auto;
+                                @media only screen and (max-width: 600px){
+                                    width: 450px;
+                                }
+                            }
                         }
                     a{
                         display: block;
@@ -73,25 +82,43 @@
                 }
                 .descripcion {
                     position: absolute;
-                    bottom: 0;
+                    bottom: 20px;
                     z-index: 4;
+                    width: 95%;
                     .info-destino{
-                        padding: 0 2em 2em 1.2em;
+                        padding: 0 2em;
                         @media only screen and (max-width: 600px){
-                            padding: 0 0.7em;  
+                            padding: 0 0.7em;   
                         }
                         .titulo{
-                            font-size: 1.5em;
+                            
                             line-height: 1.2em;
                             font-weight: 600;
-                            margin-bottom: 12px;
+                            margin-bottom: 20px;
                             @media only screen and (max-width: 600px){
                                 font-size: 1em;
+                            }
+                            h3{
+                                position: relative;
+                                font-size: 1.5em;
+                                line-height: 1.2em;
+                                font-weight: 600;
+                                @media only screen and (max-width: 600px){
+                                    font-size: 1em;
+                                    bottom: 30px;
+                                    line-height: 1.6em;
+                                }
+                                a{
+                                    color: $white;
+                                    text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+                                }
                             }
                             a{
                                 color: $white;
                                 text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+                                font-size: 1.5em;
                             }
+
                         }
                         .cuerpo, .cuerpo p{
                             color: $white;
@@ -114,7 +141,7 @@
                 line-height: 1.2em;
                 font-weight: 600;
                 z-index: 3;
-                right: 0;
+                right: 6px;
                 left: 0;
                 margin-bottom: 0;
                 padding-left: 0;
@@ -124,11 +151,8 @@
                     padding: 1em;
                     display: inline-block; 
                 }
-                @media only screen and (max-width: 600px){
-                    bottom: 0.2em;
-                    left: 1.2em;
-                    font-size: 1em;
-                    padding-right: 1.2em;
+                @media only screen and (max-width: 600px){ 
+                    font-size: 1.2em;
                 }
             }
         }
@@ -414,7 +438,7 @@
     .block-views-block-encabezado-destino-block-1{
         .views-field-nothing {
             position: absolute;
-            bottom: 8em;
+            bottom: 0em;
             max-width: 80rem;
             z-index: 5;
             width: 100%;
@@ -450,6 +474,52 @@
                     @media only screen and (max-width: 600px){
                         margin-bottom: 0.8em;
                     }
+            }
+            .flag.flag-favorito.action-flag {
+
+                a{
+                    text-indent: -10000px;
+                    display: inline-block;
+                    background: $primary-color;
+                    margin-top: 6em;
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    &:after{
+                        position: absolute;
+                        content: "";
+                        bottom: 6px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        background-image: url(../../../../sites/default/files/inline-images/planea_0.png);
+                        width: 40px;
+                        height: 40px;
+                    } 
+                }
+            }
+            .flag.flag-favorito.action-unflag {
+
+                a{
+                    text-indent: -10000px;
+                    display: inline-block;
+                    background: $primary-color;
+                    margin-top: 6em;
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    &:after{
+                        position: absolute;
+                        content: "";
+                        bottom: 6px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        background-image: url(../../../../sites/default/files/inline-images/favorito.png);
+                        width: 40px;
+                        height: 40px;
+                    } 
+                }
             }
         }
     }
@@ -579,8 +649,6 @@
             text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
         }
         @media only screen and (max-width: 600px){
-            bottom: 0.2em;
-            left: 1.2em;
             font-size: 1em;
             padding-right: 1.2em; 
         }
@@ -869,4 +937,81 @@ a.btn-ingresar {
     @media only screen and (max-width: 600px){
         margin-bottom: 1em;
     }
+}
+
+//Donde ir - menu destinos
+.menu-destinos{
+    h2{
+        text-align:left; 
+        font-size: 4.2em;
+        letter-spacing: -1px;
+    }
+}
+.donde-ir{
+    margin-bottom: 80px;
+    @media only screen and (max-width: 600px){
+        margin-bottom: 30px;
+    }
+}
+//Menu filtros
+nav#block-submenu-donde-ir {
+    border-bottom: 1px solid $light-gray;
+    padding-bottom: 24px;
+    ul{
+        li{
+            margin: 0 6px;
+            a{
+                color: $medium-blue;
+                border-radius: 8px;
+                border: 1px solid $medium-blue;
+                &.is-active{
+                    background: $secondary-color;
+                    color: $white;
+                }
+                &:hover{
+                    background: #001c3b;
+                    color: $white;
+                    transition: all ease-in-out 0.4s;
+                }
+            }
+        }
+    }
+}
+
+//Acordeones
+.ckeditor-accordion-container > dl {
+    position: relative;
+    border: 0px solid #ffffff;
+}
+.ckeditor-accordion-container > dl dt:last-of-type > a {
+    border-bottom: 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 200px;
+    padding-left: 40px;
+}
+.ckeditor-accordion-container > dl dd {
+    padding: 0 0px;
+}
+.ckeditor-accordion-container > dl dt.active > a {
+    background-color: $secondary-color;
+}
+.ckeditor-accordion-container dt a {
+    display: inline-block !important;
+    background-color: $secondary-color;
+}
+.ckeditor-accordion-container dt span.ckeditor-accordion-toggle {
+    left: auto !important;
+    top: 21px !important;
+    margin-left: 20px;
+}
+.ckeditor-accordion-container > dl dt {
+    position: relative;
+    text-align: center;
+}  
+.ckeditor-accordion-container > dl dt > a {
+    background-color: $secondary-color;
+}
+.ckeditor-accordion-container > dl dt > a:hover {
+    background-color: #001c3b;
 }
