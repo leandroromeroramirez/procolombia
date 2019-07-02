@@ -3,6 +3,7 @@
     "type": "project",
     "require": {
         "cweagans/composer-patches": "^1.6.0",
+        "dompdf/dompdf": "0.7.0-beta3",
         "drupal/addtoany": "^1.12",
         "drupal/adminimal_theme": "^1.4",
         "drupal/amp": "^2.1",
@@ -17,10 +18,12 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6",
         "drupal/devel": "^2.0",
+        "drupal/dropdown_language": "^2.3",
         "drupal/ds": "^3.3",
         "drupal/easy_breadcrumb": "^1.12",
         "drupal/entity_browser": "^2.1",
         "drupal/entityqueue": "^1.0",
+        "drupal/erd": "^1.0@beta",
         "drupal/field_collection": "^1.0",
         "drupal/field_formatter_class": "^1.1",
         "drupal/field_group": "^1.0",
@@ -50,11 +53,14 @@
         "drupal/twig_vardumper": "^1.1",
         "drupal/url_redirect": "^2.61",
         "drupal/vardumper": "^1.4",
+        "drupal/views_infinite_scroll": "^1.5",
         "drupal/zurb_foundation": "^6.0",
         "drush/drush": "^9.6",
         "hussainweb/drupal-composer-helper": "^1.0",
         "lullabot/amp": "^1.1",
-        "symfony/var-dumper": "~3.4"
+        "mikehaertl/phpwkhtmltopdf": "~2.1",
+        "symfony/var-dumper": "~3.4",
+        "tecnickcom/tcpdf": "~6"
     },
     "require-dev": {
         "behat/mink": "~1.7",

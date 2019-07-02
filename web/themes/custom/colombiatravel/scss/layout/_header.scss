@@ -1,6 +1,6 @@
 header.header-page {
     position: absolute;
-    z-index: 4;
+    z-index: 6;
     left: 0;
     right: 0;
     width: auto;
@@ -102,6 +102,15 @@ header.header-page {
             content: "";
             z-index: 1;
         }
+        .field-content{
+            img{
+                width: 100%;
+                @media only screen and (max-width: 600px){
+                    max-width: 300%;
+                    overflow: hidden;
+                }
+            }
+        }
     }
 }
 .block-views-block-encabezado-destino-block-1{
@@ -162,10 +171,11 @@ ul#superfish-main {
         a{
             color: $white;
             text-transform: uppercase;
-            font-size: 1.1em; 
+            font-size: 1em; 
             letter-spacing: 1px;
             text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
             font-weight: 500;
+            padding: 1em 1em !important;
         }
     }
 }
@@ -205,7 +215,7 @@ ul#superfish-main {
 
 //Submenu anclas destino
 
-#block-menudestino{
+#block-menudestino, #block-menufavoritos{
     .menu{
         display: block;
         padding: 5em 0px 0em 0;
@@ -218,15 +228,26 @@ ul#superfish-main {
                 &:hover{
                     color: $primary-color;
                 }
-                &.active{
+                &.active {
+                    color: $primary-color;
+                    border-bottom: 3px solid $primary-color;
+                }
+                &.is-active{
                     color: $primary-color;
                     border-bottom: 3px solid $primary-color;
                 }
             }
         }
+
     }
 }
-
+ #block-menufavoritos{
+    .menu{
+        @media only screen and (max-width: 600px){
+            padding: 1em 0px 0em 0;
+        }
+    }
+ }
 //Encabezado de paginas small
 .block-views-block-encabezado-de-paginas-block-1{
     .views-field-field-image{

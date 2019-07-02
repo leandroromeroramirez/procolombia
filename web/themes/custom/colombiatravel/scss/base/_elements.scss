@@ -149,6 +149,12 @@ padding: 100px 12em 80px 12em;
         padding-top: 60px;
     }
 }
+.padding-bottom{
+    padding-bottom: 60px;
+    @media only screen and (max-width: 600px){
+        padding-bottom: 20px;
+    }
+}
 .owl-page.active span{
     background: $primary-color !important;
 }
@@ -285,7 +291,7 @@ nav#block-menuherramientas {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 220px;
+    top: 180px;
     opacity: 0.8;
     li{
         color: $white;
@@ -298,11 +304,11 @@ nav#block-menuherramientas {
 
 //Buscador
 section#block-formularioexpuestobuscadorpage-1 {
-    background: rgba(10,36,79,0.7);
+    background: rgba(10,36,79,0.8);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 5;
     width: 100%;
     height: 100%;
     form#views-exposed-form-buscador-page-1 {
@@ -345,5 +351,57 @@ blockquote, blockquote p{
         letter-spacing: 0px;
         padding: 0; 
         line-height: 1.5em !important;
+    }
+}
+
+//Selector de idioma
+.block-dropdownlanguage{
+    &.columns{
+        padding-right: 0;
+    }
+    .dropbutton-widget {
+        display: inline-block;
+        position: relative;
+        margin-top: 7px;
+        color: $white;
+        font-size: 1.1em;
+        margin-left: 20px;
+        &:before{
+            position: absolute;
+            content: "";
+            width: 21px;
+            height: 21px;
+            top: 3px;
+            left: -26px;
+            background-image: url(../../../../sites/default/files/inline-images/lang.png);
+            cursor: pointer;
+        }
+    }
+    .dropbutton-wrapper {
+        background-color: rgba(0, 140, 186, 0);
+    }
+    .dropbutton-arrow {
+        border-top-color: $white;
+    }
+    a{
+        color: $white;
+    }
+    .open{
+        border-bottom-color: $white;
+    }
+.dropbutton {
+        cursor: pointer;
+}
+}
+
+// Paginador infinito
+ul.js-pager__items.pager{
+    list-style: none;
+    text-align: center;
+    li{
+        a{
+           background-color: $secondary-color;
+           padding: 0.85em 3em;
+        }
     }
 }
