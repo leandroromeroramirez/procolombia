@@ -1,0 +1,10 @@
+block.settings.currency_converter_block:
+  type: block_settings
+  label: 'Currency Converter block settings'
+  mapping:
+    currency_converter_from:
+      type: string
+      label: 'Currency Converter From'
+    currency_converter_to:
+      type: string
+      label: 'Currency Converter to'

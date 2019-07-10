@@ -1,0 +1,11 @@
+name: Currency Converter
+description: 'Currency Converter API.'
+type: module
+libraries:
+  - currency_converter/drupal.currency_converter
+
+version: '1.x'
+core: '8.x'
+project: 'currency_converter'
+datestamp: 1562018368
+package: 'dayscript'

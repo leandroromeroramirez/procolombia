@@ -31,7 +31,7 @@
             }
             .destino{
                 position: relative;
-                margin-bottom: 1.8em;
+                margin-bottom: 1.8rem;
                 text-align: center;
                 @media only screen and (max-width: 600px){
                     margin-bottom: 1em;
@@ -144,7 +144,8 @@
                 right: 6px;
                 left: 0;
                 margin-bottom: 0;
-                padding-left: 0;
+                padding-left: .67935rem !important;
+                padding-right: .67935rem !important;
                 a{
                     color: $white;
                     text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
@@ -412,6 +413,7 @@
     position: absolute;
     top: 30%;
     width: 100%;
+    height: 0;
     .owl-next{
         float: right !important;
         background-image: url("../../../../sites/default/files/inline-images/right.png") !important; 
@@ -628,6 +630,8 @@
             right: 0; 
             margin-left: auto;
             margin-right: auto;
+            padding-left: .67935rem;
+            padding-right: .67935rem; 
             @media only screen and (max-width: 600px){
                 padding-left: 0.9em;
                 
@@ -1143,6 +1147,7 @@ a.btn-ingresar {
 
 //Donde ir - menu destinos
 .menu-destinos{
+    margin-top: 40px;
     h2{
         text-align:left; 
         font-size: 4.2em;
@@ -1161,9 +1166,12 @@ a.btn-ingresar {
     }
 }
 //Menu filtros
-nav#block-submenu-donde-ir {
+nav#block-submenu-donde-ir, nav#block-quehacer-2 {
     border-bottom: 1px solid $light-gray;
-    padding-bottom: 24px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    padding-left: .67935rem;
+    padding-right: .67935rem;
     @media only screen and (max-width: 600px){
         padding-bottom: 40px;
     }
@@ -1174,7 +1182,7 @@ nav#block-submenu-donde-ir {
                 color: $medium-blue;
                 border-radius: 8px;
                 border: 1px solid $medium-blue;
-                &.is-active{
+                &.is-active{ 
                     background: $secondary-color;
                     color: $white;
                 }
@@ -1284,4 +1292,89 @@ nav#block-submenu-donde-ir {
 }
 #block-informacionrelevanteinfocomplementaria{
     margin-bottom: 40px;
+} 
+
+//Paginas basicas.
+
+.section-terminos-y-condiciones{
+    #block-mainpagecontent{
+        h2{
+            font-size: 2em;
+            text-align: left;
+            padding-left: 0em;
+        }
+        h3 {
+            font-weight: 600;
+            padding-left: 0em;
+            font-size: 1.4em;
+        }
+    }
+
+}
+
+//Seccion que hacer
+.section-que-hacer{
+    #block-mainpagecontent{
+        header{
+            h2{
+                text-align: left;
+                padding-left: 0;
+                margin-top: 10px !important; 
+            }
+            p{
+                margin-bottom: 1.8rem;
+                padding-left: .67935rem;
+                padding-right: .67935rem;
+            }
+        }
+    }
+    .padding-large {
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+    #sub-content-first{
+        margin-top: 40px;
+    }
+}
+.filtros{
+    margin-top: 30px;
+    margin-bottom: 40px;
+        span.fieldset-legend {
+            font-weight: 600;
+            font-size: 1.4em;
+            color: $primary-color;
+        }
+        .fieldset-wrapper {
+            border-bottom: 1px solid $light-gray;
+            margin-bottom: 1em;
+            padding-bottom: 1em;
+        } 
+}
+
+//Convertidor de moneda
+.moneda-converter{
+    border-top: 1px solid $light-gray;
+    h2{
+        text-align: left;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    label {
+        color: #3b444f;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+    }
+    select {
+        font-size: 1.3rem;
+    }
+    input[type="number"]{
+        color: $primary-color;
+        font-size: 2.2rem;
+        padding-bottom: 21px
+    }
+    .arrows-change-currency {
+        text-align: center;
+        margin-top: 91px;
+    } 
 }

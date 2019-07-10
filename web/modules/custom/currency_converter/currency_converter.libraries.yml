@@ -1,0 +1,6 @@
+drupal.currency_converter:
+  version: VERSION
+  js:
+    js/currency_converter.js: {}
+  dependencies:
+    - core/jquery

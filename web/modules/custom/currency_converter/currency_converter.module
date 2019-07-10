@@ -1,0 +1,63 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+function currency_converter_help($route_name, RouteMatchInterface $route_match) {
+  if ($route_name == 'help.page.currency_converter') {
+    $output = '';
+    $output .= '<h3>' . t('About') . '</h3>';
+    $output .= '<p>' . t('This module will help your website to convert currency using finance calculator. It will give you defult block option to convert currency from one format to another.') . '</p>';
+    return $output;
+  }
+}
+
+function currency_converter_cron() {
+  $moduleRoot = drupal_get_path('module', 'currency_converter');
+  $last_run = \Drupal::state()->get('currency_converter.last_run', 0);
+
+  if ((REQUEST_TIME - $last_run) > 3600) {
+    $fp = fopen($moduleRoot . '/json/converter.json', 'a+');
+    $results = 'time '.$last_run.'  REQUEST_TIME '.REQUEST_TIME;
+    fwrite($fp, $results);
+    fwrite($fp, "\n");
+    fclose($fp);
+
+    _currency_converter_get_endpoint();
+
+    \Drupal::state()->set('currency_converter.last_run', REQUEST_TIME);
+  }
+}
+
+function _currency_converter_get_endpoint() {
+    $moduleRoot = drupal_get_path('module', 'currency_converter');
+    $parameters = array (
+      'apiKey' => 'fee2c139fae5933bd739',
+      'q' => '%'
+    );
+    $endpoint = 'https://free.currconv.com/api/v7/convert?' . http_build_query($parameters);
+    $i=0;
+    $j=10;
+    $currencies_json = file_get_contents($moduleRoot . '/json/currencies.json');
+    $currencies_json = json_decode($currencies_json);
+
+    foreach ($currencies_json as $key => $currency) {
+      if($i<$j){
+        $currency_url[] = $key;
+        $i++;
+      }
+      if($i==$j || $i==168){
+       $currencies_get = file_get_contents(str_replace('%', implode(",", $currency_url), $endpoint));
+       $currencies_get = json_decode($currencies_get);
+        foreach ($currencies_get->results as $key => $currency) {
+          $currencies_json->$key = $currency->val;
+        }
+        $j=$j+10;
+        $currency_url = [];
+      }
+    }
+
+    $fp = fopen($moduleRoot . '/json/currencies.json', 'w+');
+    $results = print_r(json_encode($currencies_json), true);
+    fwrite($fp, $results);
+    fclose($fp);
+  }

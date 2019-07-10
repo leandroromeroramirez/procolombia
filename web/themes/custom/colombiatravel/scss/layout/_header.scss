@@ -4,7 +4,7 @@ header.header-page {
     left: 0;
     right: 0;
     width: auto;
-    padding: 4em 0em;
+    top: 70px;
     .logo{
         display: block;
     }
@@ -18,7 +18,7 @@ header.header-page {
         left: 0;
         right: 0;
         width: auto;
-        padding: 0.5em 0em;
+        padding: 0.8em 0em 0em 0;
         background: $secondary-color;
         top: 0;
         position: fixed;
@@ -220,6 +220,7 @@ ul#superfish-main {
         display: block;
         padding: 5em 0px 0em 0;
         border-bottom: 1px solid $light-gray;
+        margin-bottom: 40px;
         li{
             a{
                 color: $dark-gray;

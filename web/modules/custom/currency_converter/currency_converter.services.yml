@@ -1,0 +1,4 @@
+services:
+  currency_converter.manager:
+    class: Drupal\currency_converter\CurrencyConverterManager
+    arguments: ["@string_translation"]
