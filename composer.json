@@ -31,6 +31,7 @@
         "drupal/field_group": "^1.0",
         "drupal/flag": "^4.0@alpha",
         "drupal/geolocation": "^1.11",
+        "drupal/geotimezone": "^2.1",
         "drupal/google_analytics": "^3.0",
         "drupal/google_currency_converter": "^1.0@beta",
         "drupal/hotjar": "^1.5",
