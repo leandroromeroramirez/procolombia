@@ -57,6 +57,7 @@
         "drupal/url_redirect": "^2.61",
         "drupal/vardumper": "^1.4",
         "drupal/verf": "^1.0",
+        "drupal/views_extras": "^1.1",
         "drupal/views_infinite_scroll": "^1.5",
         "drupal/zurb_foundation": "^6.0",
         "drush/drush": "^9.6",
