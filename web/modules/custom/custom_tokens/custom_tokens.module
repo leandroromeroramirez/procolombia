@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_tokens.module.
+ */
+
+//use Drupal\Core\Render\BubbleableMetadata;
+
+/**
+ * Implements hook_token_info().
+ */
+function custom_tokens_token_info() {
+   $info = [];
+   $info['types']['smart_ip'] = ['name' => t('Custom Tokens'), 'description' => t('Tokens for custom things.')];
+   $info['tokens']['smart_ip']['country'][] = 'Identifica el país de ubicación del visitante';
+   $info['tokens']['smart_ip']['countryCode'][] = 'Identifica el código del país de la ubicación del visitante';
+   return $info;
+}
+
+/**
+* Implements hook_tokens().
+*/
+function custom_tokens_tokens($type, $tokens, array $data, array $options, \Drupal\Core\Render\BubbleableMetadata $bubbleable_metadata) {
+   $replacements = [];
+    if ($type == 'smart_ip') {
+      foreach ($tokens as $name => $original) {
+        switch ($name) {
+          case 'country':
+            $replacements[$original] = $_SESSION['_sf2_attributes']['smart_ip']['location']['country'];
+            break;
+          case 'countryCode':
+            $replacements[$original] = $_SESSION['_sf2_attributes']['smart_ip']['location']['countryCode'];
+            break;
+        }
+      }
+    }
+  return $replacements;
+}

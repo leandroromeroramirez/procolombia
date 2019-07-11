@@ -1,0 +1,7 @@
+name: Custom Tokens
+type: module
+description: Genera token's personalizados del modulo smart_ip
+package: Dayscript
+core: 8.x
+dependencies:
+ - smart_ip
