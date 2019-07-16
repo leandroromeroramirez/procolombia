@@ -43,6 +43,10 @@
       amount_from = "#edit-container-form-1-amount-from",
       amount_to = "#edit-container-form-2-amount-to",
       change_currency = '#edit-change-currency';
+      
+      $( document ).ready(function() {
+        disabled_currency_default(currency_from, currency_to, currency_default);
+      });
 
       $(currency_from).change(function() {
         if($(currency_from).val() == currency_default && $(currency_to).val() == currency_default){ $('#edit-currency-converter-labels').text("Seleccione una nueva divisa");}else{ $('#edit-currency-converter-labels').text(""); }
