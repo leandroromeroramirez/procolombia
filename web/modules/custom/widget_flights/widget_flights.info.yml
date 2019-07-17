@@ -1,0 +1,10 @@
+name: Widget Flights
+description: 'This module shows flights from an origin and with a destination.'
+type: module
+libraries:
+  - widget_flights/drupal.widget_flights
+version: '1.x'
+core: '8.x'
+project: 'widget_flights'
+datestamp: 1563207512
+package: 'dayscript'

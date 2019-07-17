@@ -1,0 +1,9 @@
+drupal.widget_flights:
+  version: VERSION
+  css:
+    component:
+      css/components/widget_flights.module.css: {}
+  js:
+    js/widget_flights.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,3 @@
+block.settings.widget_flights_block:
+  type: block_settings
+  label: 'Widget Flights block settings'

@@ -1,0 +1,12 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+function widget_flights_help($route_name, RouteMatchInterface $route_match) {
+  if ($route_name == 'help.page.widget_flights') {
+    $output = '';
+    $output .= '<h3>' . t('About') . '</h3>';
+    $output .= '<p>' . t('This module shows flights from an origin and with a destination.') . '</p>';
+    return $output;
+  }
+}

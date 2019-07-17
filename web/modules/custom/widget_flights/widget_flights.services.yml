@@ -1,0 +1,4 @@
+services:
+  widget_flights.manager:
+    class: Drupal\widget_flights\WidgetFlightsManager
+    arguments: ["@string_translation"]
