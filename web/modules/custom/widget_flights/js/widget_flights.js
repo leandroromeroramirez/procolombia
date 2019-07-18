@@ -34,8 +34,8 @@
           $("#owl-flights").owlCarousel({
             autoPlay: 10000, //Set AutoPlay to 3 seconds
             items : 1,
-            itemsDesktop : [1199,3],
-            itemsDesktopSmall : [979,3]
+            itemsDesktop : [1199,1],
+            itemsDesktopSmall : [979,1]
           });
           console.log('ok');
         });

@@ -48,14 +48,14 @@ class WidgetFlightsForm extends FormBase {
           '#type' => 'html_tag',
           '#tag' => 'div',
           '#attributes' => array('id' => 'edit-svg'),
-          '#prefix' => '<div class="medium-7 columns">',
+          '#prefix' => '<div class="large-7 medium-6 small-12 columns">',
           '#suffix' => '</div>',
         ];
 
         $form['container_flight']['container_flight_list'] = [
           '#type' => 'container',
           '#tree' => TRUE,
-          '#prefix' => '<div class="medium-5 columns">',
+          '#prefix' => '<div class="large-5 medium-6 small-12 columns">',
           '#suffix' => '</div>',
         ];
         
@@ -63,7 +63,7 @@ class WidgetFlightsForm extends FormBase {
        
         foreach ($flights as $key => $value) {
           $html_item[] = '
-          <div class="small-6 columns aerolinea end">
+          <div class="large-6 medium-6 small-6 columns aerolinea end">
             <div class="views-field views-field-title">
               <span class="field-content">'.$value['airline'].'</span>
             </div>
@@ -72,7 +72,7 @@ class WidgetFlightsForm extends FormBase {
             </div>
           </div>';
           if(count($html_item) == 8 || $key == count($flights)-1 ){
-            $html_owl[] = '<div class="item">'.implode($html_item).'</div>';
+            $html_owl[] = '<div class="item"><div class="row">'.implode($html_item).'</div></div>';
             $html_item = [];
           }
         }
