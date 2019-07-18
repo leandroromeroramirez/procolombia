@@ -16,15 +16,14 @@ function currency_converter_cron() {
   $last_run = \Drupal::state()->get('currency_converter.last_run', 0);
 
   if ((REQUEST_TIME - $last_run) > 3600) {
-    $fp = fopen($moduleRoot . '/json/converter.json', 'a+');
-    $results = 'time '.$last_run.'  REQUEST_TIME '.REQUEST_TIME;
-    fwrite($fp, $results);
-    fwrite($fp, "\n");
-    fclose($fp);
-
     _currency_converter_get_endpoint();
 
     \Drupal::state()->set('currency_converter.last_run', REQUEST_TIME);
+    /*$fp = fopen($moduleRoot . '/json/converter.json', 'a+');
+    $results = 'time '.$last_run.'  REQUEST_TIME '.REQUEST_TIME;
+    fwrite($fp, $results);
+    fwrite($fp, "\n");
+    fclose($fp);*/
   }
 }
 
