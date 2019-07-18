@@ -5,56 +5,14 @@ namespace Drupal\currency_converter;
 use Drupal\Core\StringTranslation\TranslationInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 
-/**
- * Class CurrencyConverterManager.
- *
- * @package Drupal\currency_converter
- */
 class CurrencyConverterManager implements CurrencyConverterManagerInterface {
 
   use StringTranslationTrait;
 
-  /**
-   * Constructs a new Entity plugin manager.
-   *
-   * @param \Drupal\Core\StringTranslation\TranslationInterface $string_translation
-   *   The string translation.
-   */
   public function __construct(TranslationInterface $string_translation) {
     $this->stringTranslation = $string_translation;
   }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function convertAmount($amount, $from, $to) {
-    // currency converter widget
-    // Base URL: https://www..com/finance/converter
-    // Query Parameters:
-    // - a: amount to be converted.
-    // - from: source currency.
-    // - to: target currency.
-    $url = "https://www..com/finance/converter?a=$amount&from=$from&to=$to";
-
-    // Fetches widget HTML with converted amount.
-    $data = file_get_contents($url);
-
-    // According to 's current layout, it provides converted amount with
-    // target currency code within `span` tag with class `bld`.
-    // example: <span class=bld>1.5 USD</span>
-    // So, we extract converted amount using `preg_match` function.
-    preg_match("/<span class=bld>(.*)<\/span>/", $data, $converted);
-
-    // Along with amount, we have target currency code. We use `preg_replace`
-    // function to remove target currency code and extract only numeric value.
-    $converted = preg_replace("/[^0-9.]/", "", isset($converted[1]) ? $converted[1] : NULL);
-
-    return round($converted, 2);
-  }
-
-  /**
-   * {@inheritdoc}
-   */
   public function countries() {
     $countries = [
       'AED' => $this->t('United Arab Emirates Dirham (AED)'),

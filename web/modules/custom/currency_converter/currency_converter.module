@@ -46,7 +46,7 @@ function _currency_converter_get_endpoint() {
         $i++;
       }
       if($i==$j || $i==168){
-       $currencies_get = file_get_contents(str_replace('%', implode(",", $currency_url), $endpoint));
+       $currencies_get = @file_get_contents(str_replace('%', implode(",", $currency_url), $endpoint));
        $currencies_get = json_decode($currencies_get);
         foreach ($currencies_get->results as $key => $currency) {
           $currencies_json->$key = $currency->val;
@@ -55,9 +55,10 @@ function _currency_converter_get_endpoint() {
         $currency_url = [];
       }
     }
-
-    $fp = fopen($moduleRoot . '/json/currencies.json', 'w+');
-    $results = print_r(json_encode($currencies_json), true);
-    fwrite($fp, $results);
-    fclose($fp);
+    if($currencies_get != false){
+      $fp = fopen($moduleRoot . '/json/currencies.json', 'w+');
+      $results = print_r(json_encode($currencies_json), true);
+      fwrite($fp, $results);
+      fclose($fp);
+    }
   }
