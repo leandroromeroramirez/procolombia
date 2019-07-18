@@ -13,34 +13,33 @@
   }
 
   Drupal.behaviors.currency_converter = {
-    attach: function(context, settings) {
-      if(context.id == "block-comollegaracolombiacontenedor"){
-        var flights_config = drupalSettings.settings.flights_config, a = getCoordinates(), coordinates_origin, coordinates_destination = a['SA']['country']['CO'].coordinates;
+    attach: function(context, settings) {}
+  };
 
-        if(flights_config.header.origin.continent_code !== null && flights_config.header.origin.country_code !== null){
-          if(typeof flights_config.header.origin.continent_code !== 'undefined' && typeof flights_config.header.origin.country_code.coordinates !== 'undefined'){
-            coordinates_origin = a[flights_config.header.origin.continent_code]['country'][flights_config.header.origin.country_code].coordinates;
-          }else if (typeof flights_config.header.origin.continent_code !== 'undefined'){
-            coordinates_origin = a[flights_config.header.origin.continent_code].continent.coordinates;
-          }
-        }else if (flights_config.header.origin.continent_code !== null){
+  $(document).ready(function() {
+    if(drupalSettings){
+      var flights_config = drupalSettings.settings.flights_config, a = getCoordinates(), coordinates_origin, coordinates_destination = a['SA']['country']['CO'].coordinates;
+
+      if(flights_config.header.origin.continent_code !== null && flights_config.header.origin.country_code !== null){
+        if(typeof flights_config.header.origin.continent_code !== 'undefined' && typeof flights_config.header.origin.country_code.coordinates !== 'undefined'){
+          coordinates_origin = a[flights_config.header.origin.continent_code]['country'][flights_config.header.origin.country_code].coordinates;
+        }else if (typeof flights_config.header.origin.continent_code !== 'undefined'){
           coordinates_origin = a[flights_config.header.origin.continent_code].continent.coordinates;
         }
-
-        $(document).ready(function() {
-          var a = replaceCoordinates(flights_config.svg, coordinates_origin, coordinates_destination);
-          $("#edit-svg").append(a);
-
-          $("#owl-flights").owlCarousel({
-            autoPlay: 10000, //Set AutoPlay to 3 seconds
-            items : 1,
-            itemsDesktop : [1199,1],
-            itemsDesktopSmall : [979,1]
-          });
-          console.log('ok');
-        });
+      }else if (flights_config.header.origin.continent_code !== null){
+        coordinates_origin = a[flights_config.header.origin.continent_code].continent.coordinates;
       }
+
+      var a = replaceCoordinates(flights_config.svg, coordinates_origin, coordinates_destination);
+      $("#edit-svg").append(a);
+
+      $("#owl-flights").owlCarousel({
+        autoPlay: 10000,//seconds
+        items : 1,
+        itemsDesktop : [1199,1],
+        itemsDesktopSmall : [979,1]
+      });
     }
-  };
+});
 
 })(jQuery, Drupal, drupalSettings);
