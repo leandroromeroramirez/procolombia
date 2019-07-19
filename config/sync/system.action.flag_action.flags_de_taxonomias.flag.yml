@@ -1,0 +1,13 @@
+uuid: e36c77c0-d4c5-4ce4-9ab8-e1f56b289008
+langcode: es
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.flags_de_taxonomias.flag
+label: 'Flag this item'
+type: taxonomy_term
+plugin: 'flag_action:flags_de_taxonomias.flag'
+configuration:
+  flag_id: flags_de_taxonomias
+  flag_action: flag

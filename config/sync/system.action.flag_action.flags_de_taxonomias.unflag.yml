@@ -1,0 +1,13 @@
+uuid: c2df33a5-5c44-4084-8a96-c0c308c3107e
+langcode: es
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.flags_de_taxonomias.unflag
+label: 'Unflag this item'
+type: taxonomy_term
+plugin: 'flag_action:flags_de_taxonomias.unflag'
+configuration:
+  flag_id: flags_de_taxonomias
+  flag_action: unflag

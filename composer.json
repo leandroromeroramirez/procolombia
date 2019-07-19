@@ -29,7 +29,7 @@
         "drupal/field_collection": "^1.0",
         "drupal/field_formatter_class": "^1.1",
         "drupal/field_group": "^1.0",
-        "drupal/flag": "^4.0@alpha",
+        "drupal/flag": "^4.0",
         "drupal/form_mode_manager": "^2.0",
         "drupal/geolocation": "^1.11",
         "drupal/geotimezone": "^2.1",
