@@ -21,12 +21,8 @@
       var flights_config = drupalSettings.settings.flights_config, a = getCoordinates(), coordinates_origin, coordinates_destination = a['SA']['country']['CO'].coordinates;
 
       if(flights_config.header.origin.continent_code !== null && flights_config.header.origin.country_code !== null){
-        if(typeof flights_config.header.origin.continent_code !== 'undefined' && typeof flights_config.header.origin.country_code.coordinates !== 'undefined'){
           coordinates_origin = a[flights_config.header.origin.continent_code]['country'][flights_config.header.origin.country_code].coordinates;
-        }else if (typeof flights_config.header.origin.continent_code !== 'undefined'){
-          coordinates_origin = a[flights_config.header.origin.continent_code].continent.coordinates;
-        }
-      }else if (flights_config.header.origin.continent_code !== null){
+      }else if (flights_config.header.origin.continent_code !== null && flights_config.header.origin.country_code == null){
         coordinates_origin = a[flights_config.header.origin.continent_code].continent.coordinates;
       }
 
