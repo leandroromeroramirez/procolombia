@@ -1,0 +1,16 @@
+uuid: da61355e-874b-4f5e-b8fc-a66a15d1a9df
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Destinos
+vid: destinos
+description: ''
+hierarchy: 0
+weight: 0

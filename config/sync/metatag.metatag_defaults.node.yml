@@ -1,0 +1,17 @@
+uuid: 19b4cfab-7bfd-473e-b04f-2d571e4127f2
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  title: '[node:title] | [site:name]'
+  description: '[node:summary]'
+  canonical_url: '[node:url]'
+  schema_web_page_breadcrumb: 'Yes'
+  schema_web_page_publisher: 'a:3:{s:5:"@type";s:12:"Organization";s:4:"name";s:15:"Colombia Travel";s:4:"logo";a:4:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:80:"https://colombiatravel.demodayscript.com/sites/default/files/colombia-logo_0.png";s:5:"width";s:3:"280";s:6:"height";s:2:"60";}}'
+  schema_web_page_author: 'a:4:{s:5:"@type";s:12:"Organization";s:4:"name";s:15:"Colombia Travel";s:3:"url";s:10:"[node:url]";s:4:"logo";a:4:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:80:"https://colombiatravel.demodayscript.com/sites/default/files/colombia-logo_0.png";s:5:"width";s:3:"280";s:6:"height";s:2:"60";}}'
+  schema_web_page_is_accessible_for_free: 'True'
+  schema_web_page_type: WebPage

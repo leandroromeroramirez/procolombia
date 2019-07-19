@@ -1,0 +1,7 @@
+text_resize_scope: 'a, p'
+text_resize_minimum: '10'
+text_resize_maximum: '48'
+text_resize_reset_button: 1
+text_resize_line_height_allow: 1
+text_resize_line_height_min: '12'
+text_resize_line_height_max: '52'

@@ -1,0 +1,72 @@
+uuid: a9d39244-a632-4f82-bac8-0a2c8a295e4e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.super_banner.body
+    - field.field.node.super_banner.field_button_to_link
+    - field.field.node.super_banner.field_image
+    - node.type.super_banner
+  module:
+    - ds
+    - field_collection
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - links
+        - body
+        - field_image
+        - field_button_to_link
+id: node.super_banner.default
+targetEntityType: node
+bundle: super_banner
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: ds_content
+  field_button_to_link:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: ds_content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

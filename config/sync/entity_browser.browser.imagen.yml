@@ -1,0 +1,33 @@
+uuid: 2323a46c-b7da-4dcf-9fea-25d671baaa66
+langcode: es
+status: true
+dependencies: {  }
+name: imagen
+label: 'Widget Imagen'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: file
+  display: label
+  display_settings: {  }
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  b9b86674-88fd-4210-a689-720d83f26117:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Seleccionar los archivos'
+    uuid: b9b86674-88fd-4210-a689-720d83f26117
+    weight: 1
+    label: media_image_upload
+    id: media_image_upload

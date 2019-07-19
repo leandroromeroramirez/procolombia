@@ -1,0 +1,22 @@
+uuid: 64d59ab4-5d4d-4b4b-8654-cc64d77add00
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.aerolinea
+  module:
+    - text
+id: node.aerolinea.body
+field_name: body
+entity_type: node
+bundle: aerolinea
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

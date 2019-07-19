@@ -1,0 +1,21 @@
+uuid: db3f8879-7abe-4f38-a170-6ce41318ba9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_posts_instagram
+    - node.type.actividad
+  module:
+    - text
+id: node.actividad.field_posts_instagram
+field_name: field_posts_instagram
+entity_type: node
+bundle: actividad
+label: 'Posts instagram'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

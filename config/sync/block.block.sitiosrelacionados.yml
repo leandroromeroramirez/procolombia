@@ -1,0 +1,28 @@
+uuid: 95ef6cc9-acad-4d55-8061-fcc09444eabd
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.sitios-relaciona
+  module:
+    - block_class
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'columns medium-3'
+id: sitiosrelacionados
+theme: colombiatravel
+region: footer_first
+weight: -24
+provider: null
+plugin: 'system_menu_block:sitios-relaciona'
+settings:
+  id: 'system_menu_block:sitios-relaciona'
+  label: 'Sitios relacionados'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

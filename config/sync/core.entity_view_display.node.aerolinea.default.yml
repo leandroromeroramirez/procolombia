@@ -1,0 +1,40 @@
+uuid: ab9ca315-17f5-4ae6-bdc1-a8d4a333cf20
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.aerolinea.body
+    - field.field.node.aerolinea.field_image
+    - node.type.aerolinea
+  module:
+    - image
+    - text
+    - user
+id: node.aerolinea.default
+targetEntityType: node
+bundle: aerolinea
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

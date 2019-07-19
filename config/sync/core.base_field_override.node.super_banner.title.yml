@@ -1,0 +1,18 @@
+uuid: 61ff70b0-39c6-401c-9eda-ac47701339b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.super_banner
+id: node.super_banner.title
+field_name: title
+entity_type: node
+bundle: super_banner
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,28 @@
+uuid: 953e2e6a-5715-4bfb-80ec-e0cf326a6c0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-herramientas
+  module:
+    - block_class
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: hide-for-small-only
+id: menuherramientas
+theme: colombiatravel
+region: meta_header
+weight: -18
+provider: null
+plugin: 'system_menu_block:menu-herramientas'
+settings:
+  id: 'system_menu_block:menu-herramientas'
+  label: 'Menú herramientas'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

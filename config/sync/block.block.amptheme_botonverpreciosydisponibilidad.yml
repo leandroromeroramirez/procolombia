@@ -1,0 +1,37 @@
+uuid: 6a1d540c-3304-4d00-a42f-a16364e33609
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1f45290c-0f7d-4006-b368-93b648c4759f'
+  module:
+    - block_class
+    - block_content
+    - ctools
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'row text-center padding-slim'
+id: amptheme_botonverpreciosydisponibilidad
+theme: amptheme
+region: header
+weight: -16
+provider: null
+plugin: 'block_content:1f45290c-0f7d-4006-b368-93b648c4759f'
+settings:
+  id: 'block_content:1f45290c-0f7d-4006-b368-93b648c4759f'
+  label: 'Botón Ver precios y disponibilidad'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      actividad: actividad
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

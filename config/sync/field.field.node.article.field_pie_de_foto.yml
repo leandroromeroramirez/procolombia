@@ -1,0 +1,23 @@
+uuid: c3dc331a-ae7c-4534-be0c-68eab6184cb6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pie_de_foto
+    - node.type.article
+  module:
+    - link
+id: node.article.field_pie_de_foto
+field_name: field_pie_de_foto
+entity_type: node
+bundle: article
+label: 'Pie de foto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

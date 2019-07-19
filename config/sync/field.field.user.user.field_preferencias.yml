@@ -1,0 +1,30 @@
+uuid: 06e45c84-7014-4b5c-a8dc-d3b6bfb05de9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_preferencias
+    - taxonomy.vocabulary.tipos_de_turismo
+  module:
+    - user
+id: user.user.field_preferencias
+field_name: field_preferencias
+entity_type: user
+bundle: user
+label: Preferencias
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipos_de_turismo: tipos_de_turismo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,31 @@
+uuid: 7fd6a4e1-e051-4919-b9b5-713502b5bb84
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.encabezado_de_paginas
+  module:
+    - system
+    - views
+  theme:
+    - colombiatravel
+id: views_block__encabezado_de_paginas_block_1
+theme: colombiatravel
+region: help
+weight: -29
+provider: null
+plugin: 'views_block:encabezado_de_paginas-block_1'
+settings:
+  id: 'views_block:encabezado_de_paginas-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/buscador\r\n/user\r\n/user/*\r\n/ingresar\r\n/favoritos/*\r\n/terminos-y-condiciones\r\n/que-hacer/*\r\n/que-hacer\r\n/ecoturismo\r\n/cultura\r\n/salud-y-bienestar\r\n/aventura-y-deportes-extremos\r\n/atracciones\r\n/sol-y-playa\r\n/siente-el-ritmo"
+    negate: false
+    context_mapping: {  }

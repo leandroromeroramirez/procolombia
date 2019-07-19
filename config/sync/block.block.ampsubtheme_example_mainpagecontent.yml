@@ -1,0 +1,29 @@
+uuid: 66d53551-3edb-4842-b0ed-278158beab63
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: padding-large
+id: ampsubtheme_example_mainpagecontent
+theme: ampsubtheme_example
+region: header
+weight: -17
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

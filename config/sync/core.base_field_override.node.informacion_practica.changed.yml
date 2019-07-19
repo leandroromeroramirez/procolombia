@@ -1,0 +1,18 @@
+uuid: ccb0063e-4420-4051-91bb-c0ed15987728
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informacion_practica
+id: node.informacion_practica.changed
+field_name: changed
+entity_type: node
+bundle: informacion_practica
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

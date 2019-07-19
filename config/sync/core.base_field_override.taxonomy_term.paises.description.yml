@@ -1,0 +1,20 @@
+uuid: 424591d5-146e-48fc-b9b9-8ff9b64fc49a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paises
+  module:
+    - text
+id: taxonomy_term.paises.description
+field_name: description
+entity_type: taxonomy_term
+bundle: paises
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

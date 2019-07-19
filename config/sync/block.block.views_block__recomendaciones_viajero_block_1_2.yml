@@ -1,0 +1,34 @@
+uuid: 26ad7c0d-c955-4f4a-bdae-057d904ce934
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.recomendaciones_viajero
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'row padding-bottom'
+id: views_block__recomendaciones_viajero_block_1_2
+theme: colombiatravel
+region: sub_content_first
+weight: -25
+provider: null
+plugin: 'views_block:recomendaciones_viajero-block_1'
+settings:
+  id: 'views_block:recomendaciones_viajero-block_1'
+  label: 'Recomendaciones de un viajero como tú'
+  provider: views
+  label_display: visible
+  views_label: 'Recomendaciones de un viajero como tú'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

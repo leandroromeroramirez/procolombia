@@ -1,0 +1,18 @@
+uuid: 52074439-bf75-4dc7-b384-3b27f093812d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.aerolinea
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.aerolinea
+target_entity_type_id: node
+target_bundle: aerolinea
+default_langcode: site_default
+language_alterable: false

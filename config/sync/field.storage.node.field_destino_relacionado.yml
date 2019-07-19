@@ -1,0 +1,19 @@
+uuid: cee1e2a6-ed1e-42f4-8b0f-06136507d93f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_destino_relacionado
+field_name: field_destino_relacionado
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: d222363d-6947-40f0-9e27-2a85539415b0
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'medium-3 columns logo hide-for-small-only'
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: colombiatravel_branding
+theme: colombiatravel
+region: header
+weight: -32
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,28 @@
+uuid: abddd294-20a2-400e-badc-ee967e69c611
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-herramientas
+  module:
+    - block_class
+    - system
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: hide-for-small-only
+id: ampsubtheme_example_menuherramientas
+theme: ampsubtheme_example
+region: header
+weight: -19
+provider: null
+plugin: 'system_menu_block:menu-herramientas'
+settings:
+  id: 'system_menu_block:menu-herramientas'
+  label: 'Menú herramientas'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

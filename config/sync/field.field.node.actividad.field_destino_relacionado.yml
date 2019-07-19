@@ -1,0 +1,28 @@
+uuid: 7c983ba9-3f3c-4d7f-a23b-9e9d8144786f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destino_relacionado
+    - node.type.actividad
+    - node.type.destino
+id: node.actividad.field_destino_relacionado
+field_name: field_destino_relacionado
+entity_type: node
+bundle: actividad
+label: 'Destino relacionado'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      destino: destino
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

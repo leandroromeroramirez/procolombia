@@ -1,0 +1,20 @@
+uuid: 8c074628-7e13-490b-993b-82495667283f
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - colombiatravel
+id: userlogin
+theme: colombiatravel
+region: ingreso_
+weight: -22
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: '0'
+visibility: {  }

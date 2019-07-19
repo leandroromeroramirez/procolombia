@@ -1,0 +1,21 @@
+uuid: 4c2f9abb-34f7-4059-91e9-d90a2b98353d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geolocalizacion
+    - node.type.destino
+  module:
+    - geolocation
+id: node.destino.field_geolocalizacion
+field_name: field_geolocalizacion
+entity_type: node
+bundle: destino
+label: Geolocalización
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

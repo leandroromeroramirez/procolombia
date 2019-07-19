@@ -1,0 +1,16 @@
+uuid: b2bd2f2f-4df7-4c35-8e21-4fa5a486104f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Regiones geográficas'
+vid: regiones_geograficas
+description: ''
+hierarchy: 0
+weight: 0

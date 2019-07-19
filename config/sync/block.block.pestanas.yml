@@ -1,0 +1,20 @@
+uuid: b052f26e-596c-4c57-91ca-927e9309e0fa
+langcode: es
+status: true
+dependencies:
+  theme:
+    - colombiatravel
+id: pestanas
+theme: colombiatravel
+region: content
+weight: -35
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

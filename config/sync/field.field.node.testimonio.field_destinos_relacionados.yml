@@ -1,0 +1,21 @@
+uuid: 33dbbb05-aabe-4532-a704-2b99414ad25b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destinos_relacionados
+    - node.type.testimonio
+id: node.testimonio.field_destinos_relacionados
+field_name: field_destinos_relacionados
+entity_type: node
+bundle: testimonio
+label: 'Destinos relacionados'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

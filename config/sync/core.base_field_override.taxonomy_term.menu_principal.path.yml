@@ -1,0 +1,20 @@
+uuid: 52ffd940-55d4-4902-899c-2c597a21a13b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.menu_principal
+  module:
+    - path
+id: taxonomy_term.menu_principal.path
+field_name: path
+entity_type: taxonomy_term
+bundle: menu_principal
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

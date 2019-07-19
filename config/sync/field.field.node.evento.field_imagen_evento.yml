@@ -1,0 +1,38 @@
+uuid: 46409ecc-f440-4c59-9aa2-3d9b49a46773
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_evento
+    - node.type.evento
+  module:
+    - image
+id: node.evento.field_imagen_evento
+field_name: field_imagen_evento
+entity_type: node
+bundle: evento
+label: 'Imagen evento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: eventos
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '200 KB'
+  max_resolution: 3000x3000
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

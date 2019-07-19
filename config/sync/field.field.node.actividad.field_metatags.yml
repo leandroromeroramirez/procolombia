@@ -1,0 +1,21 @@
+uuid: 62fd377b-7293-4b44-8605-5826718f5798
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.actividad
+  module:
+    - metatag
+id: node.actividad.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: actividad
+label: Metatags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

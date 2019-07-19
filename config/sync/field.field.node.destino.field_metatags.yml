@@ -1,0 +1,21 @@
+uuid: 5554efb5-14fb-4a9a-ba5c-9431abe109a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.destino
+  module:
+    - metatag
+id: node.destino.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: destino
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

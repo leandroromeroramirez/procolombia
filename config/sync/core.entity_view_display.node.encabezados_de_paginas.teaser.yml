@@ -1,0 +1,23 @@
+uuid: aba1e53a-4fb4-416b-8aaa-22fdbec08b63
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.encabezados_de_paginas.field_image
+    - node.type.encabezados_de_paginas
+  module:
+    - user
+id: node.encabezados_de_paginas.teaser
+targetEntityType: node
+bundle: encabezados_de_paginas
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  langcode: true

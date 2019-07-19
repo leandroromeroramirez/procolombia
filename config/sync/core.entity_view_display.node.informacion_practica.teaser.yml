@@ -1,0 +1,35 @@
+uuid: bf12d361-b752-417c-96a0-cf02b98b730c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.informacion_practica.body
+    - node.type.informacion_practica
+  module:
+    - text
+    - user
+id: node.informacion_practica.teaser
+targetEntityType: node
+bundle: informacion_practica
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

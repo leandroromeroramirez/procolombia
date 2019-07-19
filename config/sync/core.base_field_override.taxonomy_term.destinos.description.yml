@@ -1,0 +1,20 @@
+uuid: 54f28a16-e4a1-4df4-a0fc-ec442ffeffc5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.destinos
+  module:
+    - text
+id: taxonomy_term.destinos.description
+field_name: description
+entity_type: taxonomy_term
+bundle: destinos
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 86ff5948-3288-48ca-970c-f8d71e471771
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informacion_practica
+id: node.informacion_practica.promote
+field_name: promote
+entity_type: node
+bundle: informacion_practica
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,10 @@
+
+user_preferences.config_preference_form:
+  path: '/admin/config/system/configpreference'
+  defaults:
+    _form: '\Drupal\user_preferences\Form\ConfigPreferenceForm'
+    _title: 'Config Preference Form'
+  requirements:
+    _permission: 'administer site configuration'
+
+

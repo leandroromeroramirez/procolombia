@@ -1,0 +1,13 @@
+uuid: 369d98ad-146e-4dc5-9103-3472cb6ba152
+langcode: es
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.favorito.flag
+label: 'Agregar a Favoritos'
+type: node
+plugin: 'flag_action:favorito.flag'
+configuration:
+  flag_id: favorito
+  flag_action: flag

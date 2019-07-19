@@ -1,0 +1,30 @@
+uuid: 081ff457-8f7f-4f10-abb7-82aea75b43fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.view_super_banner_home
+  module:
+    - system
+    - views
+  theme:
+    - colombiatravel
+id: views_block__view_super_banner_home_block_1_2
+theme: colombiatravel
+region: help
+weight: -32
+provider: null
+plugin: 'views_block:view_super_banner_home-block_1'
+settings:
+  id: 'views_block:view_super_banner_home-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

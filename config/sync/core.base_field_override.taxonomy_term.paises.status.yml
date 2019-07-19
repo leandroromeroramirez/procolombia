@@ -1,0 +1,22 @@
+uuid: 22547337-ae94-4a95-b4d2-76e19091ee51
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paises
+id: taxonomy_term.paises.status
+field_name: status
+entity_type: taxonomy_term
+bundle: paises
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

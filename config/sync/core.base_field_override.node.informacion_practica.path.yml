@@ -1,0 +1,20 @@
+uuid: a0767622-b84f-44a5-b0c6-a1eff1981d73
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informacion_practica
+  module:
+    - path
+id: node.informacion_practica.path
+field_name: path
+entity_type: node
+bundle: informacion_practica
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

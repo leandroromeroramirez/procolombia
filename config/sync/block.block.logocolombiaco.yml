@@ -1,0 +1,29 @@
+uuid: 7ee0cec7-6fad-49a4-b415-1a0c53c3e9de
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:483cdda7-ff2d-4c38-867b-6776481f9beb'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'medium-3 columns logo-co'
+id: logocolombiaco
+theme: colombiatravel
+region: header
+weight: -31
+provider: null
+plugin: 'block_content:483cdda7-ff2d-4c38-867b-6776481f9beb'
+settings:
+  id: 'block_content:483cdda7-ff2d-4c38-867b-6776481f9beb'
+  label: 'Logo Colombia CO'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

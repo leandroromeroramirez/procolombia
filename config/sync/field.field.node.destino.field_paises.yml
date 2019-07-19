@@ -1,0 +1,29 @@
+uuid: 88e6694b-1f2b-4f4f-aeb6-a36fd2218eef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paises
+    - node.type.destino
+    - taxonomy.vocabulary.paises
+id: node.destino.field_paises
+field_name: field_paises
+entity_type: node
+bundle: destino
+label: Países
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      paises: paises
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

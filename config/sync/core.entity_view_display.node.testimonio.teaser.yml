@@ -1,0 +1,31 @@
+uuid: 65e8414c-b1be-4969-bce0-0713af5a8cfe
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonio.body
+    - node.type.testimonio
+  module:
+    - text
+    - user
+id: node.testimonio.teaser
+targetEntityType: node
+bundle: testimonio
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

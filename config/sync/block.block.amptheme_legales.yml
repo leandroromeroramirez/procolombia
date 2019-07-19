@@ -1,0 +1,28 @@
+uuid: 0b119a21-29c5-4bba-abce-b30e6b6c7a4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.legales
+  module:
+    - block_class
+    - system
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'columns medium-6 legales text-center'
+id: amptheme_legales
+theme: amptheme
+region: header
+weight: -7
+provider: null
+plugin: 'system_menu_block:legales'
+settings:
+  id: 'system_menu_block:legales'
+  label: Legales
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

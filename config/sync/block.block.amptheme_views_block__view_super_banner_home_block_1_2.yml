@@ -1,0 +1,30 @@
+uuid: 6405a12a-888f-4ec5-b6fc-cc72b4b1d9e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.view_super_banner_home
+  module:
+    - system
+    - views
+  theme:
+    - amptheme
+id: amptheme_views_block__view_super_banner_home_block_1_2
+theme: amptheme
+region: header
+weight: -20
+provider: null
+plugin: 'views_block:view_super_banner_home-block_1'
+settings:
+  id: 'views_block:view_super_banner_home-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

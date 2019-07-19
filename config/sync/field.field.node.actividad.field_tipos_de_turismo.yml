@@ -1,0 +1,29 @@
+uuid: 1d283c11-449c-4e1c-ae90-29718fad1745
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipos_de_turismo
+    - node.type.actividad
+    - taxonomy.vocabulary.tipos_de_turismo
+id: node.actividad.field_tipos_de_turismo
+field_name: field_tipos_de_turismo
+entity_type: node
+bundle: actividad
+label: 'Tipos de turismo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipos_de_turismo: tipos_de_turismo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

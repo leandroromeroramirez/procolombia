@@ -1,0 +1,19 @@
+uuid: 19fe2556-7331-46cc-b400-e0c61759efe9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_posts_instagram
+field_name: field_posts_instagram
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

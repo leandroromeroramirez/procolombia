@@ -1,0 +1,16 @@
+uuid: 946eebde-8a2c-40cb-be7f-32cd1e2f5010
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Países
+vid: paises
+description: ''
+hierarchy: 0
+weight: 0

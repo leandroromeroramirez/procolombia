@@ -1,0 +1,36 @@
+uuid: e49d0d75-e0cc-4224-ad3e-6d636d176816
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.eventos_destino
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: 'row padding-large'
+id: ampsubtheme_example_views_block__eventos_destino_block_1
+theme: ampsubtheme_example
+region: header
+weight: -5
+provider: null
+plugin: 'views_block:eventos_destino-block_1'
+settings:
+  id: 'views_block:eventos_destino-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

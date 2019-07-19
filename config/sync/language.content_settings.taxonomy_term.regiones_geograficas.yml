@@ -1,0 +1,18 @@
+uuid: 858a4ef0-6a04-44ce-941f-ea27896cf736
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regiones_geograficas
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.regiones_geograficas
+target_entity_type_id: taxonomy_term
+target_bundle: regiones_geograficas
+default_langcode: site_default
+language_alterable: false

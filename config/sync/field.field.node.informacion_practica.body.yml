@@ -1,0 +1,22 @@
+uuid: 9389f311-e62c-463e-8580-1aa052b58cf3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.informacion_practica
+  module:
+    - text
+id: node.informacion_practica.body
+field_name: body
+entity_type: node
+bundle: informacion_practica
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

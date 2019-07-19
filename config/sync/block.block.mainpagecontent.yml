@@ -1,0 +1,29 @@
+uuid: 3c5d64b5-7980-4a52-8af2-86f7f345514a
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: padding-large
+id: mainpagecontent
+theme: colombiatravel
+region: content
+weight: -34
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

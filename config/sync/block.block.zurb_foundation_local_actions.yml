@@ -1,0 +1,20 @@
+uuid: 1ff8399a-f480-4de0-9d77-d60bebcc699c
+langcode: es
+status: true
+dependencies:
+  theme:
+    - zurb_foundation
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: zurb_foundation_local_actions
+theme: zurb_foundation
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones primarias de administración'
+  provider: core
+  label_display: '0'
+visibility: {  }

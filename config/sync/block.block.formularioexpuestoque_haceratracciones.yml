@@ -1,0 +1,33 @@
+uuid: adb7e17d-a0a8-4890-9f52-b5da296d0f7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.que_hacer
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: filtros
+id: formularioexpuestoque_haceratracciones
+theme: colombiatravel
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:que_hacer-atracciones'
+settings:
+  id: 'views_exposed_filter_block:que_hacer-atracciones'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /atracciones
+    negate: false
+    context_mapping: {  }

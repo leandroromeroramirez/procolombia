@@ -1,0 +1,15 @@
+uuid: b50e2393-18fd-403b-af34-4d21861f34bd
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_650x650
+label: 'Imagen 650x650 - Escala y recorte'
+effects:
+  6a1ee058-f9c8-4324-9349-3e4d5cf48b09:
+    uuid: 6a1ee058-f9c8-4324-9349-3e4d5cf48b09
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 650
+      height: 656
+      anchor: center-center

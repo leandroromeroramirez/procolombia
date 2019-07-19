@@ -1,0 +1,18 @@
+uuid: 1b7ba5f2-b0fb-4f2a-8159-0465de2d230b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recomendaciones
+id: taxonomy_term.recomendaciones.name
+field_name: name
+entity_type: taxonomy_term
+bundle: recomendaciones
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

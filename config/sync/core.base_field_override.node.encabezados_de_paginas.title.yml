@@ -1,0 +1,18 @@
+uuid: b3d1745e-4ebb-4966-82a9-e64551c6c454
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.encabezados_de_paginas
+id: node.encabezados_de_paginas.title
+field_name: title
+entity_type: node
+bundle: encabezados_de_paginas
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

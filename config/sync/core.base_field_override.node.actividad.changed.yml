@@ -1,0 +1,18 @@
+uuid: 8d52fe50-c7a5-4dc3-aa20-6468a15ddeb2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad
+id: node.actividad.changed
+field_name: changed
+entity_type: node
+bundle: actividad
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

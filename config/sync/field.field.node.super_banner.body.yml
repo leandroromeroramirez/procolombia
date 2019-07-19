@@ -1,0 +1,22 @@
+uuid: f7b07d6b-fdd7-4ce3-9ce7-a77065d564ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.super_banner
+  module:
+    - text
+id: node.super_banner.body
+field_name: body
+entity_type: node
+bundle: super_banner
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,29 @@
+uuid: 6877dc92-18e9-4fc4-8d94-06117eed6785
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.article
+    - taxonomy.vocabulary.menu_principal
+id: node.article.field_section
+field_name: field_section
+entity_type: node
+bundle: article
+label: Sección
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      menu_principal: menu_principal
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

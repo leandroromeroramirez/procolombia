@@ -1,0 +1,20 @@
+uuid: 331167f3-46ef-440f-9f65-45f175fbeb06
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad
+id: node.actividad.menu_link
+field_name: menu_link
+entity_type: node
+bundle: actividad
+label: 'Enlace del menu'
+description: 'Enlace de menú calculado para el nodo (solo disponible durante el guardado del nodo).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

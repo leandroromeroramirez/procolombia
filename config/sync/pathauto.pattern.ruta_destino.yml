@@ -1,0 +1,22 @@
+uuid: 0346ab77-d631-49da-8928-e34625b003cf
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ruta_destino
+label: 'Ruta Destino'
+type: 'canonical_entities:node'
+pattern: '[node:field_region_geografica]/[node:title]'
+selection_criteria:
+  e764fe04-cc8e-42da-a86f-bc43ca6ca5f4:
+    id: node_type
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e764fe04-cc8e-42da-a86f-bc43ca6ca5f4
+selection_logic: and
+weight: -5
+relationships: {  }

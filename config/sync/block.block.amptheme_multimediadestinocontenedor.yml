@@ -1,0 +1,34 @@
+uuid: b4cc79f9-9f75-49a1-bc3c-0112580da283
+langcode: es
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.multimedia_destino_contenedor
+  module:
+    - block_class
+    - blockgroup
+    - ctools
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: padding-large
+id: amptheme_multimediadestinocontenedor
+theme: amptheme
+region: header
+weight: -2
+provider: null
+plugin: 'block_group:ec34db63-2e8a-439a-ae09-e95a0f6c065c'
+settings:
+  id: 'block_group:ec34db63-2e8a-439a-ae09-e95a0f6c065c'
+  label: 'Multimedia destino - Contenedor'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

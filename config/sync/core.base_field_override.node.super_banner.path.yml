@@ -1,0 +1,20 @@
+uuid: a3b3237a-06f8-490e-882c-ce855e1461c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.super_banner
+  module:
+    - path
+id: node.super_banner.path
+field_name: path
+entity_type: node
+bundle: super_banner
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,22 @@
+uuid: 05b8be20-28fc-49ca-ad28-9c31932a67a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad
+id: node.actividad.promote
+field_name: promote
+entity_type: node
+bundle: actividad
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

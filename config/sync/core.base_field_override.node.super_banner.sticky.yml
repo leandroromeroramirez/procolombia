@@ -1,0 +1,22 @@
+uuid: 43cfdfc5-35a0-4c11-9dfe-35d2684a6a70
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.super_banner
+id: node.super_banner.sticky
+field_name: sticky
+entity_type: node
+bundle: super_banner
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

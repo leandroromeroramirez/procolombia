@@ -1,0 +1,20 @@
+uuid: a4d97904-89b4-4a73-b55b-6475e6cb2178
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ampsubtheme_example
+id: ampsubtheme_example_breadcrumbs
+theme: ampsubtheme_example
+region: header
+weight: -18
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

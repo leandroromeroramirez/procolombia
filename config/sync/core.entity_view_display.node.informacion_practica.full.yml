@@ -1,0 +1,49 @@
+uuid: 12a619be-372d-4f05-8edd-69a8ae585d3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.informacion_practica.body
+    - field.field.node.informacion_practica.field_icono
+    - field.field.node.informacion_practica.field_image
+    - node.type.informacion_practica
+  module:
+    - ds
+    - field_formatter_class
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - body
+id: node.informacion_practica.full
+targetEntityType: node
+bundle: informacion_practica
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'row padding-slim padding-bottom'
+    region: content
+hidden:
+  addtoany: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_icono: true
+  field_image: true
+  langcode: true
+  links: true

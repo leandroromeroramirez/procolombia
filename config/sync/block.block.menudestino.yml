@@ -1,0 +1,36 @@
+uuid: 0b49d5f1-78ca-4600-874a-8a3375d7f390
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-destino
+  module:
+    - block_class
+    - ctools
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'text-center row'
+id: menudestino
+theme: colombiatravel
+region: help
+weight: -25
+provider: null
+plugin: 'system_menu_block:menu-destino'
+settings:
+  id: 'system_menu_block:menu-destino'
+  label: 'Menú Destino'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

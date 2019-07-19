@@ -1,0 +1,21 @@
+uuid: f130612c-e2c1-4804-8d74-a885376d85d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recomendaciones
+    - node.type.actividad
+  module:
+    - text
+id: node.actividad.field_recomendaciones
+field_name: field_recomendaciones
+entity_type: node
+bundle: actividad
+label: Recomendaciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

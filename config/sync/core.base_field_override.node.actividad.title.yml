@@ -1,0 +1,18 @@
+uuid: debeaa9c-7b78-49cf-8c1c-b9d9f93158e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad
+id: node.actividad.title
+field_name: title
+entity_type: node
+bundle: actividad
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

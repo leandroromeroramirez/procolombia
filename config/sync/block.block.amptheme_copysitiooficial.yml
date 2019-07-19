@@ -1,0 +1,29 @@
+uuid: 75bffdbf-b8b2-44a1-9c14-5c03fb1a67da
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:336bb13b-aea1-4f85-be17-3250b8f0887e'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'columns medium-4 text-right'
+id: amptheme_copysitiooficial
+theme: amptheme
+region: header
+weight: -20
+provider: null
+plugin: 'block_content:336bb13b-aea1-4f85-be17-3250b8f0887e'
+settings:
+  id: 'block_content:336bb13b-aea1-4f85-be17-3250b8f0887e'
+  label: 'Copy Sitio Oficial'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

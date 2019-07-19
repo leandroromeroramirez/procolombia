@@ -1,0 +1,12 @@
+uuid: 4139a2aa-925a-4ecb-a933-4ba3b599920b
+langcode: es
+status: true
+dependencies:
+  config:
+    - flag.flag.favorito
+id: flagging.favorito.default
+targetEntityType: flagging
+bundle: favorito
+mode: default
+content: {  }
+hidden: {  }

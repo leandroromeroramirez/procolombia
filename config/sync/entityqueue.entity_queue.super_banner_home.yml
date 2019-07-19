@@ -1,0 +1,25 @@
+uuid: af99ffa4-09d2-429b-9e6e-4bee3e0cdfe4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: super_banner_home
+label: 'Super Banner Home'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      super_banner: super_banner
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

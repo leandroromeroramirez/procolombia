@@ -1,0 +1,20 @@
+uuid: fe584b9a-a637-44d2-a1d6-a6f83e34349d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.homes
+  module:
+    - path
+id: taxonomy_term.homes.path
+field_name: path
+entity_type: taxonomy_term
+bundle: homes
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

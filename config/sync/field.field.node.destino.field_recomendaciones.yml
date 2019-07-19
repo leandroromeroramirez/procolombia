@@ -1,0 +1,21 @@
+uuid: bd2831e1-8818-4ea9-a5a4-72ad2f9aaa82
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recomendaciones
+    - node.type.destino
+  module:
+    - text
+id: node.destino.field_recomendaciones
+field_name: field_recomendaciones
+entity_type: node
+bundle: destino
+label: Recomendaciones
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

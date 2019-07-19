@@ -1,0 +1,27 @@
+uuid: e921310e-7872-460c-9a94-c83c69f43f96
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.buscador
+  module:
+    - block_class
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'invisible searchBox'
+id: formularioexpuestobuscadorpage_1
+theme: colombiatravel
+region: footer_last
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:buscador-page_1'
+settings:
+  id: 'views_exposed_filter_block:buscador-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 0d7a6cd2-c11a-4ece-8211-a4fa348217a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.aerolinea
+id: node.aerolinea.sticky
+field_name: sticky
+entity_type: node
+bundle: aerolinea
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

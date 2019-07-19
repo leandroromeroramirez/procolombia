@@ -1,0 +1,22 @@
+uuid: 68909a57-978a-4a9a-a895-17afd8330e1b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipos_de_actividad
+id: taxonomy_term.tipos_de_actividad.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tipos_de_actividad
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

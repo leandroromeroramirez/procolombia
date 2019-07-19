@@ -1,0 +1,37 @@
+uuid: 9a2bf7ee-7ece-46bd-8fdc-f00094e9bd3c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.destinos_home
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'row region donde-ir'
+id: views_block__destinos_home_donde_ir_caribe
+theme: colombiatravel
+region: sub_content_first
+weight: -19
+provider: null
+plugin: 'views_block:destinos_home-donde_ir_caribe'
+settings:
+  id: 'views_block:destinos_home-donde_ir_caribe'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      region_colombiana: region_colombiana
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

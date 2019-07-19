@@ -1,0 +1,18 @@
+uuid: 0c7809ee-f954-40a2-8daa-a7b8fce189d4
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Testimonio
+type: testimonio
+description: 'Utilice este tipo de contenido para gestionar los comentarios importados desde fuentes externas (Ej. Tripadvisor).'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

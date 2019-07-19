@@ -1,0 +1,37 @@
+uuid: acacfe6e-20e8-487b-b30e-e11cf6105e17
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.lugares_cercanos
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'row padding-bottom region'
+id: views_block__lugares_cercanos_block_1
+theme: colombiatravel
+region: sub_content_first
+weight: -20
+provider: null
+plugin: 'views_block:lugares_cercanos-block_1'
+settings:
+  id: 'views_block:lugares_cercanos-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,20 @@
+uuid: c6043dcf-bad1-4b82-a2b1-aae09b428894
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipos_de_actividad
+  module:
+    - text
+id: taxonomy_term.tipos_de_actividad.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipos_de_actividad
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

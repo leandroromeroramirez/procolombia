@@ -1,0 +1,66 @@
+uuid: 9793ca01-5dc8-47a1-ad65-b69754e4ae88
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.evento.body
+    - field.field.node.evento.field_destino_relacionado
+    - field.field.node.evento.field_enlace_compra
+    - field.field.node.evento.field_fecha_del_evento
+    - field.field.node.evento.field_imagen_evento
+    - node.type.evento
+  module:
+    - ds
+    - field_formatter_class
+    - link
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - body
+        - field_enlace_compra
+id: node.evento.full
+targetEntityType: node
+bundle: evento
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'row padding-slim'
+    region: content
+  field_enlace_compra:
+    type: link
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      rel: ''
+      target: ''
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_destino_relacionado: true
+  field_fecha_del_evento: true
+  field_imagen_evento: true
+  langcode: true
+  links: true

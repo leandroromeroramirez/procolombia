@@ -1,0 +1,18 @@
+uuid: 4fe3a67c-f916-40d5-84ad-49a50cd8004b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.encabezados_de_paginas
+id: node.encabezados_de_paginas.created
+field_name: created
+entity_type: node
+bundle: encabezados_de_paginas
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

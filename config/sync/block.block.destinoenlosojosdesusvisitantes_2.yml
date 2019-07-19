@@ -1,0 +1,29 @@
+uuid: 1505a071-c51d-4590-b81e-4af3dfdd5685
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a92cd183-3d62-4b37-b5b9-f738e795ba85'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'columns medium-7'
+id: destinoenlosojosdesusvisitantes_2
+theme: colombiatravel
+region: multimedia_destino
+weight: 0
+provider: null
+plugin: 'block_content:a92cd183-3d62-4b37-b5b9-f738e795ba85'
+settings:
+  id: 'block_content:a92cd183-3d62-4b37-b5b9-f738e795ba85'
+  label: 'Destino en los ojos de sus visitantes'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 17a2b44f-d456-4018-9d2c-6d2f2d2cb4aa
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ea06d716-2a7a-45ce-b2ae-77c4939be929'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: 'columns medium-7'
+id: ampsubtheme_example_mapacomollegar
+theme: ampsubtheme_example
+region: como_llegar_a_colombia
+weight: -10
+provider: null
+plugin: 'block_content:ea06d716-2a7a-45ce-b2ae-77c4939be929'
+settings:
+  id: 'block_content:ea06d716-2a7a-45ce-b2ae-77c4939be929'
+  label: 'Mapa cómo llegar'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

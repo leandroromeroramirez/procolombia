@@ -1,0 +1,20 @@
+uuid: 171c0c4c-e065-4b23-9c35-069aa6a2b43c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.homes
+  module:
+    - text
+id: taxonomy_term.homes.description
+field_name: description
+entity_type: taxonomy_term
+bundle: homes
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

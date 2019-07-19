@@ -1,0 +1,20 @@
+uuid: 75fb3a69-1f19-48aa-91d8-c63f22a80305
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recomendaciones
+  module:
+    - path
+id: taxonomy_term.recomendaciones.path
+field_name: path
+entity_type: taxonomy_term
+bundle: recomendaciones
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

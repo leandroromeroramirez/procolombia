@@ -1,0 +1,35 @@
+uuid: dfc84b16-2ac8-403a-832c-12e8ae0f885a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fccefe78-f35a-4f17-a991-522d423f9c7e'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'padding-slim row padding-top padding-bottom'
+id: informacionrelevanteinfocomplementaria
+theme: colombiatravel
+region: sub_content_first
+weight: -18
+provider: null
+plugin: 'block_content:fccefe78-f35a-4f17-a991-522d423f9c7e'
+settings:
+  id: 'block_content:fccefe78-f35a-4f17-a991-522d423f9c7e'
+  label: 'Información relevante - info complementaria'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/65
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,29 @@
+uuid: 7dbe6c22-fd93-4466-8b95-5ade0fdc48ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region_geografica
+    - node.type.region_colombiana
+    - taxonomy.vocabulary.regiones_geograficas
+id: node.region_colombiana.field_region_geografica
+field_name: field_region_geografica
+entity_type: node
+bundle: region_colombiana
+label: 'Relacionar región'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      regiones_geograficas: regiones_geograficas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

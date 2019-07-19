@@ -1,0 +1,36 @@
+uuid: 01050e0f-5633-420b-b780-af3a77b6b124
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.no_te_puedes_perder_destino
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'row padding-large'
+id: amptheme_views_block__no_te_puedes_perder_destino_block_1
+theme: amptheme
+region: header
+weight: -6
+provider: null
+plugin: 'views_block:no_te_puedes_perder_destino-block_1'
+settings:
+  id: 'views_block:no_te_puedes_perder_destino-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

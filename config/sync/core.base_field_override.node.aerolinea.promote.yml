@@ -1,0 +1,22 @@
+uuid: a6719f31-1311-4109-9b2e-a5ce3ad919c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.aerolinea
+id: node.aerolinea.promote
+field_name: promote
+entity_type: node
+bundle: aerolinea
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

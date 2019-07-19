@@ -1,0 +1,38 @@
+uuid: f860cf2b-029b-4d82-b258-eaf5932f7531
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.super_banner
+  module:
+    - image
+id: node.super_banner.field_image
+field_name: field_image
+entity_type: node
+bundle: super_banner
+label: Imagen
+description: 'Use este campo para agregar una imagen lo suficientemente grande.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: super_banner
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '200 KB'
+  max_resolution: 3000x3000
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: b5b23c37-a677-45f7-87c2-e464b4032f00
+    alt: ''
+    title: ''
+    width: 1490
+    height: 1080
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

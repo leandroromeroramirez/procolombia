@@ -1,0 +1,18 @@
+uuid: 5a07ea9a-fd94-4309-b269-88b0e9bf7727
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paises
+id: taxonomy_term.paises.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: paises
+label: 'Meta etiquetas'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

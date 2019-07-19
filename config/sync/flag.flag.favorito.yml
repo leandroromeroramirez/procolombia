@@ -1,0 +1,33 @@
+uuid: e7925a78-3d9b-4339-9a4b-14e5d490a9b6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: favorito
+label: Favorito
+bundles:
+  - actividad
+  - destino
+entity_type: node
+global: false
+weight: 0
+flag_short: 'Agregar a Favoritos'
+flag_long: ''
+flag_message: ''
+unflag_short: 'Retirar de Favoritos'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+    token: token
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

@@ -1,0 +1,35 @@
+uuid: 5f05cafb-73a8-4d74-942f-41be279d356f
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - ctools
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: row
+id: breadcrumbs
+theme: colombiatravel
+region: help
+weight: -27
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      actividad: actividad
+      article: article
+      destino: destino
+      region_colombiana: region_colombiana
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

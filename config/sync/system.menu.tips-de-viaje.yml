@@ -1,0 +1,8 @@
+uuid: 4bd7cb79-3d5c-4fe4-829c-42e74fa372ee
+langcode: es
+status: true
+dependencies: {  }
+id: tips-de-viaje
+label: 'Tips de viaje'
+description: ''
+locked: false

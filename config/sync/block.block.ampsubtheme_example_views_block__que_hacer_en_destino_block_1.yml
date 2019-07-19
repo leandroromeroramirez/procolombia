@@ -1,0 +1,36 @@
+uuid: df99b124-794e-4e5c-a2f6-008a0f7ca495
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.que_hacer_en_destino
+  module:
+    - block_class
+    - node
+    - views
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: 'padding-large region'
+id: ampsubtheme_example_views_block__que_hacer_en_destino_block_1
+theme: ampsubtheme_example
+region: header
+weight: -7
+provider: null
+plugin: 'views_block:que_hacer_en_destino-block_1'
+settings:
+  id: 'views_block:que_hacer_en_destino-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,22 @@
+uuid: eaea11a5-2c1f-4fc3-9735-07ba0da26ab7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.homes
+id: taxonomy_term.homes.status
+field_name: status
+entity_type: taxonomy_term
+bundle: homes
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

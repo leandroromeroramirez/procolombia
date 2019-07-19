@@ -1,0 +1,30 @@
+uuid: 209517d7-60d4-4364-a65a-1048fb95760c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - system
+    - views
+  theme:
+    - colombiatravel
+id: views_block__blog_blog
+theme: colombiatravel
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:blog-blog'
+settings:
+  id: 'views_block:blog-blog'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/blog/*"
+    negate: false
+    context_mapping: {  }

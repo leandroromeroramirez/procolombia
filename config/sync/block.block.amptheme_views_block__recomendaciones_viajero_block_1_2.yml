@@ -1,0 +1,34 @@
+uuid: f1e59881-f9e1-455f-9850-9f31e846b99c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.recomendaciones_viajero
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'row padding-large'
+id: amptheme_views_block__recomendaciones_viajero_block_1_2
+theme: amptheme
+region: header
+weight: -8
+provider: null
+plugin: 'views_block:recomendaciones_viajero-block_1'
+settings:
+  id: 'views_block:recomendaciones_viajero-block_1'
+  label: 'Recomendaciones de un viajero como tú'
+  provider: views
+  label_display: visible
+  views_label: 'Recomendaciones de un viajero como tú'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

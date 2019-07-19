@@ -1,0 +1,22 @@
+uuid: a6fc0509-87be-4138-b339-a6c6e7266081
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.encabezados_de_paginas
+id: node.encabezados_de_paginas.status
+field_name: status
+entity_type: node
+bundle: encabezados_de_paginas
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

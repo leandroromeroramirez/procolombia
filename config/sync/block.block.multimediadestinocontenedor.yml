@@ -1,0 +1,34 @@
+uuid: db2830c5-69cb-4070-bdad-f22e0d606d43
+langcode: es
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.multimedia_destino_contenedor
+  module:
+    - block_class
+    - blockgroup
+    - ctools
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'padding-bottom block-full'
+id: multimediadestinocontenedor
+theme: colombiatravel
+region: sub_content_first
+weight: -17
+provider: null
+plugin: 'block_group:ec34db63-2e8a-439a-ae09-e95a0f6c065c'
+settings:
+  id: 'block_group:ec34db63-2e8a-439a-ae09-e95a0f6c065c'
+  label: 'Multimedia destino - Contenedor'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

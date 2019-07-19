@@ -1,0 +1,18 @@
+uuid: d4782f1b-da5b-4063-ba50-9e5104284e3e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipos_de_actividad
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tipos_de_actividad
+target_entity_type_id: taxonomy_term
+target_bundle: tipos_de_actividad
+default_langcode: site_default
+language_alterable: false

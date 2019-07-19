@@ -1,0 +1,6 @@
+uuid: 107052a3-d155-4058-a856-33f8741b22df
+langcode: es
+status: true
+dependencies: {  }
+id: multimedia_destino
+label: 'Multimedia destino'

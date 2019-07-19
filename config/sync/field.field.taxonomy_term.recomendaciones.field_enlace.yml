@@ -1,0 +1,23 @@
+uuid: 624f278d-8675-4073-a87e-377c50171574
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_enlace
+    - taxonomy.vocabulary.recomendaciones
+  module:
+    - link
+id: taxonomy_term.recomendaciones.field_enlace
+field_name: field_enlace
+entity_type: taxonomy_term
+bundle: recomendaciones
+label: Enlace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

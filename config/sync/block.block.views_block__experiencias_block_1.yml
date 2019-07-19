@@ -1,0 +1,36 @@
+uuid: 37a03a9e-859a-4f34-b21e-600fed111692
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.experiencias
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'block-full padding-bottom'
+id: views_block__experiencias_block_1
+theme: colombiatravel
+region: sub_content_first
+weight: -21
+provider: null
+plugin: 'views_block:experiencias-block_1'
+settings:
+  id: 'views_block:experiencias-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

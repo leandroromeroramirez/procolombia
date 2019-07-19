@@ -1,0 +1,18 @@
+uuid: c36799bd-d499-449c-bccf-56752a39a20b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regiones_geograficas
+id: taxonomy_term.regiones_geograficas.name
+field_name: name
+entity_type: taxonomy_term
+bundle: regiones_geograficas
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

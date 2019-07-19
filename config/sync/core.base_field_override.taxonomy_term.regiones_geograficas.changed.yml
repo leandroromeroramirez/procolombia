@@ -1,0 +1,18 @@
+uuid: 473a9fec-ec63-4dc0-9097-954ffc8b5f6f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regiones_geograficas
+id: taxonomy_term.regiones_geograficas.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: regiones_geograficas
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

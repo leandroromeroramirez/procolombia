@@ -1,0 +1,20 @@
+uuid: 55e4cce8-7b15-4334-8607-3827821a5c13
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.super_banner
+id: node.super_banner.uid
+field_name: uid
+entity_type: node
+bundle: super_banner
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

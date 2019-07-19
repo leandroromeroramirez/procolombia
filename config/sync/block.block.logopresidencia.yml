@@ -1,0 +1,29 @@
+uuid: 2121ba48-789d-404b-9a9c-b1f272eed145
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:60c66eaf-a501-4e5b-a5fb-e0ac51bee757'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'medium-3 columns'
+id: logopresidencia
+theme: colombiatravel
+region: footer_middle
+weight: -28
+provider: null
+plugin: 'block_content:60c66eaf-a501-4e5b-a5fb-e0ac51bee757'
+settings:
+  id: 'block_content:60c66eaf-a501-4e5b-a5fb-e0ac51bee757'
+  label: 'Logo Presidencia'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

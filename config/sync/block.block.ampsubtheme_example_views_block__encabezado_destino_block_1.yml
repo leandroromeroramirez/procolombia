@@ -1,0 +1,34 @@
+uuid: 686e118e-9013-4daa-978a-5f6582291e96
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.encabezado_destino
+  module:
+    - ctools
+    - views
+  theme:
+    - ampsubtheme_example
+id: ampsubtheme_example_views_block__encabezado_destino_block_1
+theme: ampsubtheme_example
+region: header
+weight: -19
+provider: null
+plugin: 'views_block:encabezado_destino-block_1'
+settings:
+  id: 'views_block:encabezado_destino-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      actividad: actividad
+      destino: destino
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,28 @@
+uuid: ef41baf0-5840-4d7c-9c8a-3195b780bc08
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.tips-de-viaje
+  module:
+    - block_class
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'columns medium-3'
+id: tipsdeviaje
+theme: colombiatravel
+region: footer_first
+weight: -25
+provider: null
+plugin: 'system_menu_block:tips-de-viaje'
+settings:
+  id: 'system_menu_block:tips-de-viaje'
+  label: 'Tips de viaje'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

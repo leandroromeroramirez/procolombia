@@ -1,0 +1,18 @@
+uuid: 739458c7-90d3-4982-a445-f6886d093a47
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.encabezados_de_paginas
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.encabezados_de_paginas
+target_entity_type_id: node
+target_bundle: encabezados_de_paginas
+default_langcode: site_default
+language_alterable: false

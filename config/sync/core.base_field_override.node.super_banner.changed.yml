@@ -1,0 +1,18 @@
+uuid: 1d6b202b-dc2a-4e50-a0bf-a44aa51d9a77
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.super_banner
+id: node.super_banner.changed
+field_name: changed
+entity_type: node
+bundle: super_banner
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

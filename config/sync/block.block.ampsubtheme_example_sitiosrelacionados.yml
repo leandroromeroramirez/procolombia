@@ -1,0 +1,28 @@
+uuid: f55b3e52-87c3-4597-bbb1-cc0e5ba09f78
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.sitios-relaciona
+  module:
+    - block_class
+    - system
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: 'columns medium-3'
+id: ampsubtheme_example_sitiosrelacionados
+theme: ampsubtheme_example
+region: header
+weight: -9
+provider: null
+plugin: 'system_menu_block:sitios-relaciona'
+settings:
+  id: 'system_menu_block:sitios-relaciona'
+  label: 'Sitios relacionados'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

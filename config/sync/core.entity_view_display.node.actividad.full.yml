@@ -1,0 +1,67 @@
+uuid: ebbaf2d7-f3db-4a8d-94f4-7005825face8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.actividad.body
+    - field.field.node.actividad.field_image
+    - field.field.node.actividad.field_posts_instagram
+    - field.field.node.actividad.field_recomendaciones
+    - node.type.actividad
+  module:
+    - ds
+    - field_formatter_class
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - body
+        - field_posts_instagram
+        - field_recomendaciones
+id: node.actividad.full
+targetEntityType: node
+bundle: actividad
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'row padding-slim'
+    region: content
+  field_posts_instagram:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: row
+      ds:
+        ds_limit: ''
+  field_recomendaciones:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'row padding-slim'
+hidden:
+  field_image: true
+  langcode: true
+  links: true

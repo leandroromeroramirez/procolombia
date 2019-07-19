@@ -1,0 +1,13 @@
+uuid: 96e4d813-0ced-4290-8391-3b347c8cb4c0
+langcode: es
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.favorito.unflag
+label: 'Retirar de Favoritos'
+type: node
+plugin: 'flag_action:favorito.unflag'
+configuration:
+  flag_id: favorito
+  flag_action: unflag

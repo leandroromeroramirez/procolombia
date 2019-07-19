@@ -1,0 +1,10 @@
+uuid: e8ff0e40-a997-49d2-b16d-c93145c73822
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.preferencias_de_navegacion
+label: 'Preferencias de navegación'
+targetEntityType: user
+cache: true

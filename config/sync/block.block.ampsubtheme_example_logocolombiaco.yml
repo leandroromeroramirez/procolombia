@@ -1,0 +1,29 @@
+uuid: 58a77773-f8a2-4c39-9712-076c61ee56d2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:483cdda7-ff2d-4c38-867b-6776481f9beb'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: 'medium-3 columns logo-co'
+id: ampsubtheme_example_logocolombiaco
+theme: ampsubtheme_example
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:483cdda7-ff2d-4c38-867b-6776481f9beb'
+settings:
+  id: 'block_content:483cdda7-ff2d-4c38-867b-6776481f9beb'
+  label: 'Logo Colombia CO'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

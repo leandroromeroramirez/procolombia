@@ -1,0 +1,12 @@
+attributes:
+  href: null
+  class:
+    label: ''
+    description: ''
+  target:
+    label: ''
+    description: ''
+    options:
+      _blank: 'New window (_blank)'
+      _self: 'Same window (_self)'
+langcode: es

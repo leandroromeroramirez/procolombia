@@ -1,0 +1,34 @@
+uuid: 37534e83-c6f3-4bf3-beda-4c34b5081a23
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.por_que_viajar_a_colombia_home
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'row padding-bottom text-center'
+id: views_block__por_que_viajar_a_colombia_home_block_1_2
+theme: colombiatravel
+region: sub_content_first
+weight: -27
+provider: null
+plugin: 'views_block:por_que_viajar_a_colombia_home-block_1'
+settings:
+  id: 'views_block:por_que_viajar_a_colombia_home-block_1'
+  label: '¿Por qué viajar a Colombia?'
+  provider: views
+  label_display: visible
+  views_label: '¿Por qué viajar a Colombia?'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,18 @@
+uuid: b8332808-78ac-44d8-bd07-a59c717d0385
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.evento
+id: node.evento.changed
+field_name: changed
+entity_type: node
+bundle: evento
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

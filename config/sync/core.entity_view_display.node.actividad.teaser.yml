@@ -1,0 +1,31 @@
+uuid: 99736bde-14be-4b73-b98b-a0528c7bc155
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actividad.body
+    - node.type.actividad
+  module:
+    - text
+    - user
+id: node.actividad.teaser
+targetEntityType: node
+bundle: actividad
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

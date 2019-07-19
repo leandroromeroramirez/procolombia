@@ -1,0 +1,8 @@
+uuid: a70512f5-bbcd-4129-bd5f-c4104ff0214e
+langcode: es
+status: true
+dependencies: {  }
+id: menu-secundario
+label: 'Menú secundario'
+description: ''
+locked: false

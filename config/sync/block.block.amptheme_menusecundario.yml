@@ -1,0 +1,28 @@
+uuid: aab1f246-37f6-4139-831b-a54029f93f2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-secundario
+  module:
+    - block_class
+    - system
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'columns medium-8 text-left'
+id: amptheme_menusecundario
+theme: amptheme
+region: header
+weight: -21
+provider: null
+plugin: 'system_menu_block:menu-secundario'
+settings:
+  id: 'system_menu_block:menu-secundario'
+  label: 'Menú secundario'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

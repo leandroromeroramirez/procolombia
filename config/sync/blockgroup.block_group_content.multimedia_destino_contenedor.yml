@@ -1,0 +1,6 @@
+uuid: ec34db63-2e8a-439a-ae09-e95a0f6c065c
+langcode: es
+status: true
+dependencies: {  }
+id: multimedia_destino_contenedor
+label: 'Multimedia destino - Contenedor'

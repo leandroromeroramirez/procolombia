@@ -1,0 +1,20 @@
+uuid: 0664cb90-737b-4376-88c7-64e3dc552a35
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_destinos_relacionados
+field_name: field_destinos_relacionados
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: eadbd304-6888-411c-adb1-8ca6887ec9c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - colombiatravel
+id: menudecuentadeusuario
+theme: colombiatravel
+region: footer_last
+weight: -23
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menú de cuenta de usuario'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+    context_mapping: {  }

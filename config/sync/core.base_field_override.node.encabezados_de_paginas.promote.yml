@@ -1,0 +1,22 @@
+uuid: 9e758776-462e-49d7-8e2b-7519d9c0eda9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.encabezados_de_paginas
+id: node.encabezados_de_paginas.promote
+field_name: promote
+entity_type: node
+bundle: encabezados_de_paginas
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

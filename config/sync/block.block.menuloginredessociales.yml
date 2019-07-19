@@ -1,0 +1,29 @@
+uuid: 419baae4-db65-43ac-b2f2-38e56476721b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.login-redes-sociales
+  module:
+    - system
+  theme:
+    - colombiatravel
+id: menuloginredessociales
+theme: colombiatravel
+region: content
+weight: -32
+provider: null
+plugin: 'system_menu_block:login-redes-sociales'
+settings:
+  id: 'system_menu_block:login-redes-sociales'
+  label: 'Menú login redes sociales'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /ingresar/registro
+    negate: false
+    context_mapping: {  }

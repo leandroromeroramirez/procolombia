@@ -1,0 +1,8 @@
+uuid: 286397fc-a0e3-4dd9-82f5-2d07c1917e7d
+langcode: es
+status: true
+dependencies: {  }
+id: legales
+label: Legales
+description: ''
+locked: false

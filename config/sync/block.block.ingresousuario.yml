@@ -1,0 +1,32 @@
+uuid: 90eadfd1-924f-4b6b-b8e6-fae770b4e5c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.ingreso_
+  module:
+    - block_class
+    - blockgroup
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: row
+id: ingresousuario
+theme: colombiatravel
+region: content
+weight: -33
+provider: null
+plugin: 'block_group:3d9fdcb6-77d7-4869-b381-af30bab06e36'
+settings:
+  id: 'block_group:3d9fdcb6-77d7-4869-b381-af30bab06e36'
+  label: 'Ingreso usuario'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /ingresar
+    negate: false
+    context_mapping: {  }

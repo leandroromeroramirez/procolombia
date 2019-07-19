@@ -1,0 +1,16 @@
+tips:
+  cdn-ui-main:
+    label: CDN-Einstellungen
+    body: 'Die CDN-Einstellungen anzeigen und bearbeiten.'
+  cdn-ui-status:
+    label: Status
+  cdn-ui-mapping:
+    label: Zuordnung
+  cdn-ui-mapping-type:
+    label: 'Art der Zuordnung'
+  cdn-ui-mapping-simple-domain:
+    label: CDN-Domain
+  cdn-ui-mapping-simple-conditions:
+    label: Bedingungen
+  cdn-ui-streamwrappers:
+    label: 'Stream Wrapper'

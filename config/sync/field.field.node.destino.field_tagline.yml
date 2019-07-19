@@ -1,0 +1,19 @@
+uuid: 37030ec6-6d85-4407-9668-4d0158d2916a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tagline
+    - node.type.destino
+id: node.destino.field_tagline
+field_name: field_tagline
+entity_type: node
+bundle: destino
+label: Tagline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

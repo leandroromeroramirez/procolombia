@@ -1,0 +1,18 @@
+uuid: 05e80617-f6d5-4bd8-8f88-e4d6c2a3cddc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paises
+id: taxonomy_term.paises.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: paises
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

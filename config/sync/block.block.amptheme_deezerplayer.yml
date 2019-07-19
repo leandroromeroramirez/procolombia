@@ -1,0 +1,29 @@
+uuid: 08131be3-f518-46cf-9d29-c69b6662dfea
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:92be50f4-a6f9-48c0-96d6-1c0412c7d474'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'columns medium-5 text-center'
+id: amptheme_deezerplayer
+theme: amptheme
+region: multimedia_destino
+weight: 0
+provider: null
+plugin: 'block_content:92be50f4-a6f9-48c0-96d6-1c0412c7d474'
+settings:
+  id: 'block_content:92be50f4-a6f9-48c0-96d6-1c0412c7d474'
+  label: 'Siente el ritmo'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

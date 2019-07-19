@@ -1,0 +1,28 @@
+uuid: 7ea4a818-56b4-4f70-b831-6b69d762f8f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-secundario
+  module:
+    - block_class
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'columns medium-6 text-left'
+id: menusecundario
+theme: colombiatravel
+region: meta_header
+weight: -21
+provider: null
+plugin: 'system_menu_block:menu-secundario'
+settings:
+  id: 'system_menu_block:menu-secundario'
+  label: 'Menú secundario'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

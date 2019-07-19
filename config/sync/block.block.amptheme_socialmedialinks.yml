@@ -1,0 +1,116 @@
+uuid: 2fe57d64-3823-47b6-ac71-a6fb0ff719f5
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - social_media_links
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'columns medium-3'
+id: amptheme_socialmedialinks
+theme: amptheme
+region: header
+weight: -6
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    facebook:
+      value: Colombia.travelEspanol/
+      description: ''
+      weight: '-30'
+    twitter:
+      value: colombia_travel
+      description: ''
+      weight: '-29'
+    instagram:
+      value: colombia.travel/
+      description: ''
+      weight: '-28'
+    contact:
+      value: ''
+      description: ''
+      weight: '-27'
+    flickr:
+      value: colombia_travel/
+      description: ''
+      weight: '-26'
+    youtube:
+      value: /user/Colombiatravel
+      description: ''
+      weight: '-25'
+    email:
+      value: ''
+      description: ''
+      weight: '-24'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '-23'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-22'
+    rss:
+      value: ''
+      description: ''
+      weight: '-21'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-20'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-19'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-18'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-17'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-16'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-15'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-14'
+    github:
+      value: ''
+      description: ''
+      weight: '-13'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-12'
+    behance:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

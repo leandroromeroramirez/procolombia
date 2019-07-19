@@ -1,0 +1,16 @@
+uuid: d7a62d7e-9283-48c9-8579-eef0605b4eac
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Tipos de turismo'
+vid: tipos_de_turismo
+description: ''
+hierarchy: 0
+weight: 0

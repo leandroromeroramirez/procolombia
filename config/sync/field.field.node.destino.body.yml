@@ -1,0 +1,22 @@
+uuid: 32f3b34d-5610-4c24-93e0-16f7f7fa31f7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.destino
+  module:
+    - text
+id: node.destino.body
+field_name: body
+entity_type: node
+bundle: destino
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

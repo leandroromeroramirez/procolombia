@@ -1,0 +1,32 @@
+uuid: 7a0e7ef1-e52a-43b4-8d7c-d22aee1b9e0e
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - currency_converter
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'padding-slim row padding-bottom moneda-converter'
+id: currencyconverterblock
+theme: colombiatravel
+region: sub_content_first
+weight: -30
+provider: null
+plugin: currency_converter_block
+settings:
+  id: currency_converter_block
+  label: 'Convertidor de moneda'
+  provider: currency_converter
+  label_display: visible
+  currency_converter_from: USD
+  currency_converter_to: COP
+visibility:
+  request_path:
+    id: request_path
+    pages: /informacion-practica/manejo-de-dinero-en-colombia
+    negate: false
+    context_mapping: {  }

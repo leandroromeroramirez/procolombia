@@ -1,0 +1,28 @@
+uuid: c4197d10-825b-47c0-b49e-35b9b652264b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.legales
+  module:
+    - block_class
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'columns medium-6 legales text-center'
+id: legales
+theme: colombiatravel
+region: footer_middle
+weight: -29
+provider: null
+plugin: 'system_menu_block:legales'
+settings:
+  id: 'system_menu_block:legales'
+  label: Legales
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

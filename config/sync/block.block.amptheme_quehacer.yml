@@ -1,0 +1,28 @@
+uuid: a81d7ef7-a0bb-4b09-a72d-2ba4de5bbd0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.que-hacer
+  module:
+    - block_class
+    - system
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'columns medium-3'
+id: amptheme_quehacer
+theme: amptheme
+region: header
+weight: -11
+provider: null
+plugin: 'system_menu_block:que-hacer'
+settings:
+  id: 'system_menu_block:que-hacer'
+  label: 'Qué hacer'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

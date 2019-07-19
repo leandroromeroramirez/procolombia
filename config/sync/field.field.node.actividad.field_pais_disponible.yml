@@ -1,0 +1,21 @@
+uuid: 7104e7ae-b5a2-46a4-980d-9722373b4372
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais_disponible
+    - node.type.actividad
+  module:
+    - options
+id: node.actividad.field_pais_disponible
+field_name: field_pais_disponible
+entity_type: node
+bundle: actividad
+label: 'País disponible'
+description: "[smart_ip:countryCode]\r\n[smart_ip:country]\r\ntest"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

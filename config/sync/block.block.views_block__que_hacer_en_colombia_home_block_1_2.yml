@@ -1,0 +1,34 @@
+uuid: 9a36a8fb-8632-46a6-a933-a7d10ca22d0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.que_hacer_en_colombia_home
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'padding-bottom block-full'
+id: views_block__que_hacer_en_colombia_home_block_1_2
+theme: colombiatravel
+region: sub_content_first
+weight: -28
+provider: null
+plugin: 'views_block:que_hacer_en_colombia_home-block_1'
+settings:
+  id: 'views_block:que_hacer_en_colombia_home-block_1'
+  label: '¿Qué hacer en Colombia?'
+  provider: views
+  label_display: visible
+  views_label: '¿Qué hacer en Colombia?'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

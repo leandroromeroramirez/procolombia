@@ -1,0 +1,18 @@
+uuid: dc2b2157-3d39-494b-bc8c-35ca9f538e04
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paises
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.paises
+target_entity_type_id: taxonomy_term
+target_bundle: paises
+default_langcode: site_default
+language_alterable: false

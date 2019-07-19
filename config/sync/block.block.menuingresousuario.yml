@@ -1,0 +1,33 @@
+uuid: e0b27c2a-d423-4081-ac52-726c8cda0670
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-ingreso-usuario
+  module:
+    - block_class
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'text-center row'
+id: menuingresousuario
+theme: colombiatravel
+region: help
+weight: -24
+provider: null
+plugin: 'system_menu_block:menu-ingreso-usuario'
+settings:
+  id: 'system_menu_block:menu-ingreso-usuario'
+  label: 'Menú Ingreso usuario'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/ingresar\r\n/ingresar/registro"
+    negate: false
+    context_mapping: {  }

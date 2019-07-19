@@ -1,0 +1,29 @@
+uuid: 9c744beb-be41-4155-ae83-dd17ecaff060
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region_geografica
+    - node.type.destino
+    - taxonomy.vocabulary.regiones_geograficas
+id: node.destino.field_region_geografica
+field_name: field_region_geografica
+entity_type: node
+bundle: destino
+label: 'Región geográfica'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      regiones_geograficas: regiones_geograficas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

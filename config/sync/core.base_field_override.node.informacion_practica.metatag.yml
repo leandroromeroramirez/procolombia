@@ -1,0 +1,18 @@
+uuid: 60625dd2-75d0-466b-a8f6-6063e8df9d6f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informacion_practica
+id: node.informacion_practica.metatag
+field_name: metatag
+entity_type: node
+bundle: informacion_practica
+label: 'Meta etiquetas'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

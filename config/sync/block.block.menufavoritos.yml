@@ -1,0 +1,37 @@
+uuid: 5522ca1c-1c44-44d8-9c4b-f5bceaf5f54d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-favoritos
+  module:
+    - block_class
+    - menu_block
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'padding-top padding-bottom text-center row'
+id: menufavoritos
+theme: colombiatravel
+region: help
+weight: -23
+provider: null
+plugin: 'menu_block:menu-favoritos'
+settings:
+  id: 'menu_block:menu-favoritos'
+  label: 'Favoritos de viaje'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'menu-favoritos:'
+  suggestion: menu_favoritos
+visibility:
+  request_path:
+    id: request_path
+    pages: "/favoritos\r\n/favoritos/*"
+    negate: false
+    context_mapping: {  }

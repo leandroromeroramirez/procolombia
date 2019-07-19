@@ -1,0 +1,76 @@
+uuid: c2cb5a99-3259-40f6-b4f9-812cda0221ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.amp
+    - field.field.node.actividad.body
+    - field.field.node.actividad.field_destinos_relacionados
+    - field.field.node.actividad.field_geolocalizacion
+    - field.field.node.actividad.field_image
+    - field.field.node.actividad.field_metatags
+    - field.field.node.actividad.field_posts_instagram
+    - field.field.node.actividad.field_recomendaciones
+    - field.field.node.actividad.field_region_geografica
+    - field.field.node.actividad.field_tipos_de_turismo
+    - node.type.actividad
+  module:
+    - image
+    - text
+    - user
+id: node.actividad.amp
+targetEntityType: node
+bundle: actividad
+mode: amp
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_posts_instagram:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_recomendaciones:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  flag_favorito:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_destinos_relacionados: true
+  field_geolocalizacion: true
+  field_metatags: true
+  field_region_geografica: true
+  field_tipos_de_turismo: true
+  langcode: true

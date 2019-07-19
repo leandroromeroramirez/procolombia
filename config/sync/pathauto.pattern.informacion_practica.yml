@@ -1,0 +1,33 @@
+uuid: 53c8ef47-0496-4609-843e-bd026d22f848
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: informacion_practica
+label: 'Información práctica'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  aae7a149-396b-4cad-8293-42f4f15cb8a8:
+    id: node_type
+    bundles:
+      informacion_practica: informacion_practica
+    negate: false
+    context_mapping:
+      node: node
+    uuid: aae7a149-396b-4cad-8293-42f4f15cb8a8
+  5f5e04d7-be79-4bdf-b065-5916cbd98021:
+    id: language
+    langcodes:
+      es: es
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 5f5e04d7-be79-4bdf-b065-5916cbd98021
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

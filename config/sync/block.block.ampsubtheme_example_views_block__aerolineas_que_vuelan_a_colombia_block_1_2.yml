@@ -1,0 +1,28 @@
+uuid: 78be0e19-ba9d-4fcb-a9f7-8fd317c40640
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.aerolineas_que_vuelan_a_colombia
+  module:
+    - block_class
+    - views
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: 'columns medium-5'
+id: ampsubtheme_example_views_block__aerolineas_que_vuelan_a_colombia_block_1_2
+theme: ampsubtheme_example
+region: como_llegar_a_colombia
+weight: -9
+provider: null
+plugin: 'views_block:aerolineas_que_vuelan_a_colombia-block_1'
+settings:
+  id: 'views_block:aerolineas_que_vuelan_a_colombia-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

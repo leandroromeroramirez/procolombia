@@ -1,0 +1,32 @@
+uuid: b29cfeec-7760-484f-b354-b5006b829095
+langcode: es
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.como_llegar_a_colombia_contenedor
+  module:
+    - block_class
+    - blockgroup
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'padding-bottom block-full'
+id: comollegaracolombiacontenedor
+theme: colombiatravel
+region: sub_content_first
+weight: -26
+provider: null
+plugin: 'block_group:d47f4dda-0e7c-429a-9d38-b53147e6e06f'
+settings:
+  id: 'block_group:d47f4dda-0e7c-429a-9d38-b53147e6e06f'
+  label: 'Cómo llegar a Colombia'
+  provider: blockgroup
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

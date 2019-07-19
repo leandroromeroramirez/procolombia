@@ -1,0 +1,36 @@
+uuid: d241999d-5063-4665-bc81-4842c21444d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.destinos_home
+  module:
+    - block_class
+    - node
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'block-full region'
+id: views_block__destinos_home_block_2
+theme: colombiatravel
+region: sub_content_first
+weight: -29
+provider: null
+plugin: 'views_block:destinos_home-block_2'
+settings:
+  id: 'views_block:destinos_home-block_2'
+  label: 'Actividades para disfrutar con tu presupuesto'
+  provider: views
+  label_display: visible
+  views_label: 'Actividades para disfrutar con tu presupuesto'
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      informacion_practica: informacion_practica
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

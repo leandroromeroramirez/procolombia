@@ -1,0 +1,8 @@
+uuid: db1a88c0-d5e8-4865-b6e7-98c8d2cf750c
+langcode: es
+status: true
+dependencies: {  }
+id: menu-favoritos
+label: 'Menú Favoritos'
+description: ''
+locked: false

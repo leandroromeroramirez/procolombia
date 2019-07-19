@@ -1,0 +1,17 @@
+entity_type_groups:
+  node:
+    actividad:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+    article:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      schema_article: schema_article
+    destino:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      schema_web_page: schema_web_page
+      schema_web_site: schema_web_site

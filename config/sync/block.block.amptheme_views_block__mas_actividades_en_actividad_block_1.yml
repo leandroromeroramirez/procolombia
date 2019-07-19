@@ -1,0 +1,36 @@
+uuid: d7414f80-fbc6-4d63-86d5-4cf83c193533
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.mas_actividades_en_actividad
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'padding-large region'
+id: amptheme_views_block__mas_actividades_en_actividad_block_1
+theme: amptheme
+region: header
+weight: -14
+provider: null
+plugin: 'views_block:mas_actividades_en_actividad-block_1'
+settings:
+  id: 'views_block:mas_actividades_en_actividad-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      actividad: actividad
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

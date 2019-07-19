@@ -1,0 +1,18 @@
+uuid: 2f1333dd-1bfa-4e21-bec5-4cc0bc0c7e8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.aerolinea
+id: node.aerolinea.changed
+field_name: changed
+entity_type: node
+bundle: aerolinea
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

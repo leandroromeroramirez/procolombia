@@ -1,0 +1,20 @@
+uuid: 2960be21-29ea-4a7a-8a3a-74a435eacf81
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informacion_practica
+id: node.informacion_practica.menu_link
+field_name: menu_link
+entity_type: node
+bundle: informacion_practica
+label: 'Enlace del menu'
+description: 'Enlace de menú calculado para el nodo (solo disponible durante el guardado del nodo).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

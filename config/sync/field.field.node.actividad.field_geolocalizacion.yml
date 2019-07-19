@@ -1,0 +1,21 @@
+uuid: 7cdc6b1c-7dc9-45e1-b5fd-0fbc4c9edcc1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geolocalizacion
+    - node.type.actividad
+  module:
+    - geolocation
+id: node.actividad.field_geolocalizacion
+field_name: field_geolocalizacion
+entity_type: node
+bundle: actividad
+label: Geolocalización
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

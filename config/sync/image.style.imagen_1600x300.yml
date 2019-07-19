@@ -1,0 +1,15 @@
+uuid: 6eb55973-9f8e-4c38-a2f1-1184a295c15e
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_1600x300
+label: 'Imagen 1980x300'
+effects:
+  629786c8-5579-42ed-91e8-29ab2dede999:
+    uuid: 629786c8-5579-42ed-91e8-29ab2dede999
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1980
+      height: 300
+      anchor: center-center

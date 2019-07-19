@@ -1,0 +1,16 @@
+uuid: 34fbeff6-00f9-4d1c-9842-7b0e84c09cfc
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Recomendaciones
+vid: recomendaciones
+description: ''
+hierarchy: 0
+weight: 0

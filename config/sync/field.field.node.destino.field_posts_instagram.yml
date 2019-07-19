@@ -1,0 +1,21 @@
+uuid: ddb50785-b51c-4352-812f-6a15792c5802
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_posts_instagram
+    - node.type.destino
+  module:
+    - text
+id: node.destino.field_posts_instagram
+field_name: field_posts_instagram
+entity_type: node
+bundle: destino
+label: 'Posts instagram'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

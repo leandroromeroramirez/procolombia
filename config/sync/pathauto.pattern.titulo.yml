@@ -1,0 +1,22 @@
+uuid: 5aa399eb-3d3a-4c87-88ca-6c93c8983251
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: titulo
+label: Título
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  cbb127f1-1e8a-483e-8a5c-345714c0a214:
+    id: node_type
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cbb127f1-1e8a-483e-8a5c-345714c0a214
+selection_logic: and
+weight: -5
+relationships: {  }

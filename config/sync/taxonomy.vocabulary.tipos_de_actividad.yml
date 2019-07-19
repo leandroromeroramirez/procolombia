@@ -1,0 +1,16 @@
+uuid: 9a3c06d3-917e-4fc5-9dd1-f175cc04ce7c
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Tipos de actividad'
+vid: tipos_de_actividad
+description: ''
+hierarchy: 0
+weight: 0

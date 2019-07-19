@@ -1,0 +1,47 @@
+uuid: 5cb16e34-aa53-470b-8023-09b9c8477569
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.recomendaciones.field_enlace
+    - field.field.taxonomy_term.recomendaciones.field_image
+    - taxonomy.vocabulary.recomendaciones
+  module:
+    - image
+    - link
+    - text
+id: taxonomy_term.recomendaciones.default
+targetEntityType: taxonomy_term
+bundle: recomendaciones
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_enlace:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

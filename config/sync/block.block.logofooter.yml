@@ -1,0 +1,29 @@
+uuid: 963c3386-565c-4d5f-a161-1adda1684b0d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4472a979-a4a7-4e60-ac62-1c1154e86b3c'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'columns medium-1'
+id: logofooter
+theme: colombiatravel
+region: footer_middle
+weight: -30
+provider: null
+plugin: 'block_content:4472a979-a4a7-4e60-ac62-1c1154e86b3c'
+settings:
+  id: 'block_content:4472a979-a4a7-4e60-ac62-1c1154e86b3c'
+  label: 'Logo Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

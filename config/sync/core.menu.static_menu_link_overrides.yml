@@ -1,0 +1,64 @@
+definitions:
+  contact__site_page:
+    enabled: true
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__main_menu__5':
+    weight: -49
+    menu_name: main
+    parent: ''
+    enabled: true
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__main_menu__7':
+    weight: -47
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__main_menu__8':
+    weight: -46
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  standard__front_page:
+    weight: -45
+    menu_name: main
+    parent: ''
+    enabled: false
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__main_menu__6':
+    weight: -48
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__main_menu__4':
+    enabled: true
+    menu_name: main
+    parent: ''
+    expanded: false
+    weight: -50
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__home_menu__2':
+    weight: -49
+    menu_name: home-menu
+    parent: ''
+    enabled: true
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__home_menu__1':
+    weight: -50
+    menu_name: home-menu
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__home_menu__3':
+    weight: -48
+    menu_name: home-menu
+    parent: ''
+    expanded: false
+    enabled: true
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
+langcode: es

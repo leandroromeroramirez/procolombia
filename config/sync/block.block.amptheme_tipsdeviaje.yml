@@ -1,0 +1,28 @@
+uuid: 61839be3-91a8-4e78-a750-11f0f27bdf17
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.tips-de-viaje
+  module:
+    - block_class
+    - system
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'columns medium-3'
+id: amptheme_tipsdeviaje
+theme: amptheme
+region: header
+weight: -10
+provider: null
+plugin: 'system_menu_block:tips-de-viaje'
+settings:
+  id: 'system_menu_block:tips-de-viaje'
+  label: 'Tips de viaje'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

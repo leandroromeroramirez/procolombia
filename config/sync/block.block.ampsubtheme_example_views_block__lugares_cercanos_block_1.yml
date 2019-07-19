@@ -1,0 +1,36 @@
+uuid: 9a567dd8-e7cf-44ed-aba8-785b0f67b597
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.lugares_cercanos
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: 'row padding-large region'
+id: ampsubtheme_example_views_block__lugares_cercanos_block_1
+theme: ampsubtheme_example
+region: header
+weight: -3
+provider: null
+plugin: 'views_block:lugares_cercanos-block_1'
+settings:
+  id: 'views_block:lugares_cercanos-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      destino: destino
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

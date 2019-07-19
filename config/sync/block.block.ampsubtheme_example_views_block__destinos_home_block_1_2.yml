@@ -1,0 +1,34 @@
+uuid: 19a19573-89af-4bed-b031-79371d527c56
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.destinos_home
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: 'row padding-large region'
+id: ampsubtheme_example_views_block__destinos_home_block_1_2
+theme: ampsubtheme_example
+region: header
+weight: -12
+provider: null
+plugin: 'views_block:destinos_home-block_1'
+settings:
+  id: 'views_block:destinos_home-block_1'
+  label: 'Destinos para visitar en tus vacaciones en Colombia'
+  provider: views
+  label_display: visible
+  views_label: 'Destinos para visitar en tus vacaciones en Colombia'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

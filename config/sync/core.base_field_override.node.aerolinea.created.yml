@@ -1,0 +1,18 @@
+uuid: 0ac92dbe-1f27-4835-9218-9bf303862116
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.aerolinea
+id: node.aerolinea.created
+field_name: created
+entity_type: node
+bundle: aerolinea
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,20 @@
+uuid: b6704e20-10ed-4680-8ec7-dbb6fce47c4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.encabezados_de_paginas
+  module:
+    - path
+id: node.encabezados_de_paginas.path
+field_name: path
+entity_type: node
+bundle: encabezados_de_paginas
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

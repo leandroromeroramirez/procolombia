@@ -1,0 +1,18 @@
+uuid: fad7b666-f003-49c6-9120-d4a2df6b3b53
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.menu_principal
+id: taxonomy_term.menu_principal.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: menu_principal
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

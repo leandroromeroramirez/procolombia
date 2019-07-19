@@ -1,0 +1,25 @@
+uuid: 5b316a49-c255-4bee-ad15-fb09bcf73837
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: content_types
+label: 'Content types'
+type: 'canonical_entities:node'
+pattern: '[node:field_section:entity:parents]/[node:field_section:entity:name]/[node:title]'
+selection_criteria:
+  1fa9aee6-9d81-4c47-82af-44a334cdf82c:
+    id: node_type
+    bundles:
+      article: article
+      asesoria_y_apoyo: asesoria_y_apoyo
+      page: page
+      programa: programa
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1fa9aee6-9d81-4c47-82af-44a334cdf82c
+selection_logic: and
+weight: -5
+relationships: {  }

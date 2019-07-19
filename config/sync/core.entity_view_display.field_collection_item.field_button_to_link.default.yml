@@ -1,0 +1,57 @@
+uuid: 546bdbd0-42c0-48c5-82e0-89d27d181ad7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_button_to_link.field_css_class
+    - field.field.field_collection_item.field_button_to_link.field_url
+    - field_collection.field_collection.field_button_to_link
+  module:
+    - ds
+    - link
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_url
+        - field_css_class
+id: field_collection_item.field_button_to_link.default
+targetEntityType: field_collection_item
+bundle: field_button_to_link
+mode: default
+content:
+  field_css_class:
+    type: string
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_url:
+    type: link
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+hidden: {  }

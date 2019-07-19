@@ -1,0 +1,26 @@
+uuid: bda8093e-0041-4e37-ae66-e95426f9c24a
+langcode: es
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.multimedia_destino
+  module:
+    - block_class
+    - blockgroup
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: row
+id: multimediadestino
+theme: colombiatravel
+region: multimedia_destino_contenedor
+weight: 0
+provider: null
+plugin: 'block_group:107052a3-d155-4058-a856-33f8741b22df'
+settings:
+  id: 'block_group:107052a3-d155-4058-a856-33f8741b22df'
+  label: 'Multimedia destino'
+  provider: blockgroup
+  label_display: '0'
+visibility: {  }

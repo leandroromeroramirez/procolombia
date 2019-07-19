@@ -1,0 +1,37 @@
+uuid: 51c5328b-f89d-45f0-9fb2-f16778affa33
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8a292e07-3321-497d-9125-c4f34d6b3474'
+  module:
+    - block_class
+    - block_content
+    - ctools
+  theme:
+    - ampsubtheme_example
+third_party_settings:
+  block_class:
+    classes: 'padding-large row'
+id: ampsubtheme_example_fotosdeactividadinstagram
+theme: ampsubtheme_example
+region: header
+weight: -13
+provider: null
+plugin: 'block_content:8a292e07-3321-497d-9125-c4f34d6b3474'
+settings:
+  id: 'block_content:8a292e07-3321-497d-9125-c4f34d6b3474'
+  label: 'Fotos de actividad - Instagram'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      actividad: actividad
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

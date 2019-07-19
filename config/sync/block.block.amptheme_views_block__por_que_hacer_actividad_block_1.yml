@@ -1,0 +1,32 @@
+uuid: e0f366d6-4c13-41e2-a3df-faf9751e5684
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.por_que_hacer_actividad
+  module:
+    - ctools
+    - views
+  theme:
+    - amptheme
+id: amptheme_views_block__por_que_hacer_actividad_block_1
+theme: amptheme
+region: header
+weight: -15
+provider: null
+plugin: 'views_block:por_que_hacer_actividad-block_1'
+settings:
+  id: 'views_block:por_que_hacer_actividad-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      actividad: actividad
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

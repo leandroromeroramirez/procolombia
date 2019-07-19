@@ -1,0 +1,2566 @@
+uuid: ae2cf428-1d4f-490e-ad4a-3351f3f620b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - field.storage.node.field_region_geografica
+    - image.style.imagen_300x300_
+    - node.type.actividad
+    - system.menu.que-hacer
+    - taxonomy.vocabulary.destinos
+    - taxonomy.vocabulary.tipos_de_actividad
+    - taxonomy.vocabulary.tipos_de_turismo
+  content:
+    - 'taxonomy_term:tipos_de_turismo:00d3fb01-db58-49e1-b035-b09426f74eed'
+    - 'taxonomy_term:tipos_de_turismo:0955a36b-94b5-4914-9cf5-c62dd6bba3fb'
+    - 'taxonomy_term:tipos_de_turismo:0e1614ef-f64e-43a7-9bdb-d4b686e5cb64'
+    - 'taxonomy_term:tipos_de_turismo:0e352463-ff2a-4e17-9cf5-6f19006b9bb9'
+    - 'taxonomy_term:tipos_de_turismo:11793090-c936-4736-9721-5d234ca86618'
+    - 'taxonomy_term:tipos_de_turismo:1b7e3d54-4f15-4153-8434-4f4558404292'
+    - 'taxonomy_term:tipos_de_turismo:1f5ede5a-079d-4883-8a5b-d1e583ae65a7'
+    - 'taxonomy_term:tipos_de_turismo:25f13f8c-57dd-4259-ad80-434020614288'
+    - 'taxonomy_term:tipos_de_turismo:290cba92-848c-4e05-aa46-a8ea3a64c4f3'
+    - 'taxonomy_term:tipos_de_turismo:354f6b1f-f322-4155-9106-cad19a340398'
+    - 'taxonomy_term:tipos_de_turismo:35bd0209-c480-45db-84ff-d11a1a8d4c95'
+    - 'taxonomy_term:tipos_de_turismo:38c70729-911a-4585-84cc-a5bc8cf29ee3'
+    - 'taxonomy_term:tipos_de_turismo:3b33def3-1632-43e0-8d37-082b2f098f61'
+    - 'taxonomy_term:tipos_de_turismo:3dbad334-6173-4a4e-a654-3bd15e092316'
+    - 'taxonomy_term:tipos_de_turismo:44c6b952-b8b6-4a08-8c71-31096730cab2'
+    - 'taxonomy_term:tipos_de_turismo:4bc9657a-fbea-43ee-8c29-f75417850a1a'
+    - 'taxonomy_term:tipos_de_turismo:55f48f06-6912-4133-9a44-c2db889a5cdc'
+    - 'taxonomy_term:tipos_de_turismo:574423c2-1d0d-4ec8-bd02-a2df2bcfa491'
+    - 'taxonomy_term:tipos_de_turismo:5825f2cc-c342-44cb-9f8d-745bba8ba98f'
+    - 'taxonomy_term:tipos_de_turismo:5ed3cb6c-f70a-47c5-b35a-c32f0bcde514'
+    - 'taxonomy_term:tipos_de_turismo:656bccfb-42c8-4187-9324-82381057cf27'
+    - 'taxonomy_term:tipos_de_turismo:661b8ef3-aacd-462e-8dfb-01f7b5a027e1'
+    - 'taxonomy_term:tipos_de_turismo:6c079abe-c999-4d47-80fd-e6788980ece7'
+    - 'taxonomy_term:tipos_de_turismo:74587122-73b2-402b-8688-31a3c0443822'
+    - 'taxonomy_term:tipos_de_turismo:80c6ed20-7bb6-45fb-9ddc-58c6da55493c'
+    - 'taxonomy_term:tipos_de_turismo:86821f12-786a-4c11-bae6-53a5c3df628a'
+    - 'taxonomy_term:tipos_de_turismo:8c62515a-7069-4139-969f-a44c42d6063f'
+    - 'taxonomy_term:tipos_de_turismo:92e4756a-467a-4a36-8a78-8bb3e966030f'
+    - 'taxonomy_term:tipos_de_turismo:92f786da-a13a-44e1-ba10-ca570ce2223f'
+    - 'taxonomy_term:tipos_de_turismo:94344118-2282-4eef-8b95-95f9b569ccf5'
+    - 'taxonomy_term:tipos_de_turismo:9919b920-a320-49bb-8725-6b74bddf2cfe'
+    - 'taxonomy_term:tipos_de_turismo:9a1efa58-7f5e-4ed2-a01c-b0e53a6e8e34'
+    - 'taxonomy_term:tipos_de_turismo:9ca969ce-ed24-4a9a-92e7-25f50d84707b'
+    - 'taxonomy_term:tipos_de_turismo:9ecaef25-b134-4d77-b8f2-64eb1f9d42e5'
+    - 'taxonomy_term:tipos_de_turismo:a36e7ae1-5e36-40d0-b618-d5b4baab70de'
+    - 'taxonomy_term:tipos_de_turismo:a616e2ae-1395-4c90-8a89-8ea9c0c7f5d8'
+    - 'taxonomy_term:tipos_de_turismo:a7662109-0f75-44e7-8ac9-00e3b4890cb8'
+    - 'taxonomy_term:tipos_de_turismo:ae172bc4-d9b8-412f-857c-eb433af68f20'
+    - 'taxonomy_term:tipos_de_turismo:aeb292bf-c802-406b-b2bc-8b80958a5a37'
+    - 'taxonomy_term:tipos_de_turismo:b67f3b54-37f8-4ceb-a70b-32744fc05513'
+    - 'taxonomy_term:tipos_de_turismo:ce614db9-09e3-4371-9fff-b34ae23bb75c'
+    - 'taxonomy_term:tipos_de_turismo:d76ed80c-cedb-4216-84ef-e253a7ea7b62'
+    - 'taxonomy_term:tipos_de_turismo:f7adf61c-648a-4a52-8993-3d6691e2d7a8'
+    - 'taxonomy_term:tipos_de_turismo:f8c6fe83-7799-4acb-9f0d-70d41fc8c6cb'
+    - 'taxonomy_term:tipos_de_turismo:ff908e4e-b915-4052-82b7-6aa0e109ea76'
+    - 'taxonomy_term:tipos_de_turismo:ffdb361d-a7f4-48b4-9400-0a3c833eacf7'
+  module:
+    - better_exposed_filters
+    - image
+    - node
+    - taxonomy
+    - user
+id: que_hacer
+label: 'Qué hacer'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+core: 8.x
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Filtrar
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          input_required: false
+          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
+          bef:
+            general:
+              allow_secondary: false
+              secondary_label: 'Opciones avanzadas'
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_hide: true
+            tid_1:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            field_tipos_de_turismo_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+          text_input_required_format: basic_html
+      pager:
+        type: none
+        options:
+          items_per_page: 0
+          offset: 0
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: 'small-6 medium-4 columns end destino'
+          default_row_class: true
+      row:
+        type: fields
+      fields:
+        field_image:
+          id: field_image
+          table: node__field_image
+          field: field_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: div
+          element_wrapper_class: photo
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: imagen_300x300_
+            image_link: content
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: h3
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        field_region_geografica:
+          id: field_region_geografica
+          table: node__field_region_geografica
+          field: field_region_geografica
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actividad: actividad
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        tid_3:
+          id: tid_3
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro tipo de actividad'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_3_op
+            label: 'Tipo de actividad'
+            description: ''
+            use_operator: false
+            operator: tid_3_op
+            identifier: tid_3
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_actividad
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro Destino'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_1_op
+            label: Destino
+            description: ''
+            use_operator: false
+            operator: tid_1_op
+            identifier: tid_1
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: destinos
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        tid_2:
+          id: tid_2
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro tipo de turismo'
+          operator: or
+          value:
+            42: 42
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+      title: 'Ecoturismo en Colombia'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h2>Salud y bienestar en Colombia</h2>\r\n<p>Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>"
+            format: full_html
+          plugin_id: text
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+      use_ajax: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      css_class: destinos-home
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_region_geografica'
+  atracciones:
+    display_plugin: page
+    id: atracciones
+    display_title: Atracciones
+    position: 6
+    display_options:
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: 'Aventura en Colombia'
+            description: 'Descripción de la página interna Aventura en Colombia'
+            keywords: 'colombia, aventura, travel'
+        simple_sitemap_display_extender:
+          index: true
+          variant: default
+          priority: '0.9'
+          changefreq: ''
+          arguments: {  }
+          max_links: 100
+      path: atracciones
+      display_description: ''
+      exposed_block: true
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actividad: actividad
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        term_node_tid_depth_1:
+          id: term_node_tid_depth_1
+          table: node_field_data
+          field: term_node_tid_depth
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            86: 86
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: true
+          error_message: true
+          depth: 1
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
+        term_node_tid_depth:
+          id: term_node_tid_depth
+          table: node_field_data
+          field: term_node_tid_depth
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            87: 87
+            88: 88
+            89: 89
+            90: 90
+            91: 91
+            92: 92
+            93: 93
+          group: 1
+          exposed: true
+          expose:
+            operator_id: term_node_tid_depth_op
+            label: 'Tipo de actividad'
+            description: ''
+            use_operator: false
+            operator: term_node_tid_depth_op
+            identifier: actividad
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          depth: 1
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro Destino'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_1_op
+            label: Destino
+            description: ''
+            use_operator: false
+            operator: tid_1_op
+            identifier: tid_1
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: destinos
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+        title: false
+        use_ajax: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      menu:
+        type: normal
+        title: Atracciones
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -46
+        context: '0'
+        menu_name: que-hacer
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h1 class=\"que-hacer\">Atracciones en Colombia</h1>\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>"
+            format: full_html
+          plugin_id: text
+      title: Atracciones
+      use_ajax: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_region_geografica'
+  aventura_y_deportes_extremos:
+    display_plugin: page
+    id: aventura_y_deportes_extremos
+    display_title: 'Aventura y deportes extremos'
+    position: 5
+    display_options:
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: 'Aventura en Colombia'
+            description: 'Descripción de la página interna Aventura en Colombia'
+            keywords: 'colombia, aventura, travel'
+        simple_sitemap_display_extender:
+          index: true
+          variant: default
+          priority: '0.9'
+          changefreq: ''
+          arguments: {  }
+          max_links: 100
+      path: aventura-y-deportes-extremos
+      display_description: ''
+      exposed_block: true
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actividad: actividad
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        tid_2:
+          id: tid_2
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro tipo de turismo'
+          operator: or
+          value:
+            45: 45
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        term_node_tid_depth:
+          id: term_node_tid_depth
+          table: node_field_data
+          field: term_node_tid_depth
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            76: 76
+            77: 77
+            78: 78
+            79: 79
+            80: 80
+            81: 81
+            82: 82
+            83: 83
+            84: 84
+            85: 85
+          group: 1
+          exposed: true
+          expose:
+            operator_id: term_node_tid_depth_op
+            label: 'Tipo de actividad'
+            description: ''
+            use_operator: false
+            operator: term_node_tid_depth_op
+            identifier: actividad
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          depth: 1
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro Destino'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_1_op
+            label: Destino
+            description: ''
+            use_operator: false
+            operator: tid_1_op
+            identifier: tid_1
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: destinos
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+        title: false
+        use_ajax: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      menu:
+        type: normal
+        title: 'Aventura y deportes extremos'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -47
+        context: '0'
+        menu_name: que-hacer
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h1 class=\"que-hacer\">Aventura y deportes extremos en Colombia</h1>\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>"
+            format: full_html
+          plugin_id: text
+      title: 'Aventura y deportes extremos'
+      use_ajax: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_region_geografica'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: 'Aventura - dest'
+    position: 5
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+        simple_sitemap_display_extender: {  }
+      display_description: ''
+      exposed_block: true
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actividad: actividad
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        tid_2:
+          id: tid_2
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro tipo de turismo'
+          operator: or
+          value:
+            45: 45
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        term_node_tid_depth:
+          id: term_node_tid_depth
+          table: node_field_data
+          field: term_node_tid_depth
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            76: 76
+            77: 77
+            78: 78
+            79: 79
+            80: 80
+            81: 81
+            82: 82
+            83: 83
+            84: 84
+            85: 85
+          group: 1
+          exposed: true
+          expose:
+            operator_id: term_node_tid_depth_op
+            label: 'Tipo de actividad'
+            description: ''
+            use_operator: false
+            operator: term_node_tid_depth_op
+            identifier: actividad
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          depth: 1
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro Destino'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_1_op
+            label: Destino
+            description: ''
+            use_operator: false
+            operator: tid_1_op
+            identifier: tid_1
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: destinos
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+        title: false
+        use_ajax: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h1 class=\"que-hacer\">Aventura y deportes extremos en Colombia</h1>\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>"
+            format: full_html
+          plugin_id: text
+      title: 'Aventura y deportes extremos'
+      use_ajax: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_region_geografica'
+  cultura:
+    display_plugin: page
+    id: cultura
+    display_title: Cultura
+    position: 3
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+        simple_sitemap_display_extender:
+          index: true
+          variant: default
+          priority: '0.9'
+          changefreq: ''
+          arguments: {  }
+          max_links: 100
+      path: cultura
+      display_description: ''
+      exposed_block: true
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actividad: actividad
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        tid_2:
+          id: tid_2
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro tipo de turismo'
+          operator: or
+          value:
+            43: 43
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        term_node_tid_depth:
+          id: term_node_tid_depth
+          table: node_field_data
+          field: term_node_tid_depth
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            63: 63
+            64: 64
+            65: 65
+            66: 66
+            67: 67
+            68: 68
+            69: 69
+            70: 70
+            71: 71
+          group: 1
+          exposed: true
+          expose:
+            operator_id: term_node_tid_depth_op
+            label: 'Tipo de actividad'
+            description: ''
+            use_operator: false
+            operator: term_node_tid_depth_op
+            identifier: term_node_tid_depth
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          depth: 1
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro Destino'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_1_op
+            label: Destino
+            description: ''
+            use_operator: false
+            operator: tid_1_op
+            identifier: tid_1
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: destinos
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      defaults:
+        filters: false
+        filter_groups: false
+        title: false
+        header: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      menu:
+        type: normal
+        title: Cultura
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -49
+        context: '0'
+        menu_name: que-hacer
+      title: 'Cultura en Colombia'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h1 class=\"que-hacer\">Cultura en Colombia</h1>\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>"
+            format: full_html
+          plugin_id: text
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_region_geografica'
+  ecoturismo:
+    display_plugin: page
+    id: ecoturismo
+    display_title: Ecoturismo
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: Ecoturismo
+            description: 'Contenido descriptivo en español.'
+        simple_sitemap_display_extender:
+          index: true
+          variant: default
+          priority: '0.9'
+          changefreq: ''
+          arguments: {  }
+          max_links: 100
+      path: ecoturismo
+      display_description: ''
+      exposed_block: true
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h1 class=\"que-hacer\">Ecoturismo en Colombia</h1>\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>"
+            format: full_html
+          plugin_id: text
+      defaults:
+        header: false
+        filters: false
+        filter_groups: false
+      menu:
+        type: normal
+        title: Ecoturismo
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -50
+        context: '0'
+        menu_name: que-hacer
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actividad: actividad
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        tid_2:
+          id: tid_2
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro tipo de turismo'
+          operator: or
+          value:
+            42: 42
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        term_node_tid_depth:
+          id: term_node_tid_depth
+          table: node_field_data
+          field: term_node_tid_depth
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            53: 53
+            54: 54
+            55: 55
+            56: 56
+            57: 57
+            58: 58
+            59: 59
+            60: 60
+            61: 61
+            62: 62
+          group: 1
+          exposed: true
+          expose:
+            operator_id: term_node_tid_depth_op
+            label: 'Tipo de actividad'
+            description: ''
+            use_operator: false
+            operator: term_node_tid_depth_op
+            identifier: actividad
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          depth: 1
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro Destino'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_1_op
+            label: Destino
+            description: ''
+            use_operator: false
+            operator: tid_1_op
+            identifier: tid_1
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: destinos
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_region_geografica'
+  que_hacer_principal:
+    display_plugin: page
+    id: que_hacer_principal
+    display_title: 'Qué hacer - principal'
+    position: 1
+    display_options:
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: 'Qué hacer'
+            description: 'Descripción de la sección Qué hacer'
+            keywords: 'colombia, aventura, travel'
+        simple_sitemap_display_extender:
+          index: false
+          variant: null
+          priority: '0.5'
+          changefreq: ''
+          arguments: {  }
+          max_links: 100
+      path: que-hacer
+      display_description: ''
+      exposed_block: true
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actividad: actividad
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        field_tipos_de_turismo_target_id:
+          id: field_tipos_de_turismo_target_id
+          table: node__field_tipos_de_turismo
+          field: field_tipos_de_turismo_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_tipos_de_turismo_target_id_op
+            label: 'Tipos de actividad'
+            description: ''
+            use_operator: false
+            operator: field_tipos_de_turismo_target_id_op
+            identifier: field_tipos_de_turismo_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Choose some options'
+            placeholder_text_single: 'Choose an option'
+            no_results_text: 'No results match'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+        use_ajax: false
+        css_class: false
+        title: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      menu:
+        type: none
+        title: Aventura
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: que-hacer
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h1>Qué hacer</h1>\r\n<p>Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n\r\n<p>Voluptatum repudiandae voluptatem quo pede iure non aptent atque labore laudantium magna, scelerisque asperiores sociosqu vitae quisquam anim. Fusce pellentesque phasellus? Tincidunt reprehenderit blanditiis euismod soluta numquam sociis cupiditate a, laborum cubilia senectus praesent, vitae. Ut platea, sunt sociis molestie! Cubilia, occaecat! Suspendisse, iste accumsan. Amet suspendisse hendrerit! Molestias ullamcorper.</p>"
+            format: full_html
+          plugin_id: text
+      use_ajax: false
+      css_class: 'destinos-home '
+      title: 'Qué hacer'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_region_geografica'
+  salud_y_bienestar:
+    display_plugin: page
+    id: salud_y_bienestar
+    display_title: 'Salud y bienestar'
+    position: 4
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+        simple_sitemap_display_extender:
+          index: true
+          variant: default
+          priority: '0.9'
+          changefreq: ''
+          arguments: {  }
+          max_links: 100
+      path: salud-y-bienestar
+      display_description: ''
+      exposed_block: true
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actividad: actividad
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            75: 75
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        term_node_tid_depth:
+          id: term_node_tid_depth
+          table: node_field_data
+          field: term_node_tid_depth
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            72: 72
+            73: 73
+            74: 74
+          group: 1
+          exposed: true
+          expose:
+            operator_id: term_node_tid_depth_op
+            label: 'Tipo de actividad'
+            description: ''
+            use_operator: false
+            operator: term_node_tid_depth_op
+            identifier: term_node_tid_depth
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          depth: 1
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro Destino'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_1_op
+            label: Destino
+            description: ''
+            use_operator: false
+            operator: tid_1_op
+            identifier: tid_1
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: destinos
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      defaults:
+        filters: false
+        filter_groups: false
+        title: false
+        header: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      title: 'Salud y bienestar'
+      menu:
+        type: normal
+        title: 'Salud y Bienestar'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -48
+        context: '0'
+        menu_name: que-hacer
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h1 class=\"que-hacer\">Salud y bienestar en Colombia</h1>\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>"
+            format: full_html
+          plugin_id: text
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_region_geografica'
+  siente_el_ritmo:
+    display_plugin: page
+    id: siente_el_ritmo
+    display_title: 'Siente el ritmo'
+    position: 8
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+        simple_sitemap_display_extender:
+          index: true
+          variant: default
+          priority: '0.9'
+          changefreq: ''
+          arguments: {  }
+          max_links: 100
+      path: siente-el-ritmo
+      display_description: ''
+      exposed_block: true
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actividad: actividad
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro Destino'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_1_op
+            label: Destino
+            description: ''
+            use_operator: false
+            operator: tid_1_op
+            identifier: tid_1
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: destinos
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            94: 94
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      defaults:
+        filters: false
+        filter_groups: false
+        title: false
+        header: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      title: 'Siente el ritmo'
+      menu:
+        type: normal
+        title: 'Siente el ritmo'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -44
+        context: '0'
+        menu_name: que-hacer
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h1 class=\"que-hacer\">Siente el ritmo en Colombia</h1>\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>"
+            format: full_html
+          plugin_id: text
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_region_geografica'
+  sol_y_playa:
+    display_plugin: page
+    id: sol_y_playa
+    display_title: 'Sol Playa'
+    position: 7
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+        simple_sitemap_display_extender:
+          index: true
+          variant: default
+          priority: '0.9'
+          changefreq: ''
+          arguments: {  }
+          max_links: 100
+      path: sol-y-playa
+      display_description: ''
+      exposed_block: true
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actividad: actividad
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro Destino'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_1_op
+            label: Destino
+            description: ''
+            use_operator: false
+            operator: tid_1_op
+            identifier: tid_1
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Elija algunas opciones'
+            placeholder_text_single: 'Elige una opción'
+            no_results_text: 'No hay resultados coincidentes'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: destinos
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        tid_2:
+          id: tid_2
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Filtro tipo de turismo'
+          operator: or
+          value:
+            44: 44
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tipos_de_turismo
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      defaults:
+        filters: false
+        filter_groups: false
+        title: false
+        header: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      title: 'Sol Playa en Colombia'
+      menu:
+        type: normal
+        title: 'Sol y playa'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -45
+        context: '0'
+        menu_name: que-hacer
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h1 class=\"que-hacer\">Sol y playa en Colombia</h1>\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>"
+            format: full_html
+          plugin_id: text
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_region_geografica'

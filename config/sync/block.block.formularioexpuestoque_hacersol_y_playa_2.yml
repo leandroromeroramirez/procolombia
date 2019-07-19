@@ -1,0 +1,29 @@
+uuid: a916563b-463e-450a-86a5-30ea24f3fc88
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.que_hacer
+  module:
+    - system
+    - views
+  theme:
+    - colombiatravel
+id: formularioexpuestoque_hacersol_y_playa_2
+theme: colombiatravel
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:que_hacer-sol_y_playa'
+settings:
+  id: 'views_exposed_filter_block:que_hacer-sol_y_playa'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /siente_el_ritmo
+    negate: false
+    context_mapping: {  }

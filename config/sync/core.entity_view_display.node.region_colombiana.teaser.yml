@@ -1,0 +1,32 @@
+uuid: e81819a2-5d29-4e3f-ba8a-b94cd7786a85
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.region_colombiana.body
+    - node.type.region_colombiana
+  module:
+    - text
+    - user
+id: node.region_colombiana.teaser
+targetEntityType: node
+bundle: region_colombiana
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

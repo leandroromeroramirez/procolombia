@@ -1,0 +1,32 @@
+uuid: 50cdcbc6-0219-492e-8d10-e4f2b3907eeb
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.te_puede_interesar_blog
+  module:
+    - ctools
+    - views
+  theme:
+    - colombiatravel
+id: views_block__te_puede_interesar_blog_block_1
+theme: colombiatravel
+region: content
+weight: -31
+provider: null
+plugin: 'views_block:te_puede_interesar_blog-block_1'
+settings:
+  id: 'views_block:te_puede_interesar_blog-block_1'
+  label: 'Te puede interesar'
+  provider: views
+  label_display: visible
+  views_label: 'Te puede interesar'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

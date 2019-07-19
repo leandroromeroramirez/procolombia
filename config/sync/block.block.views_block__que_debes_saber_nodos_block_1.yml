@@ -1,0 +1,28 @@
+uuid: ec79cdf6-8e88-4bc4-9675-5a9882643d68
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.que_debes_saber_si_vas_a_viajar_a_colombia_nodos
+  module:
+    - block_class
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'block-views-blockque-debes-saber-si-vas-a-viajar-a-colombia-block-1 padding-bottom padding-top'
+id: views_block__que_debes_saber_nodos_block_1
+theme: colombiatravel
+region: sub_content_first
+weight: 0
+provider: null
+plugin: 'views_block:que_debes_saber_si_vas_a_viajar_a_colombia_nodos-block_1'
+settings:
+  id: 'views_block:que_debes_saber_si_vas_a_viajar_a_colombia_nodos-block_1'
+  label: '¿Qué debes saber si vas a viajar a Colombia?'
+  provider: views
+  label_display: visible
+  views_label: '¿Qué debes saber si vas a viajar a Colombia?'
+  items_per_page: none
+visibility: {  }

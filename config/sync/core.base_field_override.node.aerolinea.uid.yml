@@ -1,0 +1,20 @@
+uuid: d2460f89-e39f-4ac0-bb94-845b54a6b758
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.aerolinea
+id: node.aerolinea.uid
+field_name: uid
+entity_type: node
+bundle: aerolinea
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

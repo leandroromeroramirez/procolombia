@@ -1,0 +1,18 @@
+uuid: 1813a83d-c74f-4fc1-aad3-e42fecc8a63f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informacion_practica
+id: node.informacion_practica.created
+field_name: created
+entity_type: node
+bundle: informacion_practica
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

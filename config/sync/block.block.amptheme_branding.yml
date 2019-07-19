@@ -1,0 +1,29 @@
+uuid: dcd74054-586c-402d-9306-4055079ab70e
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'medium-3 columns logo'
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: amptheme_branding
+theme: amptheme
+region: header
+weight: -10
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

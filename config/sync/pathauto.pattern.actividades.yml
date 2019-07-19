@@ -1,0 +1,22 @@
+uuid: b4ca8b5a-a8dd-45d8-a9db-f216f2ee6486
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: actividades
+label: Actividades
+type: 'canonical_entities:node'
+pattern: '[node:field_tipos_de_turismo:0]/[node:title]'
+selection_criteria:
+  bad4da58-302e-4421-90cd-0aaefe8a4ae8:
+    id: node_type
+    bundles:
+      actividad: actividad
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bad4da58-302e-4421-90cd-0aaefe8a4ae8
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,20 @@
+uuid: 26880118-8aed-4019-b1f8-0efe304415ae
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  robots: 'index, follow'
+  title: 'Guía oficial de turismo de Colombia'
+  shortlink: '[site:url]'
+  abstract: 'Planea tu próximo viaje a Colombia con nuestra guía oficial de turismo. Descubre destinos turísticos destacados como Bogotá, Medellín, Cartagena o San Andrés.'
+  keywords: 'Colombia Travel, Inicio, Viaje, Viajes, Destino, Destinos turisticos, vacaciones en colombia, destinos en colombia, viajar a colombia'
+  description: 'Planea tu próximo viaje a Colombia con nuestra guía oficial de turismo. Descubre destinos turísticos destacados como Bogotá, Medellín, Cartagena o San Andrés.'
+  canonical_url: '[site:url]'
+  og_url: 'https://colombiatravel.demodayscript.com'
+  og_site_name: 'Colombia Travel'
+  og_type: website
+  og_title: 'Colombia Travel'

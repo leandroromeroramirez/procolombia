@@ -1,0 +1,22 @@
+uuid: db231888-fbb6-4742-9e9a-7e9ef7d1ef19
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.super_banner
+id: node.super_banner.promote
+field_name: promote
+entity_type: node
+bundle: super_banner
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

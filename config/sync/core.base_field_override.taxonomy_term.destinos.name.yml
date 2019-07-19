@@ -1,0 +1,18 @@
+uuid: 96fb62f6-928c-46af-95d2-b00c7038193b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.destinos
+id: taxonomy_term.destinos.name
+field_name: name
+entity_type: taxonomy_term
+bundle: destinos
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

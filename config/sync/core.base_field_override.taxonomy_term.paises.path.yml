@@ -1,0 +1,20 @@
+uuid: ad5b2120-5ccb-4067-b2b1-dbf1ce44a79d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paises
+  module:
+    - path
+id: taxonomy_term.paises.path
+field_name: path
+entity_type: taxonomy_term
+bundle: paises
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

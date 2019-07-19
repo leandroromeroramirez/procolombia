@@ -1,0 +1,18 @@
+id: comentarios_de_viajeros
+label: 'Comentarios de viajeros'
+ui_limit: ''
+properties:
+  block: 'views_block:comentarios_de_viajeros-block_1'
+  use_block_title: false
+  add_block_wrappers: true
+  config:
+    id: 'views_block:comentarios_de_viajeros-block_1'
+    label: ''
+    provider: views
+    label_display: visible
+    views_label: ''
+    items_per_page: none
+type: block
+type_label: 'Block field'
+entities:
+  node: node

@@ -1,0 +1,23 @@
+uuid: 99a86809-df96-4b86-920d-fa1bc519ccc7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visible_a_internacionales
+    - node.type.actividad
+id: node.actividad.field_visible_a_internacionales
+field_name: field_visible_a_internacionales
+entity_type: node
+bundle: actividad
+label: 'Visible a internacionales'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Si
+  off_label: 'No'
+field_type: boolean

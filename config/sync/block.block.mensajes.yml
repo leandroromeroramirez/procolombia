@@ -1,0 +1,20 @@
+uuid: c9b15c57-e3e5-485e-86b2-ec044c6f40b8
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - colombiatravel
+id: mensajes
+theme: colombiatravel
+region: header
+weight: -28
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Mensajes
+  provider: system
+  label_display: '0'
+visibility: {  }

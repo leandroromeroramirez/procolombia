@@ -1,0 +1,8 @@
+uuid: ef67cb12-415d-4474-9ce8-c6513de479a0
+langcode: es
+status: true
+dependencies: {  }
+id: menu-ingreso-usuario
+label: 'Menú Ingreso usuario'
+description: ''
+locked: false

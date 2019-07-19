@@ -1,0 +1,38 @@
+uuid: e021f8b4-6501-4ffd-b226-3e539bdc06c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_button_to_link.field_css_class
+    - field.field.field_collection_item.field_button_to_link.field_url
+    - field_collection.field_collection.field_button_to_link
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: field_collection_item.field_button_to_link.default
+targetEntityType: field_collection_item
+bundle: field_button_to_link
+mode: default
+content:
+  field_css_class:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_url:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden: {  }

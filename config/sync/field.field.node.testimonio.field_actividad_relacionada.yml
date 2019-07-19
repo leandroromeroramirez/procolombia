@@ -1,0 +1,28 @@
+uuid: 477bce0d-df50-4461-8c4c-24f097fa09b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actividad_relacionada
+    - node.type.actividad
+    - node.type.testimonio
+id: node.testimonio.field_actividad_relacionada
+field_name: field_actividad_relacionada
+entity_type: node
+bundle: testimonio
+label: 'Actividad relacionada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      actividad: actividad
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 5c883e29-e33d-4a80-94c7-8e31bb48459e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.destinos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.destinos
+target_entity_type_id: taxonomy_term
+target_bundle: destinos
+default_langcode: site_default
+language_alterable: false

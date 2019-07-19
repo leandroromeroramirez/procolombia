@@ -1,0 +1,17 @@
+uuid: f661d2d4-7f1a-4f81-9ae5-cc26f42ff636
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Super banner'
+type: super_banner
+description: 'Use para crear contenidos en super banner'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

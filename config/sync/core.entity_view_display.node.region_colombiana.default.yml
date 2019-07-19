@@ -1,0 +1,33 @@
+uuid: febeb42c-3f2a-4ee0-9e71-5937ee0b98b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.region_colombiana.body
+    - field.field.node.region_colombiana.field_image
+    - field.field.node.region_colombiana.field_region_geografica
+    - node.type.region_colombiana
+  module:
+    - field_formatter_class
+    - text
+    - user
+id: node.region_colombiana.default
+targetEntityType: node
+bundle: region_colombiana
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: row
+    region: content
+hidden:
+  addtoany: true
+  field_image: true
+  field_region_geografica: true
+  langcode: true
+  links: true

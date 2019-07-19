@@ -1,0 +1,18 @@
+uuid: e7c17291-c92a-4c2e-984b-ded252efed9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.aerolinea
+id: node.aerolinea.title
+field_name: title
+entity_type: node
+bundle: aerolinea
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

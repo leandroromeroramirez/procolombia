@@ -1,0 +1,86 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h2>Salud y bienestar en Colombia</h2>\r\n\r\n<p>Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n"
+            format: full_html
+  atracciones:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h1 class=\"que-hacer\">Atracciones en Colombia</h1>\r\n\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n"
+            format: full_html
+  aventura_y_deportes_extremos:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h1 class=\"que-hacer\">Adventure and Extreme Sports in&nbsp;Colombia</h1>\r\n\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n"
+            format: full_html
+      filters:
+        term_node_tid_depth:
+          expose:
+            label: 'Activity Type'
+        tid_1:
+          expose:
+            label: Destination
+      menu:
+        title: 'Adventure and Extreme Sports'
+      title: 'Adventure and Extreme Sports'
+    display_title: 'Adventure and Extreme Sports'
+  cultura:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h1 class=\"que-hacer\">Cultura en Colombia</h1>\r\n\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n"
+            format: full_html
+  ecoturismo:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h1 class=\"que-hacer\">Ecoturismo en Colombia</h1>\r\n\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n"
+            format: full_html
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            description: 'Contenido descriptivo en inglés'
+  que_hacer_principal:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h1>Qué hacer</h1>\r\n\r\n<p>Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n\r\n<p>Voluptatum repudiandae voluptatem quo pede iure non aptent atque labore laudantium magna, scelerisque asperiores sociosqu vitae quisquam anim. Fusce pellentesque phasellus? Tincidunt reprehenderit blanditiis euismod soluta numquam sociis cupiditate a, laborum cubilia senectus praesent, vitae. Ut platea, sunt sociis molestie! Cubilia, occaecat! Suspendisse, iste accumsan. Amet suspendisse hendrerit! Molestias ullamcorper.</p>\r\n"
+            format: full_html
+  salud_y_bienestar:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h1 class=\"que-hacer\">Health &amp; Wellness in Colombia</h1>\r\n\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n"
+            format: full_html
+  siente_el_ritmo:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h1 class=\"que-hacer\">Siente el ritmo en Colombia</h1>\r\n\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n"
+            format: full_html
+  sol_y_playa:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h1 class=\"que-hacer\">Sol y playa en Colombia</h1>\r\n\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n"
+            format: full_html
+  block_1:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h1 class=\"que-hacer\">Aventura y deportes extremos en Colombia</h1>\r\n\r\n<p class=\"columns\">Minima? Impedit ullam assumenda litora fringilla eligendi pretium tenetur totam ullamco cubilia, repellat varius, ratione illo imperdiet odit odio dolorum autem autem quo perferendis, eleifend quam pharetra aperiam egestas fusce nihil, aliquid class, diamlorem. A eu occaecati maiores perferendis vulputate, reiciendis maecenas?</p>\r\n"
+            format: full_html

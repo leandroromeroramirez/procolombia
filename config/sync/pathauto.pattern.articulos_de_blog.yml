@@ -1,0 +1,22 @@
+uuid: f47b6934-ebb6-4385-a39f-52644117b2e3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: articulos_de_blog
+label: 'Artículos de blog'
+type: 'canonical_entities:node'
+pattern: 'blog/[node:title]'
+selection_criteria:
+  34c62b94-8e62-4ddb-8d4e-addb375f3834:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 34c62b94-8e62-4ddb-8d4e-addb375f3834
+selection_logic: and
+weight: -5
+relationships: {  }

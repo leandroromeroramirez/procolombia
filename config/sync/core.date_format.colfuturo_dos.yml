@@ -1,0 +1,8 @@
+uuid: ef734b59-e208-4c71-b7db-f795af541635
+langcode: es
+status: true
+dependencies: {  }
+id: colfuturo_dos
+label: 'Colfuturo (''d.m.Y'')'
+locked: false
+pattern: d.m.Y

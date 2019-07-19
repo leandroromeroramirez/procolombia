@@ -1,0 +1,55 @@
+uuid: c15d37e4-cbec-40d8-bd4c-0c8e1c1cdfeb
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.page.body
+    - field.field.node.page.field_image
+    - node.type.page
+  module:
+    - ds
+    - field_formatter_class
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - body
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'row padding-slim'
+hidden:
+  addtoany: true
+  field_image: true
+  flag_bookmark: true
+  langcode: true
+  links: true

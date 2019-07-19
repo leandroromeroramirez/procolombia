@@ -1,0 +1,29 @@
+uuid: a4a3b6c5-95e5-4d10-a734-1ddc732065b1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4472a979-a4a7-4e60-ac62-1c1154e86b3c'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: 'columns medium-3'
+id: amptheme_logofooter
+theme: amptheme
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:4472a979-a4a7-4e60-ac62-1c1154e86b3c'
+settings:
+  id: 'block_content:4472a979-a4a7-4e60-ac62-1c1154e86b3c'
+  label: 'Logo Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

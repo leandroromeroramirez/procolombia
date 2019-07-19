@@ -1,0 +1,22 @@
+uuid: 8791960f-947e-4c2e-a007-9b23c7959469
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.testimonio
+id: node.testimonio.promote
+field_name: promote
+entity_type: node
+bundle: testimonio
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

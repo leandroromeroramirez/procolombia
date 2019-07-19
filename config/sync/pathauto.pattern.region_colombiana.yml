@@ -1,0 +1,34 @@
+uuid: ff668dd4-4827-41a5-968e-a7f410992a37
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: region_colombiana
+label: 'Región colombiana'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents]/[node:title]'
+selection_criteria:
+  4a219ee7-9f03-4489-a807-8a9cca5d9e54:
+    id: node_type
+    bundles:
+      region_colombiana: region_colombiana
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4a219ee7-9f03-4489-a807-8a9cca5d9e54
+  0d8a35cb-c189-44f4-bd08-1fbbcfb0c631:
+    id: language
+    langcodes:
+      es: es
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 0d8a35cb-c189-44f4-bd08-1fbbcfb0c631
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

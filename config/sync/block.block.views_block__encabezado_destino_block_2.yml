@@ -1,0 +1,38 @@
+uuid: a9724f30-e145-4c71-8fa6-8619930d24d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.encabezado_destino
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: block-views-block-encabezado-destino-block-1
+id: views_block__encabezado_destino_block_2
+theme: colombiatravel
+region: help
+weight: -30
+provider: null
+plugin: 'views_block:encabezado_destino-block_2'
+settings:
+  id: 'views_block:encabezado_destino-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+      region_colombiana: region_colombiana
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

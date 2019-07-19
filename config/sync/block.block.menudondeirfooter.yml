@@ -1,0 +1,28 @@
+uuid: 59986d11-d61a-49bf-b509-d19a1e3c0f4a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-donde-ir---footer
+  module:
+    - block_class
+    - system
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'columns medium-3'
+id: menudondeirfooter
+theme: colombiatravel
+region: footer_first
+weight: -27
+provider: null
+plugin: 'system_menu_block:menu-donde-ir---footer'
+settings:
+  id: 'system_menu_block:menu-donde-ir---footer'
+  label: 'Dónde Ir'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

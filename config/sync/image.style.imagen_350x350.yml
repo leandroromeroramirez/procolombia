@@ -1,0 +1,15 @@
+uuid: 16f81522-4fde-4d25-86a2-85f292106f21
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_350x350
+label: 'Imagen 350x350 - Escala y recorte'
+effects:
+  1b2360f6-7fa3-4229-9587-914f32260662:
+    uuid: 1b2360f6-7fa3-4229-9587-914f32260662
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 450
+      height: 450
+      anchor: center-center

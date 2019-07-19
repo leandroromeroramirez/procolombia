@@ -1,0 +1,18 @@
+uuid: 855a0de8-e098-4dbf-a6fb-9ea94f434640
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informacion_practica
+id: node.informacion_practica.title
+field_name: title
+entity_type: node
+bundle: informacion_practica
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

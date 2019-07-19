@@ -1,0 +1,22 @@
+uuid: d7777611-97c0-4ab5-aec7-95b85e6a19cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regiones_geograficas
+id: taxonomy_term.regiones_geograficas.status
+field_name: status
+entity_type: taxonomy_term
+bundle: regiones_geograficas
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 4ad33d28-a71f-41a6-a0f6-020c82f831f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad
+id: node.actividad.created
+field_name: created
+entity_type: node
+bundle: actividad
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

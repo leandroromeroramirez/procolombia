@@ -1,0 +1,33 @@
+uuid: aeb4854a-5daa-4e72-9e4e-2d290edfe816
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.que_hacer
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: filtros
+id: formularioexpuestoque_hacersol_y_playa
+theme: colombiatravel
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:que_hacer-sol_y_playa'
+settings:
+  id: 'views_exposed_filter_block:que_hacer-sol_y_playa'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /sol-y-playa
+    negate: false
+    context_mapping: {  }

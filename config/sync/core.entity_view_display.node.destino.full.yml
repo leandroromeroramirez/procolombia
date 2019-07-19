@@ -1,0 +1,105 @@
+uuid: 986f6904-59a6-4f6f-9a5e-459456a0392a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.destino.body
+    - field.field.node.destino.field_geolocalizacion
+    - field.field.node.destino.field_image
+    - field.field.node.destino.field_metatags
+    - field.field.node.destino.field_paises
+    - field.field.node.destino.field_posts_instagram
+    - field.field.node.destino.field_recomendaciones
+    - field.field.node.destino.field_region_geografica
+    - field.field.node.destino.field_tagline
+    - field.field.node.destino.field_widget_clima
+    - node.type.destino
+  module:
+    - ds
+    - field_formatter_class
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - addtoany
+        - body
+        - field_widget_clima
+        - field_posts_instagram
+        - field_recomendaciones
+        - 'dynamic_block_field:node-comentarios_de_viajeros'
+    fields:
+      'dynamic_block_field:node-comentarios_de_viajeros':
+        plugin_id: 'dynamic_block_field:node-comentarios_de_viajeros'
+        weight: 5
+        label: hidden
+        formatter: default
+id: node.destino.full
+targetEntityType: node
+bundle: destino
+mode: full
+content:
+  addtoany:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'row padding-slim'
+    region: content
+  field_posts_instagram:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: row
+      ds:
+        ds_limit: ''
+    type: text_default
+    region: content
+  field_recomendaciones:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'row padding-slim'
+    type: text_default
+    region: content
+  field_widget_clima:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: 'row padding-slim '
+    type: text_default
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_geolocalizacion: true
+  field_image: true
+  field_metatags: true
+  field_paises: true
+  field_region_geografica: true
+  field_tagline: true
+  flag_favorito: true
+  langcode: true
+  links: true

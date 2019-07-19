@@ -1,0 +1,33 @@
+uuid: 4611a520-d4d2-4305-a983-a063832e02c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.que_hacer
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: filtros
+id: formularioexpuestoque_hacersalud_y_bienestar
+theme: colombiatravel
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:que_hacer-salud_y_bienestar'
+settings:
+  id: 'views_exposed_filter_block:que_hacer-salud_y_bienestar'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /salud-y-bienestar
+    negate: false
+    context_mapping: {  }

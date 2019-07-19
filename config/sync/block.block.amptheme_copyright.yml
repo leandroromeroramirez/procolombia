@@ -1,0 +1,29 @@
+uuid: 8e75b8c8-9e8f-4b90-9457-36f8ed4f2ff8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fa1ef473-0da8-4da1-8383-e307c5f88714'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - amptheme
+third_party_settings:
+  block_class:
+    classes: text-center
+id: amptheme_copyright
+theme: amptheme
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:fa1ef473-0da8-4da1-8383-e307c5f88714'
+settings:
+  id: 'block_content:fa1ef473-0da8-4da1-8383-e307c5f88714'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

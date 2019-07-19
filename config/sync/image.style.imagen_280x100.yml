@@ -1,0 +1,15 @@
+uuid: 1a87ca0e-bfab-43a3-b711-eccd67dec04c
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_280x100
+label: 'Imagen 280x100 - Escala'
+effects:
+  b9663edf-ddea-4b63-8be9-2635292f226c:
+    uuid: b9663edf-ddea-4b63-8be9-2635292f226c
+    id: image_scale
+    weight: 1
+    data:
+      width: 280
+      height: 100
+      upscale: true

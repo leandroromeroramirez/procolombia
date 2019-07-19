@@ -1,0 +1,15 @@
+uuid: 703f04d2-66cb-4db4-a948-144d64ccf9cb
+langcode: es
+status: true
+dependencies: {  }
+name: super_banner
+label: 'Super Banner'
+effects:
+  fe89e9e1-3e38-4ba8-9903-0e3e355e804f:
+    uuid: fe89e9e1-3e38-4ba8-9903-0e3e355e804f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 900
+      anchor: center-center

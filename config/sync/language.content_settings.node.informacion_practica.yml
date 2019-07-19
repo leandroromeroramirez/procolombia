@@ -1,0 +1,18 @@
+uuid: fd664acc-ffdd-4911-be71-c5a47e18c37a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informacion_practica
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.informacion_practica
+target_entity_type_id: node
+target_bundle: informacion_practica
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: 3804b1e8-1a7e-4ac0-9a70-f23561c45274
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_actividad_relacionada
+field_name: field_actividad_relacionada
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

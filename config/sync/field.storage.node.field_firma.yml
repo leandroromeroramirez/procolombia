@@ -1,0 +1,21 @@
+uuid: fde49f73-11b5-4ca3-ae30-ec2a096e7b0f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_firma
+field_name: field_firma
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

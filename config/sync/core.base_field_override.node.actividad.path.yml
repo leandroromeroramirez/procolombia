@@ -1,0 +1,20 @@
+uuid: 137f7f86-f3f7-4de8-b9f7-914798793f2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.actividad
+  module:
+    - path
+id: node.actividad.path
+field_name: path
+entity_type: node
+bundle: actividad
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

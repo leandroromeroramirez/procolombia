@@ -1,0 +1,29 @@
+uuid: eb1b701d-ba93-47d9-8cd6-3c13951df0f0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fa1ef473-0da8-4da1-8383-e307c5f88714'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: text-center
+id: copyright
+theme: colombiatravel
+region: footer_last
+weight: -24
+provider: null
+plugin: 'block_content:fa1ef473-0da8-4da1-8383-e307c5f88714'
+settings:
+  id: 'block_content:fa1ef473-0da8-4da1-8383-e307c5f88714'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

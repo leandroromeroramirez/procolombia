@@ -1,0 +1,9 @@
+uuid: 79f2edd1-3bc9-4b55-a79e-f6c3404c3252
+langcode: es
+status: true
+dependencies: {  }
+name: 'Menú principal'
+vid: menu_principal
+description: 'Links del menú principal de navegacion'
+hierarchy: 1
+weight: 0

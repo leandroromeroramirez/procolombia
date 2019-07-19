@@ -1,0 +1,22 @@
+uuid: cb9c3be9-d645-4450-a1a8-afd5cea82a3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recomendaciones
+id: taxonomy_term.recomendaciones.status
+field_name: status
+entity_type: taxonomy_term
+bundle: recomendaciones
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

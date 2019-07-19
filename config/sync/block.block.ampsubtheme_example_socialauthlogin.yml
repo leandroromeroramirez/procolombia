@@ -1,0 +1,20 @@
+uuid: 4773f43a-ee33-4e65-8e16-8d7069991b89
+langcode: es
+status: true
+dependencies:
+  module:
+    - social_auth
+  theme:
+    - ampsubtheme_example
+id: ampsubtheme_example_socialauthlogin
+theme: ampsubtheme_example
+region: header
+weight: 0
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: Login
+  provider: social_auth
+  label_display: visible
+visibility: {  }

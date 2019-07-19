@@ -1,0 +1,5 @@
+name: 'user preferences'
+type: module
+description: 'User preference by taxonomy'
+core: 8.x
+package: 'Custom'

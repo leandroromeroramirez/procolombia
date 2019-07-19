@@ -1,0 +1,22 @@
+uuid: 1da668f7-3385-4d80-bbac-1620313d8455
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.aerolinea
+id: node.aerolinea.status
+field_name: status
+entity_type: node
+bundle: aerolinea
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

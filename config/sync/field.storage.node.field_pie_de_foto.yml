@@ -1,0 +1,19 @@
+uuid: 0ea60d42-1218-4f12-842c-a292fb20f991
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_pie_de_foto
+field_name: field_pie_de_foto
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

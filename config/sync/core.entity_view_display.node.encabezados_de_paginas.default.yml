@@ -1,0 +1,31 @@
+uuid: 03b0c111-a7c3-41d1-bb10-574f125b94e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.encabezados_de_paginas.field_image
+    - node.type.encabezados_de_paginas
+  module:
+    - image
+    - user
+id: node.encabezados_de_paginas.default
+targetEntityType: node
+bundle: encabezados_de_paginas
+mode: default
+content:
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

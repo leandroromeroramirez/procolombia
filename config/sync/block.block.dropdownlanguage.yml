@@ -1,0 +1,25 @@
+uuid: c7efa4c7-f6f6-4766-b0f1-fa15a7fd00eb
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - dropdown_language
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'medium-1 columns'
+id: dropdownlanguage
+theme: colombiatravel
+region: header
+weight: -29
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  provider: dropdown_language
+  label_display: '0'
+  labels: null
+visibility: {  }

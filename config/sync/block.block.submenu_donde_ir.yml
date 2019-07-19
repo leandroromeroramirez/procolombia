@@ -1,0 +1,39 @@
+uuid: 1ed16e50-d997-488a-bdbc-81b114045312
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - ctools
+    - menu_block
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: 'row menu-destinos'
+id: submenu_donde_ir
+theme: colombiatravel
+region: help
+weight: -28
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Dónde ir'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'main:menu_link_content:ec6a3552-267f-4d7e-bf4a-476bce142893'
+  suggestion: main
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      region_colombiana: region_colombiana
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

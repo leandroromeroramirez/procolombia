@@ -1,0 +1,26 @@
+uuid: ce83d22a-5854-491e-affd-aee2605c3fb9
+langcode: es
+status: true
+dependencies:
+  module:
+    - social_auth
+    - system
+  theme:
+    - colombiatravel
+id: socialauthlogin
+theme: colombiatravel
+region: footer_last
+weight: -25
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: Login
+  provider: social_auth
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+    context_mapping: {  }

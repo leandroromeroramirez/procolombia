@@ -1,0 +1,37 @@
+uuid: 67475caf-5350-4cac-9cf4-7e1c9643f785
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.por_que_hacer_actividad
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - colombiatravel
+third_party_settings:
+  block_class:
+    classes: block-porque-hacer-dark
+id: views_block__por_que_hacer_actividad_block_1
+theme: colombiatravel
+region: sub_content_first
+weight: -34
+provider: null
+plugin: 'views_block:por_que_hacer_actividad-block_1'
+settings:
+  id: 'views_block:por_que_hacer_actividad-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      actividad: actividad
+      evento: evento
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

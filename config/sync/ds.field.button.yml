@@ -1,0 +1,18 @@
+id: button
+label: botón
+ui_limit: ''
+properties:
+  block: 'system_menu_block:admin'
+  use_block_title: false
+  add_block_wrappers: false
+  config:
+    id: 'system_menu_block:admin'
+    label: ''
+    provider: system
+    label_display: visible
+    level: 1
+    depth: 0
+type: block
+type_label: 'Block field'
+entities:
+  node: node

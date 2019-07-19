@@ -1,0 +1,15 @@
+uuid: 3a3a6f0d-a2e6-4a58-8e4a-5db23b0bd3ae
+langcode: es
+status: '1'
+dependencies: {  }
+id: menu_credito_beca
+label: 'Menu Credito Beca'
+message: 'No'
+path: programas/credito-beca
+redirect_path: programas/credito-beca/informacion-general
+checked_for: Role
+negate: false
+user: null
+roles:
+  anonymous: anonymous
+  authenticated: authenticated

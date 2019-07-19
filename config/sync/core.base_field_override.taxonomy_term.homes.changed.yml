@@ -1,0 +1,18 @@
+uuid: ae39ebe4-bb3b-4d2d-ac7a-d2b16cbf6a0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.homes
+id: taxonomy_term.homes.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: homes
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,15 @@
+uuid: 89a9022c-49fb-4cc2-bc31-b927e12f0bf3
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_300x300_
+label: 'Imagen 300x300 - Escala y recorte'
+effects:
+  cb6ebd9c-1ffa-4754-9583-78c7daf98443:
+    uuid: cb6ebd9c-1ffa-4754-9583-78c7daf98443
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center

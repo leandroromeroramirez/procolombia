@@ -1,0 +1,15 @@
+uuid: a3b9c1cc-04ca-4afd-9d61-6024aed8baee
+name: 'Colombia Travel'
+mail: soporte@dayscript.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

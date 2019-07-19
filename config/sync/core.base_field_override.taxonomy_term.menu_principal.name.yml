@@ -1,0 +1,18 @@
+uuid: 309180c7-7077-4f05-9efa-056becc545e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.menu_principal
+id: taxonomy_term.menu_principal.name
+field_name: name
+entity_type: taxonomy_term
+bundle: menu_principal
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

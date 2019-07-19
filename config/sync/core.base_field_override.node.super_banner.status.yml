@@ -1,0 +1,22 @@
+uuid: fabe0714-fa1e-4c38-907c-3b83a0ac3aaf
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.super_banner
+id: node.super_banner.status
+field_name: status
+entity_type: node
+bundle: super_banner
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

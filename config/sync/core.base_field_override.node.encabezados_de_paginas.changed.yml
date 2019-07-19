@@ -1,0 +1,18 @@
+uuid: e8ab4f97-f120-4988-a6a3-aaa71cd1c57a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.encabezados_de_paginas
+id: node.encabezados_de_paginas.changed
+field_name: changed
+entity_type: node
+bundle: encabezados_de_paginas
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

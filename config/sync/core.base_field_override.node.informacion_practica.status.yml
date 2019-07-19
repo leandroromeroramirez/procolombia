@@ -1,0 +1,22 @@
+uuid: 8123e80d-17e7-49f8-9a21-eaf2495de778
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informacion_practica
+id: node.informacion_practica.status
+field_name: status
+entity_type: node
+bundle: informacion_practica
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

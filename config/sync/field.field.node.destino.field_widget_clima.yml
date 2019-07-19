@@ -1,0 +1,21 @@
+uuid: 5b502846-aa10-46cd-8ed4-b812f7071347
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_widget_clima
+    - node.type.destino
+  module:
+    - text
+id: node.destino.field_widget_clima
+field_name: field_widget_clima
+entity_type: node
+bundle: destino
+label: 'Widget clima'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

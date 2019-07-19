@@ -1,0 +1,22 @@
+uuid: 34049db4-0ac8-4bd1-99a0-09e30be21af9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.destinos
+id: taxonomy_term.destinos.status
+field_name: status
+entity_type: taxonomy_term
+bundle: destinos
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

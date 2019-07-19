@@ -1,0 +1,15 @@
+uuid: d9b7c411-5fcc-41e2-afc0-23971ff2727d
+langcode: es
+status: '1'
+dependencies: {  }
+id: menu_programas
+label: 'Menu Programas'
+message: 'No'
+path: programas
+redirect_path: programas/credito-beca/informacion-general
+checked_for: Role
+negate: false
+user: null
+roles:
+  anonymous: anonymous
+  authenticated: authenticated

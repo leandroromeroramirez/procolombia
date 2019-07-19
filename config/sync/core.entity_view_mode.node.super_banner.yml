@@ -1,0 +1,10 @@
+uuid: 9d12635b-06c1-4afa-927a-074c9477c554
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.super_banner
+label: 'Super Banner'
+targetEntityType: node
+cache: true

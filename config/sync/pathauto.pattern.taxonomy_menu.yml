@@ -1,0 +1,25 @@
+uuid: fd5cc959-9912-4bc6-9498-0d78868bac6c
+langcode: es
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_menu
+label: Taxonomy
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:parents]/[term:name]'
+selection_criteria:
+  faf6a9e5-99d2-402b-b4c8-86525c4e855a:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      menu_principal: menu_principal
+      homes: homes
+      tags: tags
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: faf6a9e5-99d2-402b-b4c8-86525c4e855a
+selection_logic: and
+weight: -5
+relationships: {  }

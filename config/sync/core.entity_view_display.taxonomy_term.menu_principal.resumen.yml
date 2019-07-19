@@ -1,0 +1,78 @@
+uuid: 82258fc2-2616-4a5c-b9ef-6a014d81cc6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.resumen
+    - field.field.taxonomy_term.menu_principal.field_image
+    - image.style.medium
+    - taxonomy.vocabulary.menu_principal
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_image
+        - taxonomy_term_title
+        - description
+        - taxonomy_term_link
+    fields:
+      taxonomy_term_link:
+        plugin_id: taxonomy_term_link
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Más información'
+          'link class': ''
+          wrapper: ''
+          class: ''
+      taxonomy_term_title:
+        plugin_id: taxonomy_term_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h3
+          class: ''
+          link: false
+id: taxonomy_term.menu_principal.resumen
+targetEntityType: taxonomy_term
+bundle: menu_principal
+mode: resumen
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 2
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

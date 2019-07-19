@@ -1,0 +1,8 @@
+uuid: c9a0119d-f418-4f2d-ade5-d26f606cfd4a
+langcode: es
+status: true
+dependencies: {  }
+id: menu-destino
+label: 'Menú Destino'
+description: ''
+locked: false

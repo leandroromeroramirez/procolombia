@@ -1,0 +1,17 @@
+promote_disable_node_types:
+  actividad: actividad
+  article: article
+  destino: destino
+  page: page
+  super_banner: super_banner
+  testimonio: testimonio
+promote_disable_sticky_node_types:
+  actividad: actividad
+  article: article
+  destino: destino
+  page: page
+  super_banner: super_banner
+  testimonio: testimonio
+_core:
+  default_config_hash: sssLNRxRTk1CrIHzMgMCGq0WNBNn9k6p1L3_N-cp0Zg
+langcode: es
