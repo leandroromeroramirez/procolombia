@@ -1,4 +1,4 @@
-footer{
+footer#page-footer{
     background: $secondary-color;
     padding: 60px 0 10px 0;
     h2{
@@ -46,8 +46,8 @@ footer{
 }
 #block-legales{
     li{
-        display: inline-block;
-        width: auto;
+        display: inline-block !important;
+        width: auto !important;
         padding: 16px 12px;
         a{
             display: inline-block;
@@ -56,8 +56,8 @@ footer{
     }
 }
 .social-media-links--platforms.horizontal li {
-    width: auto;
-    display: inline-block;
+    width: auto !important;
+    display: inline-block !important;
     text-align: center;
     padding: .2em .35em;
 
