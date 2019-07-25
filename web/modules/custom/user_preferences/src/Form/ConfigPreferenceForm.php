@@ -92,7 +92,8 @@ class ConfigPreferenceForm extends ConfigFormBase {
 
       if(!empty($datafield)&& is_array($datafield)){
         foreach ($datafield as $key => $value) {
-          $data_key = $this->utilitiesServices->convertName($value).'_'.$key ;
+          $data_
+          key = $this->utilitiesServices->convertName($value).'_'.$key ;
           $form['group_tax'][$data_key] = [
             '#type' => 'checkbox',
             '#default_value' => $config->get($data_key),
