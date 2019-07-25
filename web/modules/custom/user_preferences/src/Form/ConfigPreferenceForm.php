@@ -68,57 +68,29 @@ class ConfigPreferenceForm extends ConfigFormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $config = $this->config('user_preferences.configpreference');
-    $val_tax_father = 0;
-
-    
-    $form['father_taxonomy'] = [
-      '#type' => 'select',
-      '#title' => $this->t('select taxonomy father'),
-      '#description' => $this->t('Select the parent taxonomy, then save and you can select the fields to use'),
-      '#options' => [0 => $this->t('Ninguno')] + $this->utilitiesServices->buildListTerm($val_tax_father, 'destinos'),
-      '#default_value' => $config->get('father_taxonomy'),
+    $vocabulary = $this->utilitiesServices->getVocabulary();
+    $form['#tree'] = TRUE;
+    $form['names_fieldset'] = [
+      '#type' => 'fieldset',
+      '#title' => $this->t('Seleccione los elementos disponibles para las preferencias de usuario'),
+      '#prefix' => '<div id="names-fieldset-wrapper">',
+      '#suffix' => '</div>',
     ];
 
-    if($config->get('father_taxonomy') != 0) {
-      $val_tax = (int) $config->get('father_taxonomy');
-      $form['group_tax'] = [
+    foreach ($vocabulary as $key => $value) {
+      $form['names_fieldset'][$value['name_machine']] = [
         '#type' => 'fieldset',
-        '#title' => t('available taxonomies'),
-        '#collapsible' => FALSE,
-        '#collapsed' => FALSE,
+        '#title' => t('Vocabulario de '.$value['name']),
+        '#collapsible' => TRUE,
+        '#collapsed' => TRUE,
       ];
 
-      $datafield = $this->utilitiesServices->buildListTerm($val_tax);
-
-      if(!empty($datafield)&& is_array($datafield)){
-        foreach ($datafield as $key => $value) {
-          $data_
-          key = $this->utilitiesServices->convertName($value).'_'.$key ;
-          $form['group_tax'][$data_key] = [
-            '#type' => 'checkbox',
-            '#default_value' => $config->get($data_key),
-            '#title' => t($value),
-          ];
-
-          // $form['group_tax'][$data_key . "txt"] = [
-          //   '#type' => 'select',
-          //   '#default_value' => $config->get($data_key."txt"),
-          //   '#title' => t('Select the entity to relate to '.$value),
-          //   '#options' => [0 => 'Select'] + $this->getListEntityA2(),
-          //   '#states' => [
-          //     'visible' => [
-          //       ':input[name="'.$data_key . '"]' => [
-          //         'checked' => TRUE,
-          //       ],
-          //     ],
-          //     'required' => [
-          //       ':input[name="' . $data_key . '"]' => [
-          //         'checked' => TRUE,
-          //       ],
-          //     ],
-          //   ],
-          // ];
-        }
+      foreach ($value['term'] as $k => $val) {
+        $form['names_fieldset'][$value['name_machine']]['isActive_'.$k] = [
+          '#type' => 'checkbox',
+          '#default_value' => $config->get($value['name_machine'] . '-' . 'isActive_'.$k),
+          '#title' => t($val),
+        ];
       }
     }
 
@@ -137,10 +109,17 @@ class ConfigPreferenceForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     parent::submitForm($form, $form_state);
+    $config = $this->config('user_preferences.configpreference');
+    $fieldset = $form_state->getValue('names_fieldset');
 
-    $this->config('user_preferences.configpreference')
-      ->set('test', $form_state->getValue('test'))
-      ->save();
+    foreach ($fieldset as $key => $value) {
+      foreach ($value as $k => $val) {
+        $name = $key . '-' . $k;
+        $config->set($name,$val)->save();
+      }
+    }
+
+    $form_state->setRedirect('system.admin_config');
   }
 
 }

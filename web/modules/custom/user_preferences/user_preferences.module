@@ -31,5 +31,11 @@ function user_preferences_theme() {
     'user_preferences' => [
       'render element' => 'children',
     ],
+    'activity_block' => [
+      'variables' => [
+        'list_activity' => NULL
+      ],
+      'template' => 'activity-block',
+    ],
   ];
 }

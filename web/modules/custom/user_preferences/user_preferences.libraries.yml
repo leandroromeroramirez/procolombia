@@ -1,0 +1,9 @@
+activity.block:
+  js:
+    js/block-activity.js: {}
+  dependencies:
+    - 'core/drupal'
+    - 'core/drupalSettings'
+  css:
+    layout:
+      css/_activity.css: {}

@@ -124,7 +124,6 @@ module:
   update: 0
   url_redirect: 0
   user: 0
-  user_preferences: 0
   vardumper: 0
   views_extras: 0
   views_infinite_scroll: 0
