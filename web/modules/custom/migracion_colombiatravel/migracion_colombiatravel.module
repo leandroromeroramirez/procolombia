@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains migracion_colombiatravel.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function migracion_colombiatravel_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the migracion_colombiatravel module.
+    case 'help.page.migracion_colombiatravel':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Modulo de migracion para procolombia') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -171,6 +171,12 @@ padding: 100px 12em 80px 12em;
         padding-bottom: 20px;
     }
 }
+.padding-bottom-medium{
+    padding-bottom: 30px;
+    @media only screen and (max-width: 600px){
+        padding-bottom: 10px;
+    }
+}
 .owl-page.active span{
     background: $primary-color !important;
 }
