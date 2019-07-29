@@ -1327,6 +1327,7 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
         margin-top: 91px;
     } 
 }
+
 #block-views-block-categorias-que-hacer-block-1{
     margin: 2rem auto;
     border-bottom: 1px solid $light-gray;
@@ -1410,48 +1411,22 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
     ul{
         li{
             list-style: none;
-            .form-item {
-                label.option{
-                    font-weight: 600;
-                    font-size: 1.2rem;
-                    color: $primary-color;
-                }
-            }
-            ul{
-                margin-top: 1rem;
-                li{
-                    .form-item {
-                        label.option{
-                            font-weight: normal;
-                            color: initial;
-                            font-size: 1rem; 
-                        }
-                    }
-                }
-            }
         }
     }
 }
+
 .formulario-expuesto-que-hacer {
     .form-checkboxes {
         > ul {
             margin: 0;
             > li {
-                padding: 0.9rem 0 0.5rem;
                 > .form-item {
                     border-bottom: solid 1px $light-gray;
                     padding-bottom: 0.5rem;
                     margin-bottom: 1rem;
-                    label {
-                        color: $primary-color;
-                        font-weight: 600;
-                        font-size: 1.4rem;
-                        line-height: 1em;
-                        display: inline-block;
-                    }
                     input {
                         position: absolute;
-                        top: 1.2rem;
+                        top: 0.2rem;
                         right: 0;
                     }
                 }
@@ -1469,5 +1444,36 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
     .button.success {
         margin-top: 2rem;
         width: 160px;
+    }
+    header{
+        p{
+            padding-right: 0.7rem;
+            padding-left: 0.7rem;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $primary-color;
+            letter-spacing: -1px;
+            margin-bottom: 2rem;
+        }
+    }
+    span.fieldset-legend{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $primary-color;
+        letter-spacing: 0px;
+        margin-bottom: 1rem;
+        display: block;
+        }
+    ul.js-pager__items.pager {
+            list-style: none;
+            text-align: center;
+            width: 75%;
+            float: right;
+            margin-bottom: 3rem;
+    }
+    .views-infinite-scroll-content-wrapper {
+        float: left;
+        width: 75%;
+        margin-top: 0.8rem;
     }
 }
