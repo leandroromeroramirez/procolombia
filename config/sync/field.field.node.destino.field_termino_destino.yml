@@ -1,0 +1,29 @@
+uuid: f1bfea7d-a676-472a-aa2d-9e84964f2666
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_termino_destino
+    - node.type.destino
+    - taxonomy.vocabulary.destinos
+id: node.destino.field_termino_destino
+field_name: field_termino_destino
+entity_type: node
+bundle: destino
+label: 'Termino Destino'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      destinos: destinos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

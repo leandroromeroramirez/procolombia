@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.destino.field_recomendaciones
     - field.field.node.destino.field_region_geografica
     - field.field.node.destino.field_tagline
+    - field.field.node.destino.field_termino_destino
     - field.field.node.destino.field_widget_clima
     - image.style.thumbnail
     - node.type.destino
@@ -106,6 +107,15 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_termino_destino:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_widget_clima:
     weight: 8
     settings:
@@ -156,6 +166,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 12

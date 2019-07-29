@@ -1,0 +1,22 @@
+uuid: 5217ca62-75a7-4e90-a50b-2d481126a09b
+langcode: es
+status: true
+dependencies:
+  module:
+    - user_preferences
+  theme:
+    - colombiatravel
+id: activityblock
+theme: colombiatravel
+region: content
+weight: 0
+provider: null
+plugin: activity_block
+settings:
+  id: activity_block
+  label: 'Activity block'
+  provider: user_preferences
+  label_display: visible
+  view_mode: teaser
+  limit: '10'
+visibility: {  }

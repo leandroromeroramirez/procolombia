@@ -1,0 +1,19 @@
+uuid: 0e914c05-6016-440f-bb67-3fbf5ee094db
+langcode: es
+status: true
+dependencies:
+  theme:
+    - colombiatravel
+id: preferencesblock
+theme: colombiatravel
+region: content
+weight: 0
+provider: null
+plugin: preferences_block
+settings:
+  id: preferences_block
+  label: 'Preferences block'
+  provider: user_preferences
+  label_display: visible
+  test: 0
+visibility: {  }
