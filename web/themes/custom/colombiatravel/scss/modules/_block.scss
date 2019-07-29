@@ -733,6 +733,7 @@
             text-align: left;
             border-top: 1px solid $light-gray;
             padding-top: 46px;
+            margin-bottom: 1rem;
         }
     }
 }
@@ -1129,8 +1130,8 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
 .block-views-block-donde-ir-2-caribe{
     h2{
         text-align: left;
-        font-size: 2.6rem;
-        margin-bottom: 0.6rem;
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
         a{
             position: relative;
             padding-right: 2rem;
@@ -1141,7 +1142,7 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
                 width: 8px;
                 height: 14px;
                 right: 0;
-                bottom: 13px;
+                bottom: 9px;
             }
         }
     }
@@ -1359,7 +1360,8 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
         a{
             color: $white;
             font-weight: 600;
-            line-height: 1rem;
+            line-height: 1.3rem;
+            display: block;
         }
     }
     .views-field-field-image{
@@ -1407,6 +1409,11 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
 }
 
 //Menu filtros que hacer
+.hidden-title{
+    h2{
+        display: none;
+    }
+}
 #block-formularioexpuestoque-hacerque-hacer-principal{
     ul{
         li{
