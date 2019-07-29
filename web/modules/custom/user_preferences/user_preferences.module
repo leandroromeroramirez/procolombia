@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_help().
@@ -38,4 +39,44 @@ function user_preferences_theme() {
       'template' => 'activity-block',
     ],
   ];
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function user_preferences_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  $values_active = [];
+  $value_for_config = [];
+  $forms = [
+    'user_form'
+  ];
+
+  if (in_array($form_id, $forms)) {
+
+    $values_tax = $form['field_preferencias']['widget']['#options'];
+    $serviceUtilities = \Drupal::service('user_preferences.utilities');
+    $value_config = $serviceUtilities->getActivePreference();
+    
+    foreach ($value_config as $key => $data) {
+      if (!empty($data['childrens'])) {
+        //Armar al padre
+        foreach ($values_tax as $id => $obj) {
+          if ($id == reset($data['term'])) {
+            $values_active[$id] = $obj;
+          } else {
+            // Armar el listado de hijos
+            foreach ($data['childrens'] as $k => $objChild) {
+              //kint($objChild['idTerm']);
+              if ($id == $objChild['idTerm']) {
+                $values_active[$id] = $obj;
+              }
+            }
+          }
+        }
+      }
+    }
+    $form['field_preferencias']['widget']['#options']= $values_active;
+
+  }
 }

@@ -69,6 +69,7 @@ class ConfigPreferenceForm extends ConfigFormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $config = $this->config('user_preferences.configpreference');
     $vocabulary = $this->utilitiesServices->getVocabulary();
+
     $form['#tree'] = TRUE;
     $form['names_fieldset'] = [
       '#type' => 'fieldset',
@@ -77,21 +78,32 @@ class ConfigPreferenceForm extends ConfigFormBase {
       '#suffix' => '</div>',
     ];
 
-    foreach ($vocabulary as $key => $value) {
-      $form['names_fieldset'][$value['name_machine']] = [
+    
+    foreach ($vocabulary['data'] as $key => $value) {
+
+      $form['names_fieldset'][$value['term']] = [
         '#type' => 'fieldset',
-        '#title' => t('Vocabulario de '.$value['name']),
+        '#title' => t('Seleccione los elementos que desea que esten disponibles de '.$value['name']),
         '#collapsible' => TRUE,
         '#collapsed' => TRUE,
       ];
 
-      foreach ($value['term'] as $k => $val) {
-        $form['names_fieldset'][$value['name_machine']]['isActive_'.$k] = [
+      if (!empty($value['childs'])) {
+        foreach ($value['childs'] as $k => $val) {
+          $form['names_fieldset'][$value['term']]['isActive_'.$k] = [
+            '#type' => 'checkbox',
+            '#default_value' => $config->get($value['term'] . '-' . 'isActive_'.$k),
+            '#title' => t($val),
+          ];
+        }
+      } else {
+        $form['names_fieldset'][$value['term']]['isActive_'. $value['term']] = [
           '#type' => 'checkbox',
-          '#default_value' => $config->get($value['name_machine'] . '-' . 'isActive_'.$k),
-          '#title' => t($val),
+          '#default_value' => $config->get($value['term'] . '-' . 'isActive_'.$value['term']),
+          '#title' => t($value['name']),
         ];
       }
+      
     }
 
     return parent::buildForm($form, $form_state);

@@ -8,6 +8,9 @@ use Drupal\Core\Session\AccountProxy;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Entity\EntityDisplayRepositoryInterface;
 use Drupal\user_preferences\UtilitiesServiceInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Routing\CurrentRouteMatch;
+use Drupal\node\NodeInterface;
 
 /**
  * Provides a 'ActivityBlock' block.
@@ -38,26 +41,49 @@ class ActivityBlock extends BlockBase implements ContainerFactoryPluginInterface
    */
   protected $utilitiesServices;
 
+   /**
+   * Drupal\Core\Routing\CurrentRouteMatch definition.
+   *
+   * @var \Drupal\Core\Routing\CurrentRouteMatch
+   */
+  protected $currentRouteMatch;
+
+
+
   /**
    * {@inheritdoc}
    */
   public function __construct(
+    array $configuration,
+    $plugin_id,
+    $plugin_definition,
     AccountProxy $current_user,
     EntityDisplayRepositoryInterface $entityDisplayRepository,
-    UtilitiesServiceInterface $utilities_service) {
+    UtilitiesServiceInterface $utilities_service,
+    CurrentRouteMatch $current_route_match) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->currentUser = $current_user;
     $this->viewModeOptions = $entityDisplayRepository->getViewModeOptions('node');
     $this->utilitiesServices = $utilities_service;
+    $this->currentRouteMatch = $current_route_match;
   }
 
   /**
    * {@inheritdoc}
    */
-  public static function create(ContainerInterface $container) {
+  public static function create(
+    ContainerInterface $container, 
+    array $configuration, 
+    $plugin_id, 
+    $plugin_definition) {
     return new static(
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
       $container->get('current_user'),
       $container->get('entity_display.repository'),
-      $container->get('user_preferences.utilities')
+      $container->get('user_preferences.utilities'),
+      $container->get('current_route_match')
     );
   }
 
@@ -66,8 +92,8 @@ class ActivityBlock extends BlockBase implements ContainerFactoryPluginInterface
    */
   public function defaultConfiguration() {
     return [
-      'view_mode' => '',
-      'limit' => 10,
+      // 'view_mode' => '',
+      // 'limit' => 10,
           ] + parent::defaultConfiguration();
   }
 
@@ -108,14 +134,25 @@ class ActivityBlock extends BlockBase implements ContainerFactoryPluginInterface
     $build['#theme'] = 'activity_block';
     $build['#attached']['library'][] =  'user_preferences/activity.block';
     $build['#view_mode'] = $this->configuration['view_mode'];
+    $route_match = $this->currentRouteMatch->getRouteName();
+
+    //kint($route_match);
+
+    //view.frontpage.page_1
+    //entity.node.canonical
 
     $uid = $this->currentUser->id();
     $destiny = '';
     $limit = $this->configuration['limit'];
 
+    if ($route_match == 'entity.node.canonical') {
+      $node = $this->currentRouteMatch->getParameter('node');
+      if ($node instanceof \Drupal\node\NodeInterface) {
+        $destiny = $node->get('field_termino_destino');
+      }
+    }
+
     $resultados =  $this->utilitiesServices->getActivityXUserXDestinyXlimit($uid, $destiny, $limit);
-
-
     
     $build['#list_activity'] = $resultados;
 

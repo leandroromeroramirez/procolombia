@@ -72,7 +72,7 @@ class WidgetUserPreferences extends WidgetBase {
   public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state) {
     $vocabulary = \Drupal::service('user_preferences.utilities')->getActivePreference();
 
-    kint($form);
+
     foreach ($vocabulary as $key => $value) {
       $element['names_fieldset'][$value['name_machine']] = $element +[
         '#type' => 'fieldset',

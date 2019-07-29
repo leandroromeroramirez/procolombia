@@ -1,4 +1,4 @@
 services:
   user_preferences.utilities:
     class: Drupal\user_preferences\UtilitiesService
-    arguments: ['@entity_type.manager']
+    arguments: ['@entity_type.manager','@entity.query']

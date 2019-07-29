@@ -2,6 +2,9 @@
 
 namespace Drupal\user_preferences;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+use Drupal\node\Entity\Node;
+use Drupal\user\Entity\User;
 
 
 /**
@@ -15,14 +18,25 @@ class UtilitiesService implements UtilitiesServiceInterface {
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface
    */
   protected $entityTypeManager;
+
+  /**
+   * Symfony\Component\DependencyInjection\ContainerAwareInterface definition.
+   *
+   * @var \Symfony\Component\DependencyInjection\ContainerAwareInterface
+   */
+  protected $entityQuery;
+
   /**
    * Constructs a new UtilitiesService object.
    */
-  public function __construct(EntityTypeManagerInterface $entity_type_manager) {
+  public function __construct(
+    EntityTypeManagerInterface $entity_type_manager,
+    ContainerAwareInterface $entity_query) {
     $this->entityTypeManager = $entity_type_manager;
+    $this->entityQuery = $entity_query;
   }
 
-  public function buildListTerm($idTermFather, $idSection){
+  public function buildListTerm($idSection, $idTermFather){
     $response = [];
     $tree = $this->entityTypeManager->getStorage('taxonomy_term')
       ->loadTree($idSection, $idTermFather, 1, TRUE);
@@ -41,22 +55,20 @@ class UtilitiesService implements UtilitiesServiceInterface {
   public function getVocabulary() {
     $vocabulary = [];
     $val_tax_father = 0;
-    $vocabulary[0]['term'] = $this->buildListTerm($val_tax_father, 'destinos');
-    $vocabulary[0]['name_machine'] = 'destinos';
-    $vocabulary[0]['name'] = 'Destinos';
 
-    $vocabulary[1]['term'] = $this->buildListTerm($val_tax_father, 'tipos_de_actividad');
-    $vocabulary[1]['name_machine'] = 'tipos_de_actividad';
-    $vocabulary[1]['name'] = 'Tipos de actividad';
+    $list_father= $this->buildListTerm('tipos_de_turismo', $val_tax_father);
+    $vocabulary['name_machine'] = 'tipos_de_turismo';
+    $vocabulary['name'] = 'Tipos de turismo';
+    
+    foreach ($list_father as $idTerm => $name) {
+      $list_child = $this->buildListTerm('tipos_de_turismo', $idTerm);
 
-    $vocabulary[2]['term'] = $this->buildListTerm($val_tax_father, 'tipos_de_turismo');
-    $vocabulary[2]['name_machine'] = 'tipos_de_turismo';
-    $vocabulary[2]['name'] = 'Tipos de turismo';
-
-    $vocabulary[3]['term'] = $this->buildListTerm($val_tax_father, 'recomendaciones');
-    $vocabulary[3]['name_machine'] = 'recomendaciones';
-    $vocabulary[3]['name'] = 'Recomendaciones';
-
+      $vocabulary['data'][] = [
+        'term' => $idTerm,
+        'name' => $name,
+        'childs' => $list_child
+      ];
+    }
     return $vocabulary;
   }
 
@@ -65,21 +77,53 @@ class UtilitiesService implements UtilitiesServiceInterface {
     $vocabulary = $this->getVocabulary();
     $config = \Drupal::config('user_preferences.configpreference');
 
-    foreach ($vocabulary as $key => $value) {
-      foreach ($value['term'] as $k => $val) {
-        $data = $config->get($value['name_machine'] . '-' . 'isActive_'.$k);
+    foreach ($vocabulary['data'] as $key => $value) {
+      //Validando el padre
+
+
+      //VAlidando los hijos
+      foreach ($value['childs'] as $k => $name) {
+        $data = $config->get($value['term'] . '-' . 'isActive_'.$k);
         if ($data == 1) {
-          $response[$key]['idTerm'][] = $k;
-          
+          $response[$value['term']]['childrens'][] = [
+            'idTerm' => $k,
+            'name' => $name,
+          ];
         }
       }
-      $response[$key]['name_machine'][] = $value['name_machine'];
-      $response[$key]['name'][] = $value['name'];
+      $response[$value['term']]['name'][] = $value['name'];
+      $response[$value['term']]['term'][] = $value['term'];
     }
     return $response;
   }
 
   public function getActivityXUserXDestinyXlimit($uid, $destiny, $limit){
+    $response = [];
+    $node = $this->entityQuery->get('node');
+    $list_user = $this->getListPrefererUser($uid);
+    //kint($list_user);
+    $id_node = $node->condition('status', 1)
+    ->condition('type', 'actividad')
+    ->execute();
+
+    if(!empty($id_node)){
+      $nodes = Node::loadMultiple($id_node);
+      foreach ($nodes as $key => $node) {
+        $destino = $node->get('field_destinos_relacionados');
+        $val = reset($destino->getValue());
+        $des = reset($destiny->getValue());
+        if ($des['target_id'] == $val['target_id']) {
+          $response[] = $node;
+        }
+      }
+
+      if(!empty($response)){
+       
+      }
+
+    }
+    
+    kint($response);
     // Cargar el usuario para extraer los datos de carga
     //$user = \Drupal\user\Entity\User::load($uid);
 
@@ -88,5 +132,15 @@ class UtilitiesService implements UtilitiesServiceInterface {
     // debe retornar las actividades 
   }
 
+  public function getListPrefererUser($uid){
+    $response = [];
+    $userData = User::load($uid);
+    if ($userData) {
+      $data = $userData->get('field_preferencias');
+      kint($data);
+    }
+    
+
+  }
 
 }
