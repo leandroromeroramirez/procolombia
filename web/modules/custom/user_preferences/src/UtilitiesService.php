@@ -101,7 +101,7 @@ class UtilitiesService implements UtilitiesServiceInterface {
     $response = [];
     $node = $this->entityQuery->get('node');
     $list_user = $this->getListPrefererUser($uid);
-    //kint($list_user);
+    $list_nodes = [];
     $id_node = $node->condition('status', 1)
     ->condition('type', 'actividad')
     ->execute();
@@ -113,12 +113,19 @@ class UtilitiesService implements UtilitiesServiceInterface {
         $val = reset($destino->getValue());
         $des = reset($destiny->getValue());
         if ($des['target_id'] == $val['target_id']) {
-          $response[] = $node;
+          $list_nodes[] = $node;
         }
       }
 
-      if(!empty($response)){
-       
+      if(!empty($list_nodes)){
+
+       foreach ($list_nodes as $nd) {
+         $list_turimo = reset($nd->get('field_tipos_de_turismo')->getValue());
+
+         foreach ($list_user as $key => $value) {
+           # code...
+         }
+       }
       }
 
     }
@@ -140,7 +147,7 @@ class UtilitiesService implements UtilitiesServiceInterface {
       kint($data);
     }
     
-
+    return $response;
   }
 
 }
