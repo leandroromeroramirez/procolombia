@@ -90,36 +90,7 @@
                         @media only screen and (max-width: 600px){
                             padding: 0 0.7em;   
                         }
-                        .titulo{
-                            
-                            line-height: 1.2em;
-                            font-weight: 600;
-                            margin-bottom: 20px;
-                            @media only screen and (max-width: 600px){
-                                font-size: 1em;
-                            }
-                            h3{
-                                position: relative;
-                                font-size: 1.5em;
-                                line-height: 1.2em;
-                                font-weight: 600;
-                                @media only screen and (max-width: 600px){
-                                    font-size: 1em;
-                                    bottom: 30px;
-                                    line-height: 1.6em;
-                                }
-                                a{
-                                    color: $white;
-                                    text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-                                }
-                            }
-                            a{
-                                color: $white;
-                                text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-                                font-size: 1.5em;
-                            }
 
-                        }
                         .cuerpo, .cuerpo p{
                             color: $white;
                             font-size: 0.9em;
@@ -133,30 +104,29 @@
                     }
                 }
             }
-            h3{
-                position: absolute;
-                bottom: 50%;
-                transform: translateY(50%);
-                font-size: 1.5em; 
-                line-height: 1.2em;
-                font-weight: 600;
-                z-index: 3;
-                right: 6px;
-                left: 0;
-                margin-bottom: 0;
-                padding-left: .67935rem !important;
-                padding-right: .67935rem !important;
-                a{
-                    color: $white;
-                    text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-                    padding: 1em;
-                    display: inline-block; 
-                }
-                @media only screen and (max-width: 600px){ 
-                    font-size: 1.2em;
-                }
-            }
+
         }
+}
+.descripcion {
+    position: absolute;
+    bottom: 20px;
+    z-index: 4;
+    width: 95%;
+    .titulo{
+        font-size: 1.4rem;               
+        line-height: 1.2em;
+        font-weight: 600;
+        margin-bottom: 8px;
+        @media only screen and (max-width: 600px){
+            font-size: 1em;
+        }
+        a{
+            color: $white;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+            font-size: 1.5em;
+        }
+
+    }
 }
 .destinos-home{ 
     .destacado{
@@ -226,36 +196,7 @@
                 @media only screen and (max-width: 600px){
                     padding: 0 0.7em;   
                 }
-                .titulo{
-                    
-                    line-height: 1.2em;
-                    font-weight: 600;
-                    margin-bottom: 20px;
-                    @media only screen and (max-width: 600px){
-                        font-size: 1em;
-                    }
-                    h3{
-                        position: relative;
-                        font-size: 1.5em;
-                        line-height: 1.2em;
-                        font-weight: 600;
-                        @media only screen and (max-width: 600px){
-                            font-size: 1em;
-                            bottom: 30px;
-                            line-height: 1.6em;
-                        }
-                        a{
-                            color: $white;
-                            text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-                        }
-                    }
-                    a{
-                        color: $white;
-                        text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-                        font-size: 1.5em;
-                    }
 
-                }
                 .cuerpo, .cuerpo p{
                     color: $white;
                     font-size: 0.9em;
@@ -269,28 +210,7 @@
             }
         }
     }
-    h3{
-        position: absolute;
-        bottom: 50%;
-        transform: translateY(50%);
-        font-size: 1.5em; 
-        line-height: 1.2em;
-        font-weight: 600;
-        z-index: 3;
-        right: 6px;
-        left: 0;
-        margin-bottom: 0;
-        padding-left: 0;
-        a{
-            color: $white;
-            text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-            padding: 1em;
-            display: inline-block; 
-        }
-        @media only screen and (max-width: 600px){ 
-            font-size: 1.2em;
-        }
-    }
+
     .views-field-field-region-geografica{
         position: absolute;
         bottom: 30px;
@@ -300,8 +220,20 @@
         font-weight: 600; 
         color: $white;
         z-index: 3;
-        left: 30px;
+        left: 0;
+        right: 0;
         margin-bottom: 0;
+        padding-left: 0;
+    }
+    .region-geografica{
+        font-size: 0.8em;
+        text-transform: uppercase; 
+        line-height: 1.2em;
+        font-weight: 600; 
+        color: $white;
+        z-index: 3;
+        left: 30px;
+        margin-bottom: 8px;
         padding-left: 0;
     }
     .flag.flag-favorito.action-unflag {
@@ -826,18 +758,6 @@
     h2{
         color: $white;
     }
-    h3{
-        color: $white;
-        position: relative !important;
-        font-size: 1.4em;
-        line-height: 1.2em;
-        font-weight: 600;
-        z-index: 3;
-        text-align: left; 
-        margin-bottom: 1em;
-        padding: 0 !important;
-        bottom: 40px !important;
-    }
     h4{
         position: absolute;
         bottom: 50%;
@@ -921,6 +841,7 @@
         position: absolute;
         top: 30%;
         width: 100%;
+        height: 0;
         .owl-next{
             float: right !important;
             background-image: url("../../../../sites/default/files/inline-images/right.png") !important; 
@@ -1021,12 +942,7 @@
         margin-bottom: 1em;
     }
 }
-.block-views-block-mas-actividades-en-actividad-block-1{
-    .destinos-home .destino .descripcion .info-destino {
-        padding: 0 2em 2em 1.2em;
-        text-align: left !important;
-    }
-}
+
 //Lugares cercanos
 .block-views-block-lugares-cercanos-block-1 {
     padding-left: 0.9em;
@@ -1372,6 +1288,18 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
         } 
 }
 
+// Vista de la sección qué hacer
+.seccion-que-hacer {
+  h3 {
+    clear: both;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  // .destino {
+  //   margin-bottom: 4rem;
+  // }
+}
+
 //Convertidor de moneda
 .moneda-converter{
     border-top: 1px solid $light-gray;
@@ -1398,4 +1326,148 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
         text-align: center;
         margin-top: 91px;
     } 
+}
+#block-views-block-categorias-que-hacer-block-1{
+    margin: 2rem auto;
+    border-bottom: 1px solid $light-gray;
+    padding-bottom: 1rem;
+    header{
+        p{
+            padding-right: 0.7rem;
+            padding-left: 0.7rem;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $primary-color;
+            letter-spacing: -1px;
+        }
+    }
+    .views-row{
+        position: relative;
+        text-align: center;
+    }
+    .views-field-name{
+        position: absolute;
+        bottom: 50%;
+        z-index: 3;
+        display: block;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+        transform: translateY(50%);
+        a{
+            color: $white;
+            font-weight: 600;
+            line-height: 1rem;
+        }
+    }
+    .views-field-field-image{
+        position: relative;
+        img{
+            border-radius: 6px; 
+        }
+        a{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        
+            &:before{
+                position: absolute; 
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.3);
+                content: "";
+                z-index: 1; 
+                border-radius: 6px;
+            }
+            &:hover{
+                &:before{
+                    transition: all 0.5s ease;
+                    position: absolute; 
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: $secondary-color;
+                    content: "";
+                    z-index: 1; 
+                    border-radius: 6px;
+                }
+            }
+        }
+}
+}
+
+//Menu filtros que hacer
+#block-formularioexpuestoque-hacerque-hacer-principal{
+    ul{
+        li{
+            list-style: none;
+            .form-item {
+                label.option{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    color: $primary-color;
+                }
+            }
+            ul{
+                margin-top: 1rem;
+                li{
+                    .form-item {
+                        label.option{
+                            font-weight: normal;
+                            color: initial;
+                            font-size: 1rem; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.formulario-expuesto-que-hacer {
+    .form-checkboxes {
+        > ul {
+            margin: 0;
+            > li {
+                padding: 0.9rem 0 0.5rem;
+                > .form-item {
+                    border-bottom: solid 1px $light-gray;
+                    padding-bottom: 0.5rem;
+                    margin-bottom: 1rem;
+                    label {
+                        color: $primary-color;
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                        line-height: 1em;
+                        display: inline-block;
+                    }
+                    input {
+                        position: absolute;
+                        top: 1.2rem;
+                        right: 0;
+                    }
+                }
+            }
+            ul {
+                // display: none;
+            }
+        }
+        li {
+            list-style: none;
+            clear: both;
+            position: relative;
+        }
+    }
+    .button.success {
+        margin-top: 2rem;
+        width: 160px;
+    }
 }

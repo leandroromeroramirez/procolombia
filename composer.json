@@ -62,6 +62,7 @@
         "drupal/url_redirect": "^2.61",
         "drupal/vardumper": "^1.4",
         "drupal/verf": "^1.0",
+        "drupal/views_autocomplete_filters": "^1.2",
         "drupal/views_extras": "^1.1",
         "drupal/views_infinite_scroll": "^1.5",
         "drupal/webp": "^1.0",

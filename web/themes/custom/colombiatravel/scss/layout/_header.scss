@@ -115,6 +115,24 @@ header.header-page {
 }
 .block-views-block-encabezado-destino-block-1{
     position: relative;
+    header{
+        position: absolute;
+        bottom: 3rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 100;
+        width: 100%;
+        max-width: 80rem;
+        h1{
+            font-size: 3.5vw;
+            color: $white;
+            font-weight: 700;
+            letter-spacing: -3px;
+            line-height: 0.8em;
+            text-align: left;
+        }
+    }
     h1{
         font-size: 6.5vw;
         color: #fefefe;
@@ -225,7 +243,7 @@ ul#superfish-main {
             a{
                 color: $dark-gray;
                 text-transform: uppercase;
-                padding: 16px 10px;
+                padding: 1rem 3rem;
                 &:hover{
                     color: $primary-color;
                 }
@@ -266,7 +284,6 @@ ul#superfish-main {
             z-index: 1;
         }
     }
-
 }
 
 //login

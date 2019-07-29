@@ -432,3 +432,27 @@ ul.js-pager__items.pager{
         }
     }
 }
+
+//Titulo baldosa
+.titulo-baldosa{
+    position: absolute;
+    bottom: 50%;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-weight: 600;
+    z-index: 3;
+    right: 6px;
+    left: 0;
+    margin-bottom: 0;
+    padding-left: .67935rem !important;
+    padding-right: .67935rem !important;
+    a{
+        color: #fefefe;
+        text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+        padding: 1em;
+        display: inline-block;
+        cursor: pointer;
+    }
+}
