@@ -101,3 +101,8 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+
+
+# NODE MODULES #
+##########
+/node_modules/*
