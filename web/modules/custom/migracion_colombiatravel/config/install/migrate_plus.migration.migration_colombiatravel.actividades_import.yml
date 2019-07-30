@@ -7,11 +7,7 @@ source:
   plugin: csv
   path: modules/custom/migracion_colombiatravel/data/activities_import.csv
   header_row_count: 1
-<<<<<<< HEAD
   ids: [id]
-=======
-  keys: [id]
->>>>>>> 13f951fa0ca7a0ae5ecb57c89fad8468ea3bed3a
   constants:
     status: 1
 process:
@@ -19,11 +15,7 @@ process:
     plugin: default_value
     default_value: actividad
   title: titulo
-<<<<<<< HEAD
   field_texto: texto
-=======
-  body: texto
->>>>>>> 13f951fa0ca7a0ae5ecb57c89fad8468ea3bed3a
   uid:
     plugin: default_value
     default_value: 1
