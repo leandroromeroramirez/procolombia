@@ -21,7 +21,9 @@ process:
     bypass: true
     source: 'body/format'
     map:
-      1: full_html
+      1: filtered_html
+      2: full_html
+      
   field_image: 
     plugin: image_import
     source: 'https://colombiatravel.demodayscript.com/sites/default/files/default_images/default_0.jpg'
