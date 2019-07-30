@@ -1481,7 +1481,12 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
     .views-infinite-scroll-content-wrapper {
         float: left;
         width: 75%;
-        margin-top: 0.8rem;
+        margin-top: 0.8rem; 
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;   
+        @media only screen and (max-width: 600px){
+            width: 100%;
+        }
     }
 }
 
@@ -1491,14 +1496,14 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
         margin-bottom: 2rem;
     }
     h2{
-        font-size: 1.2em;
+        font-size: 1.6em;
         font-weight: 600;
         text-align: left;
         margin-bottom: 0.5rem;
-        letter-spacing: 0px; 
+        letter-spacing: -1px; 
         padding-left: 0;
         padding-right: 0;
-        margin-top: 1rem;
+        margin-top: 1rem; 
         a{
             color: $dark-gray;
             &:hover{
