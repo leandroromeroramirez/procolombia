@@ -74,6 +74,7 @@
         "drush/drush": "^9.6",
         "hussainweb/drupal-composer-helper": "^1.0",
         "lullabot/amp": "^1.1",
+        "masterminds/html5": "~2.3.0",
         "mikehaertl/phpwkhtmltopdf": "~2.1",
         "symfony/var-dumper": "~3.4",
         "tecnickcom/tcpdf": "~6"
