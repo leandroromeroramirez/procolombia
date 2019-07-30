@@ -6,13 +6,9 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
-<<<<<<< HEAD
-use Drupal\migrate\Entity\MigrationInterface;
 use Drupal\migrate\Plugin\MigrateSourceInterface;
 use Drupal\migrate\Row;
 
-=======
->>>>>>> 13f951fa0ca7a0ae5ecb57c89fad8468ea3bed3a
 
 /**
  * Implements hook_help().
@@ -29,7 +25,6 @@ function migracion_colombiatravel_help($route_name, RouteMatchInterface $route_m
     default:
   }
 }
-<<<<<<< HEAD
 
 /**
  * Implements hook_migrate_prepare_row
@@ -48,5 +43,3 @@ function migracion_colombiatravel_help($route_name, RouteMatchInterface $route_m
       $row->setSourceProperty('field_metatags', $value);
     }
  }
-=======
->>>>>>> 13f951fa0ca7a0ae5ecb57c89fad8468ea3bed3a
