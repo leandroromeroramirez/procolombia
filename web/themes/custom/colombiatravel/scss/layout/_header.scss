@@ -9,7 +9,22 @@ header.header-page {
         display: block;
     }
     .logo-co{
-        display: none; 
+        display: none;
+    }
+    @media screen and (max-width: 39.9375em) {
+        top: 0px;
+        padding: 1rem;
+        .logo-co{
+            display: block; 
+        }
+        span.label{
+            display: none !important;
+        }
+    }
+}
+#off-canvas{
+    li{
+        width: 100%;
     }
 }
 .header-fix{

@@ -212,9 +212,18 @@ padding: 100px 12em 80px 12em;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    white-space: nowrap;
     a{
         color: $white;
         text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+    }
+    span{
+        color: $white;
+        white-space: nowrap;
+    }
+    .field-content{
+        display: inline-block;
+        white-space: nowrap;
     }
 }
 //Menu herramientas

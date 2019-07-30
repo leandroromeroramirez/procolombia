@@ -15,7 +15,11 @@
 
 			//console.log(jQuery(window).scrollTop());
 		    if (jQuery(window).scrollTop() > 95) {
+		    	if (Foundation.MediaQuery.is('small only')) {
+		    		
+		    	}else{
 					jQuery(".off-canvas-content").addClass("header-fix");
+		    	}
 		    } else {
 					jQuery(".off-canvas-content").removeClass("header-fix");
 		    }
