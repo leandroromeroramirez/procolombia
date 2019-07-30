@@ -26,7 +26,7 @@ class ColombiaTravelMetaTags extends ProcessPluginBase {
     $metatags = unserialize($value);
     $return = [];
     foreach ($metatags as $key => $value) {
-      $return[$key] = $value['value'];
+      $return[$key] = strip_tags($value['value']);
     }
 
     // // Append 3 different fields in page_title to title field.
