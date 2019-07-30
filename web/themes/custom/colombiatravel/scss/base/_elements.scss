@@ -455,4 +455,8 @@ ul.js-pager__items.pager{
         display: inline-block;
         cursor: pointer;
     }
+    @media only screen and (max-width: 600px){
+        font-size: 1em !important;
+        line-height: 1em !important; 
+    }
 }

@@ -1485,6 +1485,9 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
             width: 75%;
             float: right;
             margin-bottom: 3rem;
+            @media only screen and (max-width: 600px){
+                width: 100%;
+            }
     }
     .views-infinite-scroll-content-wrapper {
         float: left;
