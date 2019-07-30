@@ -11,18 +11,27 @@ source:
   #   uid_root: 1
   #   node_activity: 'activity'
 process:
-  type:
+  type: 
     plugin: default_value
     default_value: actividad
   title: title
-  body: body
+  'body/value': 'body/0/value'
+  'body/format':
+    plugin: static_map
+    bypass: true
+    source: 'body/format'
+    map:
+      1: filtered_html
+      2: full_html
+      
   field_image: 
     plugin: image_import
-    source: field_principal_image
-    destination: 'public://'
+    source: 'https://colombiatravel.demodayscript.com/sites/default/files/default_images/default_0.jpg'
+    destination: 'public://actividades/'
   field_metatags:
     plugin: colombia_travel_meta_tags
     source: field_metatags
+  field_geolocalizacion: field_geolocation
   langcode:
     plugin: default_value
     source: language
