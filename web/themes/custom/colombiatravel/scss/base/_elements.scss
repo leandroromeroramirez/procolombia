@@ -440,7 +440,7 @@ ul.js-pager__items.pager{
     -ms-transform: translateY(50%);
     transform: translateY(50%);
     font-size: 1.3em !important;
-    line-height: 1.2em;
+    line-height: 1.2em !important; 
     font-weight: 600;
     z-index: 3;
     right: 6px;
@@ -457,6 +457,5 @@ ul.js-pager__items.pager{
     }
     @media only screen and (max-width: 600px){
         font-size: 1em !important;
-        line-height: 1em !important; 
     }
 }
