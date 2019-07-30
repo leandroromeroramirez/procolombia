@@ -1405,6 +1405,9 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
                 }
             }
         }
+        @media only screen and (max-width: 600px){
+            margin-bottom: 1rem;
+        }
 }
 }
 
@@ -1423,6 +1426,11 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
 }
 
 .formulario-expuesto-que-hacer {
+    
+    .views-exposed-form {
+        float: left !important;
+        margin-bottom: 2rem;
+    }
     .form-checkboxes {
         > ul {
             margin: 0;
@@ -1477,6 +1485,9 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
             width: 75%;
             float: right;
             margin-bottom: 3rem;
+            @media only screen and (max-width: 600px){
+                width: 100%;
+            }
     }
     .views-infinite-scroll-content-wrapper {
         float: left;
