@@ -6,6 +6,9 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\migrate\Plugin\MigrateSourceInterface;
+use Drupal\migrate\Row;
+
 
 /**
  * Implements hook_help().
@@ -22,3 +25,21 @@ function migracion_colombiatravel_help($route_name, RouteMatchInterface $route_m
     default:
   }
 }
+
+/**
+ * Implements hook_migrate_prepare_row
+ */ 
+
+ function migracion_colombiatravel_migrate_drupal_activities_prepare_row(Row $row, MigrateSourceInterface $source, $migration){
+    // var_dump($migration->id());
+    var_dump($row->getSourceProperty('nid'));
+    $value = $source
+      ->getDatabase()
+      ->query('SELECT data FROM {metatag} WHERE entity_id = :nid', [
+      ':nid' => $row->getSourceProperty('nid'),
+      ])
+      ->fetchField();
+    if ($value) {
+      $row->setSourceProperty('field_metatags', $value);
+    }
+ }

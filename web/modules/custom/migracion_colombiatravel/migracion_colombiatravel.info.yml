@@ -8,7 +8,8 @@ dependencies:
   - migrate_tools
   - migrate_plus
   - migrate
-  - migrate_source_csv
 config_devel:
   install:
     - migrate_plus.migrate.migration_colombiatravel.actividades_import
+    - migrate_plus.migrate.migration_colombiatravel.drupal7_activities
+
