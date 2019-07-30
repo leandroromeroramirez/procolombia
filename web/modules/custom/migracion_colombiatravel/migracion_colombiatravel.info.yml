@@ -12,8 +12,5 @@ dependencies:
 config_devel:
   install:
     - migrate_plus.migrate.migration_colombiatravel.actividades_import
-<<<<<<< HEAD
     - migrate_plus.migrate.migration_colombiatravel.drupal7_activities
 
-=======
->>>>>>> 13f951fa0ca7a0ae5ecb57c89fad8468ea3bed3a
