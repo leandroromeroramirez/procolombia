@@ -1,0 +1,37 @@
+id: activities_i18n
+migration_tags:
+  - Drupal7 translations
+label: Import Activities node translations
+migration_group: Procolombia
+source:
+  plugin: d7_node
+  node_type: activity
+  key: drupal7
+  translations: true
+  # constants:
+  #   uid_root: 1
+  #   node_activity: 'activity'
+process:
+  nid:
+    plugin: migration
+    source: tnid
+    migration: drupal_activities
+  langcode: language
+  title: title
+  body: body
+  field_metatags: metatags
+  uid:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:node'
+  default_bundle: article
+  translations :  true
+migration_dependencies:
+  required:
+    - drupal_activities
+  optional: {  }
+# dependencies:
+#   enforced:
+#     module:
+#       - migrate_example_i18n

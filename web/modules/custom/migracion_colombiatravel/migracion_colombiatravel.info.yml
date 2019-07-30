@@ -1,0 +1,19 @@
+name: 'migracion colombiatravel'
+type: module
+description: 'Modulo de migracion para procolombia'
+core: 8.x
+package: 'procolombia'
+dependencies:
+  - config_devel
+  - migrate_tools
+  - migrate_plus
+  - migrate
+  - migrate_source_csv
+config_devel:
+  install:
+    - migrate_plus.migrate.migration_colombiatravel.actividades_import
+<<<<<<< HEAD
+    - migrate_plus.migrate.migration_colombiatravel.drupal7_activities
+
+=======
+>>>>>>> 13f951fa0ca7a0ae5ecb57c89fad8468ea3bed3a
