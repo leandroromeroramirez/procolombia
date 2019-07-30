@@ -1423,6 +1423,14 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
 }
 
 .formulario-expuesto-que-hacer {
+    .views-element-container {
+        border-bottom: 1px solid $light-gray; 
+        margin-bottom: 2rem;
+    }
+    .views-exposed-form {
+        float: left !important;
+        margin-bottom: 2rem;
+    }
     .form-checkboxes {
         > ul {
             margin: 0;
