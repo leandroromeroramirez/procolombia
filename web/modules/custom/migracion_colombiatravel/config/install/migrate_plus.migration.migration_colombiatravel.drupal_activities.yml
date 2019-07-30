@@ -11,7 +11,7 @@ source:
   #   uid_root: 1
   #   node_activity: 'activity'
 process:
-  type:
+  type: 
     plugin: default_value
     default_value: actividad
   title: title
