@@ -1,0 +1,12 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+function widget_reservations_help($route_name, RouteMatchInterface $route_match) {
+  if ($route_name == 'help.page.widget_reservations') {
+    $output = '';
+    $output .= '<h3>' . t('About') . '</h3>';
+    $output .= '<p>' . t('Integration to book using the API of TripAdvisor and Viator.') . '</p>';
+    return $output;
+  }
+}
