@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ *
+ * Example of a preprocess hook for a subtheme that could be used to change
+ * variables in templates in order to support custom styling of AMP pages.
+ */
+function ctamp_preprocess_html(&$vars)
+{
+  if(isset($vars['page']['#attached']['html_head']))
+  {
+    foreach($vars['page']['#attached']['html_head'] as $delta => $var)
+    {
+      if(isset($var[0]['#tag']) && $var[0]['#tag'] == 'style')
+      {
+        unset($vars['page']['#attached']['html_head'][$delta]);
+        break;
+      }
+    }
+  }
+}
+
+function ctamp_preprocess_block(&$variables) {
+  switch ($variables['base_plugin_id']) {
+    case 'system_branding_block':
+      if ($variables['content']['site_logo']['#access'] && ($logo_uri = $variables['content']['site_logo']['#uri'])) {
+        // Check if logo is an SVG.
+        if (substr(strrev($logo_uri), 0, 4) === strrev('.svg')) {
+          // The logo URI should be a relative path.
+          if (substr($logo_uri, 0, 1) === '/') {
+            $logo_uri = DRUPAL_ROOT . str_replace(base_path(), '/', $logo_uri);
+          }
+
+          if (file_exists($logo_uri)) {
+            // Load XML for SVG file.
+            $logo_xml = simplexml_load_file($logo_uri);
+            $logo_attributes = $logo_xml ? $logo_xml->attributes() : NULL;
+          }
+
+          if (!empty($logo_attributes)) {
+            // The amp-img tag generated for the logo requires height and width to be defined.
+            if (property_exists($logo_attributes, 'height') && property_exists($logo_attributes, 'width')) {
+              $variables['site_logo_height'] = round($logo_attributes->height, 0);
+              $variables['site_logo_width'] = round($logo_attributes->width, 0);
+            }
+            // Use the SVG viewBox property in order to obtain height and width.
+            elseif (property_exists($logo_attributes, 'viewBox')) {
+              $logo_viewbox = (string) $logo_attributes->viewBox;
+              $logo_viewbox_coordinates = [];
+
+              // Create array of viewBox coordinates depending on item delimiter.
+              if (strpos($logo_viewbox, ',') !== false) {
+                $logo_viewbox_coordinates = explode(',', $logo_viewbox);
+              }
+              elseif (strpos($logo_viewbox, ' ') !== false) {
+                $logo_viewbox_coordinates = explode(' ', $logo_viewbox);
+              }
+
+              // Get SVG height and width from full viewBox coordinates.
+              if (!empty($logo_viewbox_coordinates[2]) && !empty($logo_viewbox_coordinates[3])) {
+                $variables['site_logo_height'] = round($logo_viewbox_coordinates[3], 0);
+                $variables['site_logo_width'] = round($logo_viewbox_coordinates[2], 0);
+              }
+            }
+          }
+        }
+        // If logo is not an SVG, we can use the image factory service.
+        else {
+          // The logo URI should be a relative path.
+          if (substr($logo_uri, 0, 1) === '/') {
+            $logo_uri = DRUPAL_ROOT . str_replace(base_path(), '/', $logo_uri);
+          }
+
+          if (file_exists($logo_uri)) {
+            /** @var ImageInterface $logo_image */
+            $logo_image = \Drupal::service('image.factory')->get($logo_uri);
+          }
+
+          if (!empty($logo_image) && $logo_image->isValid()) {
+            // Get height and width of logo from image factory service.
+            $variables['site_logo_height'] = $logo_image->getHeight();
+            $variables['site_logo_width'] = $logo_image->getWidth();
+          }
+          else {
+            $variables['site_logo_width'] = $variables['site_logo_height'] = NULL;
+          }
+        }
+      }
+  }
+}
