@@ -15,6 +15,7 @@ process:
     plugin: default_value
     default_value: actividad
   title: title
+  field_puntaje_de_favorito: field_ctfavorite_likes
   'body/value': 'body/0/value'
   'body/format':
     plugin: static_map
