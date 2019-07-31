@@ -1,0 +1,11 @@
+name: Widget Reservations
+description: 'Integration to book using the API of TripAdvisor and Viator.'
+type: module
+libraries:
+  - widget_reservations/drupal.widget_reservations
+
+version: '1.x'
+core: '8.x'
+project: 'widget_reservations'
+datestamp: 1562018368
+package: 'dayscript'

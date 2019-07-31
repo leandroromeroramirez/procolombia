@@ -1,0 +1,8 @@
+services:
+  widget_reservations.manager:
+    class: Drupal\widget_reservations\WidgetReservationsManager
+    arguments: ["@string_translation"]
+
+  widget_reservations.fetch_data:
+    class: Drupal\widget_reservations\Controller\ReservationsConnection
+    arguments: ['@database','@config.factory','@http_client']

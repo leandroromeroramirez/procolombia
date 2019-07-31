@@ -212,9 +212,18 @@ padding: 100px 12em 80px 12em;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    white-space: nowrap;
     a{
         color: $white;
         text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+    }
+    span{
+        color: $white;
+        white-space: nowrap;
+    }
+    .field-content{
+        display: inline-block;
+        white-space: nowrap;
     }
 }
 //Menu herramientas
@@ -439,8 +448,8 @@ ul.js-pager__items.pager{
     bottom: 50%;
     -ms-transform: translateY(50%);
     transform: translateY(50%);
-    font-size: 1.3em !important;
-    line-height: 1.2em;
+    font-size: 1.3rem !important;
+    line-height: 1.6rem !important; 
     font-weight: 600;
     z-index: 3;
     right: 6px;
@@ -456,7 +465,6 @@ ul.js-pager__items.pager{
         cursor: pointer;
     }
     @media only screen and (max-width: 600px){
-        font-size: 1em !important;
-        line-height: 1em !important; 
+        font-size: 1.2rem !important; 
     }
 }

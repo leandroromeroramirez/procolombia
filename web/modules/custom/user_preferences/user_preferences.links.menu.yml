@@ -1,0 +1,7 @@
+user_preferences.config_preference_form:
+  title: 'Config User Preference'
+  route_name: user_preferences.config_preference_form
+  description: 'Config taxonomy by user preferences'
+  parent: system.admin_config_system
+  weight: 99
+

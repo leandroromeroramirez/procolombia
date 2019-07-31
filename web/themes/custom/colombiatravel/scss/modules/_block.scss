@@ -199,7 +199,7 @@
 
                 .cuerpo, .cuerpo p{
                     color: $white;
-                    font-size: 0.9em;
+                    font-size: 1rem;
                     line-height: 1.4em;
                     display: block; 
                     text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
@@ -549,6 +549,9 @@
         }
     }
 
+    .owl-theme .owl-controls .owl-page span {
+        background: $white;
+    }
 }
 //Encabezado{
     .block-views-block-encabezado-destino-block-1{
@@ -582,7 +585,7 @@
                 }
             }
             .tagline{  
-                    margin-bottom: 0.8em;
+                 
                     font-size: 1em;
                     text-transform: uppercase;
                     line-height: 1em;
@@ -749,7 +752,7 @@
     }
 }
 //Que hacer en destino
-.block-views-block-que-hacer-en-destino-block-1, .block-views-block-mas-actividades-en-actividad-block-1{
+#que-hacer{
     background: $primary-color;
     background-image: url("../../../../sites/default/files/inline-images/textura01.png");
     background-repeat: no-repeat;
@@ -759,26 +762,7 @@
     h2{
         color: $white;
     }
-    h4{
-        position: absolute;
-        bottom: 50%;
-        transform: translateY(50%);
-        left: 0;
-        right: 0;
-        font-size: 1.3em;
-        line-height: 1.3em;
-        font-weight: 600;
-        padding: 1.2em;
-          z-index: 3; 
-        a{
-            color: $white;
-            text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-        }
-        @media only screen and (max-width: 600px){
-            font-size: 1em;
-            padding-right: 1.2em; 
-        }
-    }
+ 
 }
 .block-views-block-no-te-puedes-perder-destino-block-1, .block-views-block-eventos-destino-block-1, .block-views-block-donde-ir-2-caribe{
     h3{
@@ -885,7 +869,7 @@
 
 //Experiencias
 
-.block-views-block-experiencias-block-1{
+#blog{ 
     background: $light-blue;
     background-image: url("../../../../sites/default/files/inline-images/textura06.png"); 
     background-repeat: no-repeat;
@@ -955,11 +939,21 @@ a.search-button {
     background: url("../images/search.png") no-repeat center center;
     width: 24px;
     margin-right: 12px !important;
+    @media only screen and (max-width: 600px){
+        text-indent: 0px;
+        background: none;
+        width: 100%;
+    }
 }
 a.btn-ingresar {
     text-indent: -9999px;
     background: url("../images/login.png") no-repeat center center;
     width: 24px;
+    @media only screen and (max-width: 600px){
+        text-indent: 0px;
+        background: none;
+        width: 100%;
+    }
 }
 
 
@@ -980,41 +974,33 @@ a.btn-ingresar {
 
 //Resultados de busqueda
 
-.section-buscador{
-    .views-field-field-image {
-        img{
-            border-radius: 6px;
-        }
-        a{
-            display: inline-block;
-            position: relative;
-          
-            &:before{
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0,0,0,0);
-                content: "";
-                z-index: 1;
-                border-radius: 6px; 
-            }
-            &:hover{
-                &:before{
-                    background: rgba(0,0,0,.5);
-
-                    transition: all ease-in-out 0.4s;
-                }
-            }
+.path-buscador{
+    header{
+        h2{
+            text-align: left;
+            font-size: 2rem;
+            padding-left: 0;
+            padding-right: 0;
         }
     }
-    h3{
-        padding-left: 0;
-        font-size: 1.6rem;
+    .result {
+        font-weight: 500;
+        font-size: 1.4rem;
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: 0.8rem;
+        margin-bottom: 2rem;
     }
+    .views-infinite-scroll-content-wrapper{
+        h3{
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 1.3rem;
+        }
+        .region-geografica {
+            font-weight: 600;
+        }
+    }
+   
 }
 //Blog
 
@@ -1132,6 +1118,7 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
         text-align: left;
         font-size: 2rem;
         margin-bottom: 0.8rem;
+        margin-top: 2rem;
         a{
             position: relative;
             padding-right: 2rem;
@@ -1503,55 +1490,51 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
 
 //Informacion practica home
 .info-practica{
+    p{
+        text-align: center;
+        margin: 2rem 0;
+        padding-left: 1rem;
+        padding-right: 1rem; 
+    }
     .views-row {
         margin-bottom: 2rem;
+        position: relative;
     }
-    h2{
-        font-size: 1.6em;
-        font-weight: 600;
-        text-align: left;
-        margin-bottom: 0.5rem;
-        letter-spacing: -1px; 
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 1rem; 
-        a{
-            color: $dark-gray;
-            &:hover{
-                color: $primary-color;
-            }
-        }
-    }
-    .photo{
-        img{
-            border-radius: 6px; 
+
+    .views-field-field-image{
+        position: relative;
+        .photo{
             img{
-                width: auto;
-                @media only screen and (max-width: 600px){
-                    width: 450px;
+                border-radius: 6px; 
+                img{
+                    width: auto;
+                    @media only screen and (max-width: 600px){
+                        width: 450px;
+                    }
                 }
             }
-        }
-    a{
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 100%;
-      
-        &:before{
-            position: absolute; 
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
+        a{
+            display: block;
+            position: relative;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,.2);
-            content: "";
-            z-index: 1;
-            border-radius: 6px; 
+          
+            &:before{
+                position: absolute; 
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.2);
+                content: "";
+                z-index: 1;
+                border-radius: 6px; 
+            }
+    
         }
-
     }
-}
+    }
+
 }

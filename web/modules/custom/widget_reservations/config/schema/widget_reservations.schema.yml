@@ -1,0 +1,7 @@
+block.settings.widget_reservations_block:
+  type: block_settings
+  label: 'Widget Reservations block settings'
+  mapping:
+    widget_reservations_key:
+      type: string
+      label: 'Api Key Viator'

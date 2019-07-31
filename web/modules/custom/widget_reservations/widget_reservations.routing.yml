@@ -1,0 +1,8 @@
+widget_reservations.admin_config_widget_reservations:
+  path: /admin/config/system/widget_reservations
+  defaults:
+    _form: 'Drupal\widget_reservations\Form\WidgetReservationsSettings'
+    _title: 'Configuration Reservations API'
+  requirements:
+    _permission: 'administer site configuration'
+

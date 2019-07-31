@@ -1,0 +1,6 @@
+drupal.widget_reservations:
+  version: VERSION
+  js:
+    js/widget_reservations.js: {}
+  dependencies:
+    - core/jquery
