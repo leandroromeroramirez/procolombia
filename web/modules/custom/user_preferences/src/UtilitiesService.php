@@ -145,6 +145,13 @@ class UtilitiesService implements UtilitiesServiceInterface {
                 break;
               }
             }
+          } else {
+            if ($count <= $limit) {
+              $response[] = $nd;
+              $count++;
+            } else {
+              break;
+            }
           }
        }
       } else {
