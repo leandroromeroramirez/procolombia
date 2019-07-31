@@ -109,34 +109,58 @@ class UtilitiesService implements UtilitiesServiceInterface {
     if(!empty($id_node)){
       $nodes = Node::loadMultiple($id_node);
       foreach ($nodes as $key => $node) {
-        $destino = $node->get('field_destinos_relacionados');
-        $val = reset($destino->getValue());
+        $destinoNode = $node->get('field_destinos_relacionados');
+
+        $val = reset($destinoNode->getValue());
         $des = reset($destiny->getValue());
+
         if ($des['target_id'] == $val['target_id']) {
           $list_nodes[] = $node;
         }
       }
 
       if(!empty($list_nodes)){
-
        foreach ($list_nodes as $nd) {
-         $list_turimo = reset($nd->get('field_tipos_de_turismo')->getValue());
-
-         foreach ($list_user as $key => $value) {
-           # code...
-         }
+          $list_turismo = $nd->get('field_tipos_de_turismo')->getValue();
+          $flag = false;
+          $count = 0;
+          if (!empty($list_user)) {
+            foreach ($list_user as $k => $v) {
+              foreach ($list_turismo as $k2 => $v2) {
+                if ($v['target_id'] == $v2['target_id']) {
+                  $flag = true;
+                  break;
+                }
+                
+              }
+              if ($flag) {
+                break;
+              }
+            }
+            if ($flag) {
+              if ($count <= $limit) {
+                $response[] = $nd;
+                $count++;
+              } else {
+                break;
+              }
+            }
+          }
        }
+      } else {
+        $cont = 0;
+        foreach ($nodes as $id => $node) {
+          if ($cont > $limit) {
+            break;
+          } else {
+            $response[] = $node;
+            $cont++;
+          }
+        }
       }
 
     }
-    
-    kint($response);
-    // Cargar el usuario para extraer los datos de carga
-    //$user = \Drupal\user\Entity\User::load($uid);
-
-    //Aqui debe ir la consulta a el tipo de contenido Actividad
-
-    // debe retornar las actividades 
+    return $response;
   }
 
   public function getListPrefererUser($uid){
@@ -144,9 +168,10 @@ class UtilitiesService implements UtilitiesServiceInterface {
     $userData = User::load($uid);
     if ($userData) {
       $data = $userData->get('field_preferencias');
-      kint($data);
+      if (!empty($data->getValue())) {
+        $response = $data->getValue();
+      }
     }
-    
     return $response;
   }
 

@@ -136,11 +136,6 @@ class ActivityBlock extends BlockBase implements ContainerFactoryPluginInterface
     $build['#view_mode'] = $this->configuration['view_mode'];
     $route_match = $this->currentRouteMatch->getRouteName();
 
-    //kint($route_match);
-
-    //view.frontpage.page_1
-    //entity.node.canonical
-
     $uid = $this->currentUser->id();
     $destiny = '';
     $limit = $this->configuration['limit'];
@@ -149,15 +144,12 @@ class ActivityBlock extends BlockBase implements ContainerFactoryPluginInterface
       $node = $this->currentRouteMatch->getParameter('node');
       if ($node instanceof \Drupal\node\NodeInterface) {
         $destiny = $node->get('field_termino_destino');
+        $resultados =  $this->utilitiesServices->getActivityXUserXDestinyXlimit($uid, $destiny, $limit);
+        if (!empty($resultados)) {
+          $build['#list_activity'] = $resultados;
+        }
       }
     }
-
-    $resultados =  $this->utilitiesServices->getActivityXUserXDestinyXlimit($uid, $destiny, $limit);
-    
-    $build['#list_activity'] = $resultados;
-
-    $build['activity_block_test']['#markup'] = '<p>' . $this->configuration['test'] . '</p>';
-
     return $build;
   }
 
