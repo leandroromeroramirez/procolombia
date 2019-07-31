@@ -132,13 +132,13 @@ header.header-page {
     position: relative;
     header{
         position: absolute;
-        bottom: 3rem;
+        bottom: 1rem;
         left: 0;
         right: 0;
         margin: 0 auto;
         z-index: 4;
         width: 100%;
-        max-width: 80rem;
+        max-width: 80rem; 
         h1{
             font-size: 3.5vw;
             color: $white;
@@ -487,4 +487,30 @@ form#user-register-form{
             }
         }
     }
+}
+//Menu responsive
+.mm-menu.mm-theme-dark {
+    background: $primary-color !important;
+    color: $white !important;
+        padding: 1.2rem 1rem;
+    ul.menu{
+        li{
+            a{
+                padding: 1.2rem 1rem;
+                &:after{
+                    left: 0px !important;
+                }
+            }
+        }
+    }
+    a#toggle-icon {
+        z-index: 4;
+    }
+}
+.mm-listview>li:not(.mm-divider):after {
+    left: 0px !important;
+}
+.mm-opening #mm-blocker {
+    background:rgba(10, 36, 79, 0.7);
+    transition: background 1s ease 0.3s;
 }
