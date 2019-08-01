@@ -43,3 +43,18 @@ function migracion_colombiatravel_help($route_name, RouteMatchInterface $route_m
       $row->setSourceProperty('field_metatags', $value);
     }
  }
+
+
+ function migracion_colombiatravel_migrate_drupal_articles_prepare_row(Row $row, MigrateSourceInterface $source, $migration){
+  // var_dump($migration->id());
+  var_dump($row->getSourceProperty('nid'));
+  $value = $source
+    ->getDatabase()
+    ->query('SELECT data FROM {metatag} WHERE entity_id = :nid', [
+    ':nid' => $row->getSourceProperty('nid'),
+    ])
+    ->fetchField();
+  if ($value) {
+    $row->setSourceProperty('field_metatags', $value);
+  }
+}

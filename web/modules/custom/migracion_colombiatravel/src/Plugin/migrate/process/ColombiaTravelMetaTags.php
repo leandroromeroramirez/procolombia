@@ -22,11 +22,15 @@ class ColombiaTravelMetaTags extends ProcessPluginBase {
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-    
     $metatags = unserialize($value);
     $return = [];
     foreach ($metatags as $key => $value) {
-      $return[$key] = strip_tags($value['value']);
+      if( is_string($value['value']) ) {
+        $return[$key] = strip_tags($value['value']);
+      }else{
+        continue;
+      }
+      
     }
 
     // // Append 3 different fields in page_title to title field.
