@@ -1,0 +1,48 @@
+id: drupal_articles
+migration_tags:
+  - Drupal7
+label: Import Activities node from drupal7 database
+migration_group: Procolombia
+source:
+  plugin: d7_node
+  node_type: ctb_article
+  key: drupal7
+  # constants:
+  #   uid_root: 1
+  #   node_activity: 'activity'
+process:
+  type: 
+    plugin: default_value
+    default_value: article
+  title: title
+  'body/value': 'body/0/value'
+  'body/format':
+    plugin: static_map
+    bypass: true
+    source: 'body/format'
+    map:
+      1: filtered_html
+      2: full_html
+  field_image: 
+    plugin: image_import
+    source: 'https://colombiatravel.demodayscript.com/sites/default/files/default_images/default_0.jpg'
+    destination: 'public://actividades/'
+  field_metatags:
+    plugin: colombia_travel_meta_tags
+    source: field_metatags
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  uid:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required: {  }
+  optional: {  }
+# dependencies:
+#   enforced:
+#     module:
+#       - migrate_example_i18n
