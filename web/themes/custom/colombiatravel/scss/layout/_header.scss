@@ -9,7 +9,22 @@ header.header-page {
         display: block;
     }
     .logo-co{
-        display: none; 
+        display: none;
+    }
+    @media screen and (max-width: 39.9375em) {
+        top: 0px;
+        padding: 1rem;
+        .logo-co{
+            display: block; 
+        }
+        span.label{
+            display: none !important;
+        }
+    }
+}
+#off-canvas{
+    li{
+        width: 100%;
     }
 }
 .header-fix{
@@ -115,6 +130,24 @@ header.header-page {
 }
 .block-views-block-encabezado-destino-block-1{
     position: relative;
+    header{
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 4;
+        width: 100%;
+        max-width: 80rem; 
+        h1{
+            font-size: 3.5vw;
+            color: $white;
+            font-weight: 700;
+            letter-spacing: -3px;
+            line-height: 0.8em;
+            text-align: left;
+        }
+    }
     h1{
         font-size: 6.5vw;
         color: #fefefe;
@@ -218,14 +251,14 @@ ul#superfish-main {
 #block-menudestino, #block-menufavoritos, #block-navegacionprincipal{
     .menu{
         display: block;
-        padding: 5em 0px 0em 0;
+        padding: 3em 0px 0em 0; 
         border-bottom: 1px solid $light-gray;
         margin-bottom: 40px;
         li{
             a{
                 color: $dark-gray;
                 text-transform: uppercase;
-                padding: 16px 10px;
+                padding: 1rem 3rem;
                 &:hover{
                     color: $primary-color;
                 }
@@ -266,7 +299,6 @@ ul#superfish-main {
             z-index: 1;
         }
     }
-
 }
 
 //login
@@ -455,4 +487,30 @@ form#user-register-form{
             }
         }
     }
+}
+//Menu responsive
+.mm-menu.mm-theme-dark {
+    background: $primary-color !important;
+    color: $white !important;
+        padding: 1.2rem 1rem;
+    ul.menu{
+        li{
+            a{
+                padding: 1.2rem 1rem;
+                &:after{
+                    left: 0px !important;
+                }
+            }
+        }
+    }
+    a#toggle-icon {
+        z-index: 4;
+    }
+}
+.mm-listview>li:not(.mm-divider):after {
+    left: 0px !important;
+}
+.mm-opening #mm-blocker {
+    background:rgba(10, 36, 79, 0.7);
+    transition: background 1s ease 0.3s;
 }

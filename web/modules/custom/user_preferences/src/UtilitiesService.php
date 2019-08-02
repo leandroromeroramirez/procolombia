@@ -105,9 +105,7 @@ class UtilitiesService implements UtilitiesServiceInterface {
     $id_node = $node->condition('status', 1)
     ->condition('type', 'actividad')
     ->execute();
-
     $count = 0;
-
     if(!empty($id_node)){
       $nodes = Node::loadMultiple($id_node);
       foreach ($nodes as $key => $node) {

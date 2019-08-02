@@ -212,9 +212,18 @@ padding: 100px 12em 80px 12em;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    white-space: nowrap;
     a{
         color: $white;
         text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+    }
+    span{
+        color: $white;
+        white-space: nowrap;
+    }
+    .field-content{
+        display: inline-block;
+        white-space: nowrap;
     }
 }
 //Menu herramientas
@@ -430,5 +439,32 @@ ul.js-pager__items.pager{
            background-color: $secondary-color;
            padding: 0.85em 3em;
         }
+    }
+}
+
+//Titulo baldosa
+.titulo-baldosa{
+    position: absolute;
+    bottom: 50%;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    font-size: 1.3rem !important;
+    line-height: 1.6rem !important; 
+    font-weight: 600;
+    z-index: 3;
+    right: 6px;
+    left: 0;
+    margin-bottom: 0 !important;
+    padding-left: .67935rem !important;
+    padding-right: .67935rem !important;
+    a{
+        color: #fefefe;
+        text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+        padding: 1em;
+        display: inline-block;
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 600px){
+        font-size: 1.2rem !important; 
     }
 }

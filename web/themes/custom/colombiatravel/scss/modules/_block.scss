@@ -90,36 +90,7 @@
                         @media only screen and (max-width: 600px){
                             padding: 0 0.7em;   
                         }
-                        .titulo{
-                            
-                            line-height: 1.2em;
-                            font-weight: 600;
-                            margin-bottom: 20px;
-                            @media only screen and (max-width: 600px){
-                                font-size: 1em;
-                            }
-                            h3{
-                                position: relative;
-                                font-size: 1.5em;
-                                line-height: 1.2em;
-                                font-weight: 600;
-                                @media only screen and (max-width: 600px){
-                                    font-size: 1em;
-                                    bottom: 30px;
-                                    line-height: 1.6em;
-                                }
-                                a{
-                                    color: $white;
-                                    text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-                                }
-                            }
-                            a{
-                                color: $white;
-                                text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-                                font-size: 1.5em;
-                            }
 
-                        }
                         .cuerpo, .cuerpo p{
                             color: $white;
                             font-size: 0.9em;
@@ -133,30 +104,29 @@
                     }
                 }
             }
-            h3{
-                position: absolute;
-                bottom: 50%;
-                transform: translateY(50%);
-                font-size: 1.5em; 
-                line-height: 1.2em;
-                font-weight: 600;
-                z-index: 3;
-                right: 6px;
-                left: 0;
-                margin-bottom: 0;
-                padding-left: .67935rem !important;
-                padding-right: .67935rem !important;
-                a{
-                    color: $white;
-                    text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-                    padding: 1em;
-                    display: inline-block; 
-                }
-                @media only screen and (max-width: 600px){ 
-                    font-size: 1.2em;
-                }
-            }
+
         }
+}
+.descripcion {
+    position: absolute;
+    bottom: 20px;
+    z-index: 4;
+    width: 95%;
+    .titulo{
+        font-size: 1.4rem;               
+        line-height: 1.2em;
+        font-weight: 600;
+        margin-bottom: 8px;
+        @media only screen and (max-width: 600px){
+            font-size: 1em;
+        }
+        a{
+            color: $white;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
+            font-size: 1.5em;
+        }
+
+    }
 }
 .destinos-home{ 
     .destacado{
@@ -226,39 +196,10 @@
                 @media only screen and (max-width: 600px){
                     padding: 0 0.7em;   
                 }
-                .titulo{
-                    
-                    line-height: 1.2em;
-                    font-weight: 600;
-                    margin-bottom: 20px;
-                    @media only screen and (max-width: 600px){
-                        font-size: 1em;
-                    }
-                    h3{
-                        position: relative;
-                        font-size: 1.5em;
-                        line-height: 1.2em;
-                        font-weight: 600;
-                        @media only screen and (max-width: 600px){
-                            font-size: 1em;
-                            bottom: 30px;
-                            line-height: 1.6em;
-                        }
-                        a{
-                            color: $white;
-                            text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-                        }
-                    }
-                    a{
-                        color: $white;
-                        text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-                        font-size: 1.5em;
-                    }
 
-                }
                 .cuerpo, .cuerpo p{
                     color: $white;
-                    font-size: 0.9em;
+                    font-size: 1rem;
                     line-height: 1.4em;
                     display: block; 
                     text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
@@ -269,28 +210,7 @@
             }
         }
     }
-    h3{
-        position: absolute;
-        bottom: 50%;
-        transform: translateY(50%);
-        font-size: 1.5em; 
-        line-height: 1.2em;
-        font-weight: 600;
-        z-index: 3;
-        right: 6px;
-        left: 0;
-        margin-bottom: 0;
-        padding-left: 0;
-        a{
-            color: $white;
-            text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-            padding: 1em;
-            display: inline-block; 
-        }
-        @media only screen and (max-width: 600px){ 
-            font-size: 1.2em;
-        }
-    }
+
     .views-field-field-region-geografica{
         position: absolute;
         bottom: 30px;
@@ -300,8 +220,20 @@
         font-weight: 600; 
         color: $white;
         z-index: 3;
-        left: 30px;
+        left: 0;
+        right: 0;
         margin-bottom: 0;
+        padding-left: 0;
+    }
+    .region-geografica{
+        font-size: 0.8em;
+        text-transform: uppercase; 
+        line-height: 1.2em;
+        font-weight: 600; 
+        color: $white;
+        z-index: 3;
+        left: 30px;
+        margin-bottom: 8px;
         padding-left: 0;
     }
     .flag.flag-favorito.action-unflag {
@@ -617,6 +549,9 @@
         }
     }
 
+    .owl-theme .owl-controls .owl-page span {
+        background: $white;
+    }
 }
 //Encabezado{
     .block-views-block-encabezado-destino-block-1{
@@ -650,7 +585,7 @@
                 }
             }
             .tagline{  
-                    margin-bottom: 0.8em;
+                 
                     font-size: 1em;
                     text-transform: uppercase;
                     line-height: 1em;
@@ -801,6 +736,7 @@
             text-align: left;
             border-top: 1px solid $light-gray;
             padding-top: 46px;
+            margin-bottom: 1rem;
         }
     }
 }
@@ -816,7 +752,7 @@
     }
 }
 //Que hacer en destino
-.block-views-block-que-hacer-en-destino-block-1, .block-views-block-mas-actividades-en-actividad-block-1{
+#que-hacer{
     background: $primary-color;
     background-image: url("../../../../sites/default/files/inline-images/textura01.png");
     background-repeat: no-repeat;
@@ -826,38 +762,7 @@
     h2{
         color: $white;
     }
-    h3{
-        color: $white;
-        position: relative !important;
-        font-size: 1.4em;
-        line-height: 1.2em;
-        font-weight: 600;
-        z-index: 3;
-        text-align: left; 
-        margin-bottom: 1em;
-        padding: 0 !important;
-        bottom: 40px !important;
-    }
-    h4{
-        position: absolute;
-        bottom: 50%;
-        transform: translateY(50%);
-        left: 0;
-        right: 0;
-        font-size: 1.3em;
-        line-height: 1.3em;
-        font-weight: 600;
-        padding: 1.2em;
-          z-index: 3; 
-        a{
-            color: $white;
-            text-shadow: 3px 3px 5px rgba(0,0,0,0.44);
-        }
-        @media only screen and (max-width: 600px){
-            font-size: 1em;
-            padding-right: 1.2em; 
-        }
-    }
+ 
 }
 .block-views-block-no-te-puedes-perder-destino-block-1, .block-views-block-eventos-destino-block-1, .block-views-block-donde-ir-2-caribe{
     h3{
@@ -921,6 +826,7 @@
         position: absolute;
         top: 30%;
         width: 100%;
+        height: 0;
         .owl-next{
             float: right !important;
             background-image: url("../../../../sites/default/files/inline-images/right.png") !important; 
@@ -963,7 +869,7 @@
 
 //Experiencias
 
-.block-views-block-experiencias-block-1{
+#blog{ 
     background: $light-blue;
     background-image: url("../../../../sites/default/files/inline-images/textura06.png"); 
     background-repeat: no-repeat;
@@ -1021,12 +927,7 @@
         margin-bottom: 1em;
     }
 }
-.block-views-block-mas-actividades-en-actividad-block-1{
-    .destinos-home .destino .descripcion .info-destino {
-        padding: 0 2em 2em 1.2em;
-        text-align: left !important;
-    }
-}
+
 //Lugares cercanos
 .block-views-block-lugares-cercanos-block-1 {
     padding-left: 0.9em;
@@ -1038,11 +939,21 @@ a.search-button {
     background: url("../images/search.png") no-repeat center center;
     width: 24px;
     margin-right: 12px !important;
+    @media only screen and (max-width: 600px){
+        text-indent: 0px;
+        background: none;
+        width: 100%;
+    }
 }
 a.btn-ingresar {
     text-indent: -9999px;
     background: url("../images/login.png") no-repeat center center;
     width: 24px;
+    @media only screen and (max-width: 600px){
+        text-indent: 0px;
+        background: none;
+        width: 100%;
+    }
 }
 
 
@@ -1063,41 +974,33 @@ a.btn-ingresar {
 
 //Resultados de busqueda
 
-.section-buscador{
-    .views-field-field-image {
-        img{
-            border-radius: 6px;
-        }
-        a{
-            display: inline-block;
-            position: relative;
-          
-            &:before{
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0,0,0,0);
-                content: "";
-                z-index: 1;
-                border-radius: 6px; 
-            }
-            &:hover{
-                &:before{
-                    background: rgba(0,0,0,.5);
-
-                    transition: all ease-in-out 0.4s;
-                }
-            }
+.path-buscador{
+    header{
+        h2{
+            text-align: left;
+            font-size: 2rem;
+            padding-left: 0;
+            padding-right: 0;
         }
     }
-    h3{
-        padding-left: 0;
-        font-size: 1.6rem;
+    .result {
+        font-weight: 500;
+        font-size: 1.4rem;
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: 0.8rem;
+        margin-bottom: 2rem;
     }
+    .views-infinite-scroll-content-wrapper{
+        h3{
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 1.3rem;
+        }
+        .region-geografica {
+            font-weight: 600;
+        }
+    }
+   
 }
 //Blog
 
@@ -1213,8 +1116,9 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
 .block-views-block-donde-ir-2-caribe{
     h2{
         text-align: left;
-        font-size: 2.6rem;
-        margin-bottom: 0.6rem;
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+        margin-top: 2rem;
         a{
             position: relative;
             padding-right: 2rem;
@@ -1225,7 +1129,7 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
                 width: 8px;
                 height: 14px;
                 right: 0;
-                bottom: 13px;
+                bottom: 9px;
             }
         }
     }
@@ -1372,6 +1276,18 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
         } 
 }
 
+// Vista de la sección qué hacer
+.seccion-que-hacer {
+  h3 {
+    clear: both;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  // .destino {
+  //   margin-bottom: 4rem;
+  // }
+}
+
 //Convertidor de moneda
 .moneda-converter{
     border-top: 1px solid $light-gray;
@@ -1398,4 +1314,227 @@ nav#block-submenu-donde-ir, nav#block-quehacer-2 {
         text-align: center;
         margin-top: 91px;
     } 
+}
+
+#block-views-block-categorias-que-hacer-block-1{
+    margin: 2rem auto;
+    border-bottom: 1px solid $light-gray;
+    padding-bottom: 1rem;
+    header{
+        p{
+            padding-right: 0.7rem;
+            padding-left: 0.7rem;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $primary-color;
+            letter-spacing: -1px;
+        }
+    }
+    .views-row{
+        position: relative;
+        text-align: center;
+    }
+    .views-field-name{
+        position: absolute;
+        bottom: 50%;
+        z-index: 3;
+        display: block;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+        transform: translateY(50%);
+        a{
+            color: $white;
+            font-weight: 600;
+            line-height: 1.3rem;
+            display: block;
+        }
+    }
+    .views-field-field-image{
+        position: relative;
+        img{
+            border-radius: 6px; 
+        }
+        a{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        
+            &:before{
+                position: absolute; 
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.3);
+                content: "";
+                z-index: 1; 
+                border-radius: 6px;
+            }
+            &:hover{
+                &:before{
+                    transition: all 0.5s ease;
+                    position: absolute; 
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: $secondary-color;
+                    content: "";
+                    z-index: 1; 
+                    border-radius: 6px;
+                }
+            }
+        }
+        @media only screen and (max-width: 600px){
+            margin-bottom: 1rem;
+        }
+}
+}
+
+//Menu filtros que hacer
+.hidden-title{
+    h2{
+        display: none;
+    }
+}
+#block-formularioexpuestoque-hacerque-hacer-principal{
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+}
+
+.formulario-expuesto-que-hacer {
+    
+    .views-exposed-form {
+        float: left !important;
+        margin-bottom: 2rem;
+    }
+    .form-checkboxes {
+        > ul {
+            margin: 0;
+            > li {
+                > .form-item {
+                    border-bottom: solid 1px $light-gray;
+                    padding-bottom: 0.5rem;
+                    margin-bottom: 1rem;
+                    input {
+                        position: absolute;
+                        top: 0.2rem;
+                        right: 0;
+                    }
+                }
+            }
+            ul {
+                // display: none;
+            }
+        }
+        li {
+            list-style: none;
+            clear: both;
+            position: relative;
+        }
+    }
+    .button.success {
+        margin-top: 2rem;
+        width: 160px;
+    }
+    header{
+        p{
+            padding-right: 0.7rem;
+            padding-left: 0.7rem;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $primary-color;
+            letter-spacing: -1px;
+            margin-bottom: 2rem;
+        }
+    }
+    span.fieldset-legend{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $primary-color;
+        letter-spacing: 0px;
+        margin-bottom: 1rem;
+        display: block;
+        }
+    ul.js-pager__items.pager {
+            list-style: none;
+            text-align: center;
+            width: 75%;
+            float: right;
+            margin-bottom: 3rem;
+            @media only screen and (max-width: 600px){
+                width: 100%;
+            }
+    }
+    .views-infinite-scroll-content-wrapper {
+        float: left;
+        width: 75%;
+        margin-top: 0.8rem; 
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;   
+        @media only screen and (max-width: 600px){
+            width: 100%;
+        }
+    }
+}
+
+//Informacion practica home
+.info-practica{
+    p{
+        text-align: center;
+        margin: 2rem 0;
+        padding-left: 1rem;
+        padding-right: 1rem; 
+    }
+    .views-row {
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .views-field-field-image{
+        position: relative;
+        .photo{
+            img{
+                border-radius: 6px; 
+                img{
+                    width: auto;
+                    @media only screen and (max-width: 600px){
+                        width: 450px;
+                    }
+                }
+            }
+        a{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+          
+            &:before{
+                position: absolute; 
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.2);
+                content: "";
+                z-index: 1;
+                border-radius: 6px; 
+            }
+    
+        }
+    }
+    }
+
 }
