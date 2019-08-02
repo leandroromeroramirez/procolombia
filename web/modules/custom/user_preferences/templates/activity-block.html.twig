@@ -1,4 +1,6 @@
-<div>
-  <h1>Pruebas data</h1>
-  {{list_activity}}
+<div class="destinos-home row">
+  {% for node in list_activity %}
+        <li>{{ node}}</li>
+  {% endfor %}
+
 </div>

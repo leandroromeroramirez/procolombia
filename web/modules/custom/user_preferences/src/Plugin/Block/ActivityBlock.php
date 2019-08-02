@@ -139,16 +139,26 @@ class ActivityBlock extends BlockBase implements ContainerFactoryPluginInterface
     $uid = $this->currentUser->id();
     $destiny = '';
     $limit = $this->configuration['limit'];
-
+    $render_controller = \Drupal::entityTypeManager()->getViewBuilder('node');
     if ($route_match == 'entity.node.canonical') {
       $node = $this->currentRouteMatch->getParameter('node');
+      
       if ($node instanceof \Drupal\node\NodeInterface) {
         $destiny = $node->get('field_termino_destino');
         $resultados =  $this->utilitiesServices->getActivityXUserXDestinyXlimit($uid, $destiny, $limit);
         if (!empty($resultados)) {
-          $build['#list_activity'] = $resultados;
+          foreach ($resultados as $node) {
+            $build['#list_activity'][$node->id()] = $render_controller->view($node, $this->configuration['view_mode']);
+          }
         }
       }
+    } elseif ($route_match == 'view.frontpage.page_1') {
+        $resultados =  $this->utilitiesServices->getActivityXUserXDestinyXlimit($uid, $destiny, $limit);
+        if (!empty($resultados)) {
+          foreach ($resultados as $node) {
+            $build['#list_activity'][$node->id()] = $render_controller->view($node, $this->configuration['view_mode']);
+          }
+        }
     }
     return $build;
   }

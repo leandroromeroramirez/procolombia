@@ -106,16 +106,28 @@ class UtilitiesService implements UtilitiesServiceInterface {
     ->condition('type', 'actividad')
     ->execute();
 
+    $count = 0;
+
     if(!empty($id_node)){
       $nodes = Node::loadMultiple($id_node);
       foreach ($nodes as $key => $node) {
         $destinoNode = $node->get('field_destinos_relacionados');
 
         $val = reset($destinoNode->getValue());
-        $des = reset($destiny->getValue());
+        if (!empty($destiny)) {
+          $des = reset($destiny->getValue());
+        } else {
+          if ($count <= $limit) {
+            $response[] = $node->id();
+            $count++;
+          } else {
+            break;
+          }
+        }
+       
 
         if ($des['target_id'] == $val['target_id']) {
-          $list_nodes[] = $node;
+          $list_nodes[] = $node->id();
         }
       }
 
@@ -123,7 +135,7 @@ class UtilitiesService implements UtilitiesServiceInterface {
        foreach ($list_nodes as $nd) {
           $list_turismo = $nd->get('field_tipos_de_turismo')->getValue();
           $flag = false;
-          $count = 0;
+          
           if (!empty($list_user)) {
             foreach ($list_user as $k => $v) {
               foreach ($list_turismo as $k2 => $v2) {
@@ -139,7 +151,7 @@ class UtilitiesService implements UtilitiesServiceInterface {
             }
             if ($flag) {
               if ($count <= $limit) {
-                $response[] = $nd;
+                $response[] = $nd->id();
                 $count++;
               } else {
                 break;
@@ -147,7 +159,7 @@ class UtilitiesService implements UtilitiesServiceInterface {
             }
           } else {
             if ($count <= $limit) {
-              $response[] = $nd;
+              $response[] = $nd->id();
               $count++;
             } else {
               break;
@@ -160,19 +172,18 @@ class UtilitiesService implements UtilitiesServiceInterface {
           if ($cont > $limit) {
             break;
           } else {
-            $response[] = $node;
+            $response[] = $node->id();
             $cont++;
           }
         }
       }
-
     }
     return $response;
   }
 
   public function getListPrefererUser($uid){
     $response = [];
-    $userData = User::load($uid);
+    $userData = $this->entityTypeManager->getStorage('user')->load($uid);
     if ($userData) {
       $data = $userData->get('field_preferencias');
       if (!empty($data->getValue())) {

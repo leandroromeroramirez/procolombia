@@ -80,3 +80,34 @@ function user_preferences_form_alter(&$form, FormStateInterface $form_state, $fo
 
   }
 }
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function user_preferences_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+  if ($view->id() === 'que_hacer_en_destino' ) {
+    $serviceUtilities = \Drupal::service('user_preferences.utilities');
+    $uid = $this->currentUser->id();
+    $destiny = '';
+    $limit = 10;
+    $route_match = \Drupal::service('current_route_match');
+
+    if ($route_match->getRouteName() == 'entity.node.canonical') {
+      $node = $route_match->getParameter('node');
+      
+      if ($node) {
+        $destiny = $node->get('field_termino_destino');
+      }
+    } 
+    
+    $resultados =  $this->utilitiesServices->getActivityXUserXDestinyXlimit($uid, $destiny, $limit);
+    $first = array_shift($resultados);
+
+    if ($view->current_display === 'block_2' ) {
+     
+     $query->addWhere('', 'node_field_data.nid', $first, '=');
+    } elseif($view->current_display === 'block_1'){
+      $query->addWhere('', 'node_field_data.nid', $resultados, 'IN');
+    }
+  }
+}
