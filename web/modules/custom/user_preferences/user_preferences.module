@@ -7,6 +7,9 @@
 
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+use Drupal\views\ViewExecutable;
+
 
 /**
  * Implements hook_help().
@@ -87,7 +90,8 @@ function user_preferences_form_alter(&$form, FormStateInterface $form_state, $fo
 function user_preferences_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
   if ($view->id() === 'que_hacer_en_destino' ) {
     $serviceUtilities = \Drupal::service('user_preferences.utilities');
-    $uid = $this->currentUser->id();
+    $current_user = \Drupal::currentUser();
+    $uid = $current_user->id();
     $destiny = '';
     $limit = 10;
     $route_match = \Drupal::service('current_route_match');
